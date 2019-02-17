@@ -1,0 +1,96 @@
+﻿.form-btn {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-box-shadow: inset 0px 0px 5px 2px #2989d8 ;
+    -moz-box-shadow: inset 0px 0px 5px 2px #2989d8 ;
+    box-shadow: inset 0px 0px 5px 2px #2989d8;
+    background-color: transparent;
+    border-radius: 0.375em;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    height: 3.5em;
+    letter-spacing: 0.075em;
+    line-height: 3.5em;
+    padding: 0 2.25em;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    min-width: 8em;
+}
+.form-btn.loading
+{
+    background: darkred !important;
+}
+.form-btn.loading > span
+{
+    animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+    .form-btn:hover {
+        background-color: rgba(32, 96, 151, 0.6);
+    }
+
+    .form-btn:active {
+        background-color: rgba(0, 0, 0, 0.63);
+    }
+
+    .form-btn.icon:before {
+        margin-right: 0.5em;
+    }
+
+    .form-btn.fit {
+        width: 100%;
+    }
+
+    .form-btn.small {
+        font-size: 0.6em;
+    }
+
+    .form-btn.large {
+        font-size: 1em;
+        height: 3.65em;
+        line-height: 3.65em;
+    }
+
+    .form-btn.main {
+        background: #00d3ef; /* Old browsers */
+        background: -moz-linear-gradient(left, #00d3ef 1%, #2989d8 34%, #207cca 78%, #2593e8 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, #00d3ef 1%,#2989d8 34%,#207cca 78%,#2593e8 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, #00d3ef 1%,#2989d8 34%,#207cca 78%,#2593e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d3ef', endColorstr='#2593e8',GradientType=1 ); /* IE6-9 */
+        box-shadow: none;
+        color: #ffffff !important;
+        border: transparent;
+    }
+
+        .form-btn.main:hover {
+            opacity: 0.5;
+        }
+
+        .form-btn.main:active {
+            opacity: 0.3;
+        }
+
+    .form-btn.disabled,
+    .form-btn:disabled {
+        pointer-events: none;
+        opacity: 0.25;
+    }
