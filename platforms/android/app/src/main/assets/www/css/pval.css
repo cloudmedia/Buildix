@@ -1,0 +1,46 @@
+#pval-cont
+{
+    position: relative;
+}
+.pval-cont
+{
+    position: relative;
+}
+#pw-validate {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 20;
+    width:250px;
+    padding:15px;
+    background:#fefefe;
+    font-size:.875em;
+    border-radius:5px;
+    box-shadow:0 1px 3px #ccc;
+    border:1px solid #ddd;
+}
+#pw-validate h4 {
+    margin:0 0 10px 0;
+    padding:0;
+    font-weight:normal;
+}
+#pw-validate ul {
+    list-style: none;
+}
+#pw-validate ul li span {
+    font-weight: 900;
+    text-decoration: underline;
+}
+.pw-invalid {
+    background:url(/icon/cancel.png) no-repeat 0 50%;
+    padding-left:22px;
+    line-height:24px;
+    color:#ec3f41;
+}
+.pw-valid {
+    background:url(/icon/accept.png) no-repeat 0 50%;
+    padding-left:22px;
+    line-height:24px;
+    color:#3a7d34;
+}
