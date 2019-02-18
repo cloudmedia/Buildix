@@ -70,4 +70,5 @@
     <engine name="android" spec="^7.1.4" />
     <engine name="windows" spec="~6.0.1" />
     <plugin name="cordova-plugin-splashscreen" spec="https://github.com/apache/cordova-plugin-splashscreen.git" />
+    <preference name="windows-identity-name" value="59705Cloudulus.Media.Buildix" />
 </widget>
