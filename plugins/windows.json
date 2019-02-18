@@ -9,6 +9,9 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "Buildix"
+    },
+    "cordova-plugin-splash": {
+      "PACKAGE_NAME": "Buildix"
     }
   },
   "dependent_plugins": {}
