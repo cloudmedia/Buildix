@@ -69,5 +69,5 @@
     </platform>
     <engine name="android" spec="^7.1.4" />
     <engine name="windows" spec="~6.0.1" />
-    <plugin name="cordova-plugin-splash" spec="^1.0.0" />
+    <plugin name="cordova-plugin-splashscreen" spec="https://github.com/apache/cordova-plugin-splashscreen.git" />
 </widget>

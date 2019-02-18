@@ -12,6 +12,9 @@
     },
     "cordova-plugin-splash": {
       "PACKAGE_NAME": "Buildix"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "Buildix"
     }
   },
   "dependent_plugins": {}
