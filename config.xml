@@ -67,11 +67,9 @@
         <splash height="960" platform="ios" src="res/screens/ios/Default@2x~iphone.png" width="640" />
         <splash height="480" platform="ios" src="res/screens/ios/Default~iphone.png" width="320" />
     </platform>
-    <platform name="windows">
-    </platform>
     <platform name="winphone">
+        <preference name="windows-identity-name" value="59705Cloudulus.Media.Buildix" />
     </platform>
-    <preference name="windows-identity-name" value="59705Cloudulus.Media.Buildix" />
     <engine name="android" spec="^7.1.4" />
     <engine name="windows" spec="~6.0.1" />
     <plugin name="cordova-plugin-splashscreen" spec="https://github.com/apache/cordova-plugin-splashscreen.git" />
