@@ -1,36 +1,37 @@
-<?xml version='1.0' encoding='utf-8'?>
-<Package IgnorableNamespaces="uap mp" xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10">
-    <Identity Name="net.buildix.app" Publisher="CN=$username$" Version="2.0.0.0" />
-    <mp:PhoneIdentity PhoneProductId="c23e1ec0-32f8-11e9-8896-1538b1674856" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
-    <Properties>
-        <DisplayName>Buildix</DisplayName>
-        <PublisherDisplayName>Cloudulus.Media</PublisherDisplayName>
-        <Logo>images\StoreLogo.png</Logo>
-        <Description>A sample Apache Cordova application that responds to the deviceready event.</Description>
-    </Properties>
-    <Dependencies>
-        <TargetDeviceFamily MaxVersionTested="10.0.10240.0" MinVersion="10.0.10240.0" Name="Windows.Universal" />
-    </Dependencies>
-    <Resources>
-        <Resource Language="x-generate" />
-    </Resources>
-    <Applications>
-        <Application Id="net.buildix.app" StartPage="ms-appx-web://net.buildix.app/www/index.html">
-            <uap:VisualElements BackgroundColor="#464646" Description="A sample Apache Cordova application that responds to the deviceready event." DisplayName="Buildix" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png">
-                <uap:SplashScreen Image="images\splashscreen.png" />
-                <uap:DefaultTile ShortName="Buildix" Square310x310Logo="images\Square310x310Logo.png" Square71x71Logo="images\Square71x71Logo.png" Wide310x150Logo="images\Wide310x150Logo.png" />
-                <uap:InitialRotationPreference>
-                    <uap:Rotation Preference="portrait" />
-                    <uap:Rotation Preference="landscape" />
-                    <uap:Rotation Preference="landscapeFlipped" />
-                </uap:InitialRotationPreference>
-            </uap:VisualElements>
-            <uap:ApplicationContentUriRules>
-                <uap:Rule Match="ms-appx-web:///" Type="include" WindowsRuntimeAccess="all" />
-            </uap:ApplicationContentUriRules>
-        </Application>
-    </Applications>
-    <Capabilities>
-        <Capability Name="internetClient" />
-    </Capabilities>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
+  <Identity Name="59705Cloudulus.Media.Buildix" Publisher="CN=2951FC3C-84E7-4F18-AA0A-77356EC80650" Version="2.0.0.0" />
+  <mp:PhoneIdentity PhoneProductId="ced01e17-36e7-45eb-b871-b98cf0142468" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>Buildix</DisplayName>
+    <PublisherDisplayName>Cloudulus.Media</PublisherDisplayName>
+    <Logo>images\StoreLogo.png</Logo>
+    <Description>A sample Apache Cordova application that responds to the deviceready event.</Description>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily MaxVersionTested="10.0.10240.0" MinVersion="10.0.10240.0" Name="Windows.Universal" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="net.buildix.app" StartPage="ms-appx-web://net.buildix.app/www/index.html">
+      <uap:VisualElements BackgroundColor="#464646" Description="A sample Apache Cordova application that responds to the deviceready event." DisplayName="Buildix" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png">
+        <uap:SplashScreen Image="images\splashscreen.png" />
+        <uap:DefaultTile ShortName="Buildix" Square310x310Logo="images\Square310x310Logo.png" Square71x71Logo="images\Square71x71Logo.png" Wide310x150Logo="images\Wide310x150Logo.png">
+        </uap:DefaultTile>
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="portrait" />
+          <uap:Rotation Preference="landscape" />
+          <uap:Rotation Preference="landscapeFlipped" />
+        </uap:InitialRotationPreference>
+      </uap:VisualElements>
+      <uap:ApplicationContentUriRules>
+        <uap:Rule Match="ms-appx-web:///" Type="include" WindowsRuntimeAccess="all" />
+      </uap:ApplicationContentUriRules>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
 </Package>
