@@ -1,20 +1,22 @@
 ﻿<div class="box">
-    <h1>Please Log In</h1>
+    <h1>Login</h1>
+    <h2>[<span id="server-name"></span>]</h2>
     <div class="form-stacked">
         <div>
-            <input type="email" id="login-id" value="janest@buildix.net" placeholder="Login Email / Username" />
+            <input type="email" id="login-id" value="" placeholder="Login Email / Username" />
         </div>
         <div>
-            <input type="password" id="login-pass" value="Greenway1502!" placeholder="Password" />
-        </div>
-        <div>
-            <input type="text" id="login-server" value="buildix.net" placeholder="Server (e.g. myserver.buildix.net)" />
+            <input type="password" id="login-pass" value="" placeholder="Password" />
         </div>
         <div id="pin-cont" style="display: none;">
-            <input type="tel" id="login-pin" value="" data-val="" placeholder="4-digit Pin" />
+            <input type="tel" id="login-pin" value="" data-val="" placeholder="4-digit Pin" autocomplete="off" />
         </div>
         <div id="otp-cont" style="display: none;">
             <input type="tel" id="login-otp" value="" placeholder="One-Time Password" />
+        </div>
+        <div>
+            <input type="checkbox" value="1" id="login-remember" />
+            <label for="login-remember" class="checkbox">Remember Me</label>
         </div>
         <div>
             <button class="form-btn main" id="login-btn">Login</button>

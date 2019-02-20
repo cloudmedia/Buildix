@@ -7,9 +7,7 @@
     <description>
         Building automation suite.
     </description>
-    <author email="support@buildix.net" href="https://buildix.net">
-        Cloudulus.Media
-    </author>
+    <author email="support@buildix.net" href="https://buildix.net">Cloudulus.Media</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />

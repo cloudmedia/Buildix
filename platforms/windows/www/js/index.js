@@ -1,4 +1,5 @@
-﻿var server = null;
+﻿var server;
+var serverName;
 var login = false;
 var app = {
     // Application Constructor
@@ -24,6 +25,7 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         server = localStorage.getItem('server');
+        serverName = server.replace("https://", "");
 
         initMain();
 
@@ -78,7 +80,7 @@ function initMain()
             localStorage.setItem('server', server);
             window.location.replace("index.html");
         }else{
-            alert(valid.message);
+            notify2(valid.message);
         }
     });
 
@@ -106,7 +108,7 @@ function initMain()
 
     $(".clear-btn").unbind().touch(function(){
         server = null;
-        localStorage.setItem('server', null);
+        localStorage.setItem('server', "");
         window.location.replace("index.html");
     });
 

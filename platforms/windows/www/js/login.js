@@ -4,6 +4,14 @@
 
     $("#otp-cont").hide();
 
+    $("#server-name").text(serverName);
+
+    if (localStorage.getItem('remember-login') == 'yes') 
+    {
+        $("#login-remember").attr('checked', true);
+        $("#login-id").val(localStorage.getItem('saved-login'));
+    }
+
     $("#login-pin").on('keyup', function(e){
         switch (e.which)
         {
@@ -14,10 +22,11 @@
                 $("#login-btb").click();
             break;
             default:
+                var newDigit = $(this).val().substr(-1);
                 var regex = new RegExp(/^[0-9]$/);
-                if (regex.exec(e.key) && $(this).data('val').length < 4)
+                if (regex.exec(newDigit) && $(this).data('val').length < 4)
                 {
-                    $(this).data('val', $(this).data('val') + e.key);
+                    $(this).data('val', $(this).data('val') + newDigit);
                 }
         }
         setTimeout(function(){
@@ -52,15 +61,6 @@
             $("#login-pass").ok();
         }
 
-        var newServer = $("#login-server").val();
-        val.setVal(newServer);
-        if (val.isHostname())
-        {
-            server = 'https://'+newServer;
-        }else{
-            post_error(val.message);
-        }
-
         var label = $(this).text();
         var thisBtn = $(this);
         loadingOn();
@@ -71,7 +71,12 @@
         sub.addData('pass', $("#login-pass").val());
         sub.addData('pin', $("#login-pin").data('val'));
         sub.addData('otp', $("#login-otp").val());
-        sub.addData('src', 'app');
+        if ($("#login-remember").is(':checked'))
+        {
+            localStorage.setItem('remember-login', 'yes');
+        }else{
+            localStorage.setItem('remember-login', 'no');
+        }
 
         sub.submit("json", function(data){
             thisBtn.removeClass('loading').text(label);
@@ -80,6 +85,7 @@
             switch (data.status)
             {
                 case 1:
+                    if (localStorage.getItem('remember-login') == 'yes') localStorage.setItem('saved-login', $("#login-id").val());
                     login = true;
                     doLogin();
                 break;
