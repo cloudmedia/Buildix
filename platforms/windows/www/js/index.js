@@ -25,7 +25,7 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         server = localStorage.getItem('server');
-        serverName = server;
+        serverName = localStorage.getItem('serverName');
 
         initMain();
 
@@ -76,8 +76,10 @@ function initMain()
         var valid = new Valid(newServer);
         if (valid.isHostname())
         {
+            serverName = newServer;
             server = 'https://'+newServer;
             localStorage.setItem('server', server);
+            localStorage.setItem('serverName', serverName);
             window.location.replace("index.html");
         }else{
             notify2(valid.message);
