@@ -26,6 +26,7 @@ var app = {
 
         server = localStorage.getItem('server');
         serverName = server.replace("https://", "");
+        alert(serverName);
 
         initMain();
 
