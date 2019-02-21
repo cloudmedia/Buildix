@@ -43,6 +43,8 @@
         $(this).val("").data('val', '');
     });
 
+    $("#login-otp").mask('000000');
+
     $("#login-btn").touch(function(){
         scrollTop();
         if ($("#login-id").val().length < 3)
@@ -76,6 +78,7 @@
             localStorage.setItem('remember-login', 'yes');
         }else{
             localStorage.setItem('remember-login', 'no');
+            localStorage.removeItem('saved-login');
         }
 
         sub.submit("json", function(data){
@@ -91,12 +94,21 @@
                 break;
                 case 2:
                     notify2(data.message, "warn");
+                    $("#otp-cont").hide();
                     $("#pin-cont").fadeIn(function(){
                         $("#login-pin").select();
                     });
                 break;
+                case 3:
+                    notify2(data.message, "warn");
+                    $("#pin-cont").hide();
+                    $("#otp-cont").fadeIn(function(){
+                        $("#login-otp").select();
+                    });
+                break;
                 default:
                     notify2(data.message, "error", false);
+                    $("#login-pass").val("").select();
                     return false;
             }
         });

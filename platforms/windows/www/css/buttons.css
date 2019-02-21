@@ -94,3 +94,117 @@
         pointer-events: none;
         opacity: 0.25;
     }
+
+    i.disabled
+{
+    opacity: 0.2 !important;
+    cursor: default !important;
+}
+
+.inlineBtn
+{
+    cursor: pointer;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    display: inline;
+    color: #00d3ef;
+}
+.inlineBtn.spaced
+{
+    margin-left: 10px;
+}
+.inlineBtn.medium
+{
+    font-size: 2em;
+}
+.inlineBtn.big
+{
+    font-size: 3em;
+}
+.inlineBtn:hover
+{
+    opacity: 0.5;
+}
+
+.big-button
+{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  padding: 1em;
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+.big-button > i
+{
+  font-size: 4em;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+.big-button > svg
+{
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  width: 4em;
+  height: 4em;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+.big-button > svg path
+{
+    fill: white;
+}
+.big-button > span
+{
+  font-size: 2em;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  margin-bottom: 0.2em;
+}
+.big-button > span.bbb
+{
+  position: absolute;
+  left: 0.5em;
+  top: -0.5em;
+  background-color: rgba(255,255,255,0.3);
+  padding: 0.5em 0.8em 0.5em 0.8em;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+.big-button > span.bbb:hover
+{
+  background-color: rgba(255, 0, 0, 0.438);
+}
+.big-button.small-text > span
+{
+  font-size: 1.2em !important;
+  margin-top: 1em;
+}
+.big-button:hover
+{
+    opacity: 0.5;
+}

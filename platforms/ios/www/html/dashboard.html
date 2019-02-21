@@ -1,4 +1,7 @@
 <div class="box">
+    <div class="box-buttons">
+        <div><i class="fas fa-retweet"></i></div>
+    </div>
     <h1>Dashboard</h1>
     <div class="profile">
         <div>
@@ -22,36 +25,16 @@
         <button class="form-btn main logout-btn">Logout</button>
     </div>
 </div>
-<style>
-    .profile
-    {
-        display: flex;
-        flex-direction: column;
-        font-size: 1.2em;
-    }
-    .profile > div
-    {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        margin-bottom: 1em;
-    }
-    .profile > div > div:first-of-type
-    {
-        color:hotpink;
-        flex-basis: 30%;
-    }
-</style>
 <script>
     $(document).ready(function () {
-        $.getJSON(server+'/api/get-acct', function(data){
+        $.getJSON(server+'/api?action=get-acct', function(data){
             if (data.status == 1)
             {
                 var acct = data.acct;
                 $("#name").text(acct.user_name);
                 $("#email").text(acct.user_email);
                 $("#user").text(acct.user_disp);
-                $("#server").text(server);
+                $("#server").text(serverName);
             }
         });
     });

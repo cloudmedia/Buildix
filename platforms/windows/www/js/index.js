@@ -40,7 +40,7 @@ var app = {
                 timeout: 5000,
                 dataType: 'json',
                 success: processStatus,
-                error: errorStatus
+                error: errorConnect
             });
         }else{
 
@@ -62,8 +62,9 @@ function processStatus(data)
     }
 }
 
-function errorStatus()
+function errorConnect()
 {
+    loadingOff();
     notify2("Failed to connect to "+server+"!");
 }
 
@@ -118,6 +119,27 @@ function initMain()
         window.location.replace("index.html");
     });
 
+    $(".help").unbind().touch(function(){
+        var topic = $(this).data('topic');
+        loadingOn();
+        $.ajax({
+            url: server+'/api?action=get-help&topic='+topic,
+            method: 'get',
+            timeout: 5000,
+            dataType: 'json',
+            success: function(data){
+                loadingOff();
+                if (data.status == 1)
+                {
+                    notify2(data.help.help_message, data.help.help_class, false);
+                }else{
+                    notify2(data.message);
+                }
+            },
+            error: errorConnect
+        });
+    });
+
     if (login) initNav();
 }
 
@@ -143,7 +165,7 @@ function doLogin()
     loadingOn();
     $("#main").load('html/dashboard.html');
     setTimeout(function(){
-        $("#nav-vp").load(server+"/api/get-nav");
+        $("#nav-vp").load(server+"/api?action=get-nav");
     },1000);
 }
 
