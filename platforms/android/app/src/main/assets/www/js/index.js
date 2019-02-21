@@ -24,10 +24,8 @@ var app = {
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
 
-        alert("poop");
-
         server = localStorage.getItem('server');
-        serverName = server.replace("https://", "");
+        serverName = server;
 
         initMain();
 
