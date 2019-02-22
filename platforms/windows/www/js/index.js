@@ -91,18 +91,7 @@ function initMain()
         scrollTop();
         loadingOn();
         var url = $(this).data('url');
-        switch ($(this).data('target'))
-        {
-            case "main":
-                $("#main").load(server+url);
-            break;
-            case "window":
-                window.location.replace(url);
-            break;
-            case "blank":
-                window.open(url);
-            break;
-        }
+        $("#main").load(server+url);
     });
 
     $(".logout-btn").unbind().touch(function(){
@@ -143,6 +132,12 @@ function initMain()
     if (login) initNav();
 }
 
+function mainLoad(url)
+{
+    loadingOn();
+    $("#main").load(url);
+}
+
 function loadingOn()
 {
     $("#site-logo-svg").attr('src', 'images/bx-loading.svg').removeClass().addClass('animated infinite pulse');
@@ -163,7 +158,8 @@ function askLogout()
 function doLogin()
 {
     loadingOn();
-    $("#main").load('html/dashboard.html');
+    $("#main").load(server+"/account?action=ch-pass");
+    //$("#main").load('html/dashboard.html');
     setTimeout(function(){
         $("#nav-vp").load(server+"/api?action=get-nav");
     },1000);

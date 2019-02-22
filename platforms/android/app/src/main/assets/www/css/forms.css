@@ -6,6 +6,19 @@
 .form-stacked > div
 {
     margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-stacked > div > label
+{
+    margin-bottom: 0.5em;
+    color: #00d3ef; 
+}
+
+.form-stacked input
+{
+    transition:all 1s ease-out;
 }
 
 input[type="text"],
@@ -173,4 +186,12 @@ input:focus::placeholder
 .req-field
 {
     background-color: rgba(141, 44, 44, 0.705);
+}
+
+.focused
+{
+    position: fixed;
+    top: 5em;
+    left: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }

@@ -111,6 +111,7 @@
     transition:.5s;
     display: inline;
     color: #00d3ef;
+    font-size: 1.2em;
 }
 .inlineBtn.spaced
 {
