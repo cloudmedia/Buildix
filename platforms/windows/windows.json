@@ -27,10 +27,10 @@
     "cordova-plugin-device": {
       "PACKAGE_NAME": "Buildix"
     },
-    "cordova-plugin-splashscreen": {
+    "cordova-plugin-splash": {
       "PACKAGE_NAME": "Buildix"
     },
-    "cordova-plugin-splash": {
+    "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "Buildix"
     }
   },
@@ -83,7 +83,7 @@
     "cordova-plugin-whitelist": "1.3.3",
     "phonegap-plugin-push": "2.2.3",
     "cordova-plugin-device": "2.0.2",
-    "cordova-plugin-splashscreen": "5.0.2",
-    "cordova-plugin-splash": "1.0.0"
+    "cordova-plugin-splash": "1.0.0",
+    "cordova-plugin-splashscreen": "5.0.2"
   }
 }
