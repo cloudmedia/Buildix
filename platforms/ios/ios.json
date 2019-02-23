@@ -13,11 +13,11 @@
               "count": 1
             },
             {
-              "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
+              "xml": "<feature name=\"SplashScreen\"><param name=\"ios-package\" value=\"CDVSplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
               "count": 1
             },
             {
-              "xml": "<feature name=\"SplashScreen\"><param name=\"ios-package\" value=\"CDVSplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
               "count": 1
             }
           ]
@@ -59,13 +59,13 @@
     "phonegap-plugin-push": {
       "PACKAGE_NAME": "net.buildix.app"
     },
-    "cordova-plugin-device": {
-      "PACKAGE_NAME": "net.buildix.app"
-    },
     "cordova-plugin-splash": {
       "PACKAGE_NAME": "net.buildix.app"
     },
     "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "net.buildix.app"
+    },
+    "cordova-plugin-device": {
       "PACKAGE_NAME": "net.buildix.app"
     }
   },
@@ -80,26 +80,26 @@
       ]
     },
     {
-      "id": "cordova-plugin-device.device",
-      "file": "plugins/cordova-plugin-device/www/device.js",
-      "pluginId": "cordova-plugin-device",
-      "clobbers": [
-        "device"
-      ]
-    },
-    {
       "id": "cordova-plugin-splashscreen.SplashScreen",
       "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
       "pluginId": "cordova-plugin-splashscreen",
       "clobbers": [
         "navigator.splashscreen"
       ]
+    },
+    {
+      "id": "cordova-plugin-device.device",
+      "file": "plugins/cordova-plugin-device/www/device.js",
+      "pluginId": "cordova-plugin-device",
+      "clobbers": [
+        "device"
+      ]
     }
   ],
   "plugin_metadata": {
     "phonegap-plugin-push": "2.2.3",
-    "cordova-plugin-device": "2.0.2",
     "cordova-plugin-splash": "1.0.0",
-    "cordova-plugin-splashscreen": "5.0.2"
+    "cordova-plugin-splashscreen": "5.0.2",
+    "cordova-plugin-device": "2.0.2"
   }
 }

@@ -15,20 +15,6 @@ module.exports = [
     "runs": true
   },
   {
-    "id": "cordova-plugin-device.device",
-    "file": "plugins/cordova-plugin-device/www/device.js",
-    "pluginId": "cordova-plugin-device",
-    "clobbers": [
-      "device"
-    ]
-  },
-  {
-    "id": "cordova-plugin-device.DeviceProxy",
-    "file": "plugins/cordova-plugin-device/src/windows/DeviceProxy.js",
-    "pluginId": "cordova-plugin-device",
-    "runs": true
-  },
-  {
     "id": "cordova-plugin-splashscreen.SplashScreen",
     "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
     "pluginId": "cordova-plugin-splashscreen",
@@ -41,6 +27,20 @@ module.exports = [
     "file": "plugins/cordova-plugin-splashscreen/www/windows/SplashScreenProxy.js",
     "pluginId": "cordova-plugin-splashscreen",
     "runs": true
+  },
+  {
+    "id": "cordova-plugin-device.device",
+    "file": "plugins/cordova-plugin-device/www/device.js",
+    "pluginId": "cordova-plugin-device",
+    "clobbers": [
+      "device"
+    ]
+  },
+  {
+    "id": "cordova-plugin-device.DeviceProxy",
+    "file": "plugins/cordova-plugin-device/src/windows/DeviceProxy.js",
+    "pluginId": "cordova-plugin-device",
+    "runs": true
   }
 ];
 module.exports.metadata = 
@@ -48,9 +48,9 @@ module.exports.metadata =
 {
   "cordova-plugin-whitelist": "1.3.3",
   "phonegap-plugin-push": "2.2.3",
-  "cordova-plugin-device": "2.0.2",
   "cordova-plugin-splash": "1.0.0",
-  "cordova-plugin-splashscreen": "5.0.2"
+  "cordova-plugin-splashscreen": "5.0.2",
+  "cordova-plugin-device": "2.0.2"
 };
 // BOTTOM OF METADATA
 });
