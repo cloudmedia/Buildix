@@ -13,15 +13,15 @@
               "count": 1
             },
             {
-              "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
-              "count": 1
-            },
-            {
               "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
               "count": 1
             },
             {
               "xml": "<feature name=\"PushNotification\"><param name=\"android-package\" value=\"com.adobe.phonegap.push.PushPlugin\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
               "count": 1
             }
           ]
@@ -29,32 +29,12 @@
       },
       "res/values/cordova_plugin_splash_style.xml": {
         "parents": {
-          "/*": [
-            {
-              "xml": "<style name=\"CordovaPluginSplashTheme\" parent=\"@android:style/Theme.NoTitleBar\"><item name=\"android:windowBackground\">@drawable/cordova_plugin_splash_background</item><item name=\"android:windowFullscreen\">true</item></style>",
-              "count": 1
-            }
-          ]
+          "/*": []
         }
       },
       "AndroidManifest.xml": {
         "parents": {
-          "/manifest/application/activity[@android:name='MainActivity']": [
-            {
-              "xml": "<activity android:name=\"MainActivity\" android:theme=\"@style/CordovaPluginSplashTheme\" />",
-              "count": 1,
-              "mode": "merge",
-              "plugin": "cordova-plugin-splash",
-              "oldAttrib": {
-                "android:configChanges": "orientation|keyboardHidden|keyboard|screenSize|locale",
-                "android:label": "@string/activity_name",
-                "android:launchMode": "singleTop",
-                "android:name": "MainActivity",
-                "android:theme": "@style/CordovaPluginSplashTheme",
-                "android:windowSoftInputMode": "adjustResize"
-              }
-            }
-          ],
+          "/manifest/application/activity[@android:name='MainActivity']": [],
           "/manifest": [
             {
               "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
@@ -103,12 +83,6 @@
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "net.buildix.app"
     },
-    "cordova-plugin-splash": {
-      "PACKAGE_NAME": "net.buildix.app"
-    },
-    "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "net.buildix.app"
-    },
     "cordova-plugin-device": {
       "PACKAGE_NAME": "net.buildix.app"
     },
@@ -122,18 +96,13 @@
       "ANDROID_SUPPORT_V13_VERSION": "27.+",
       "FCM_VERSION": "17.0.+",
       "PACKAGE_NAME": "net.buildix.app"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "net.buildix.app"
     }
   },
   "dependent_plugins": {},
   "modules": [
-    {
-      "id": "cordova-plugin-splashscreen.SplashScreen",
-      "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
-      "pluginId": "cordova-plugin-splashscreen",
-      "clobbers": [
-        "navigator.splashscreen"
-      ]
-    },
     {
       "id": "cordova-plugin-device.device",
       "file": "plugins/cordova-plugin-device/www/device.js",
@@ -149,15 +118,22 @@
       "clobbers": [
         "PushNotification"
       ]
+    },
+    {
+      "id": "cordova-plugin-splashscreen.SplashScreen",
+      "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+      "pluginId": "cordova-plugin-splashscreen",
+      "clobbers": [
+        "navigator.splashscreen"
+      ]
     }
   ],
   "plugin_metadata": {
     "cordova-plugin-whitelist": "1.3.3",
-    "cordova-plugin-splash": "1.0.0",
-    "cordova-plugin-splashscreen": "5.0.3-dev",
     "cordova-plugin-device": "2.0.3-dev",
     "cordova-support-google-services": "1.2.1",
     "phonegap-plugin-multidex": "1.0.0",
-    "phonegap-plugin-push": "2.2.3"
+    "phonegap-plugin-push": "2.2.3",
+    "cordova-plugin-splashscreen": "5.0.3-dev"
   }
 }

@@ -9,15 +9,15 @@
         "parents": {
           "/*": [
             {
-              "xml": "<feature name=\"SplashScreen\"><param name=\"ios-package\" value=\"CDVSplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
-              "count": 1
-            },
-            {
               "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
               "count": 1
             },
             {
               "xml": "<feature name=\"PushNotification\"><param name=\"ios-package\" value=\"PushPlugin\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"SplashScreen\"><param name=\"ios-package\" value=\"CDVSplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
               "count": 1
             }
           ]
@@ -56,29 +56,18 @@
     }
   },
   "installed_plugins": {
-    "cordova-plugin-splash": {
-      "PACKAGE_NAME": "net.buildix.app"
-    },
-    "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "net.buildix.app"
-    },
     "cordova-plugin-device": {
       "PACKAGE_NAME": "net.buildix.app"
     },
     "phonegap-plugin-push": {
       "PACKAGE_NAME": "net.buildix.app"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "net.buildix.app"
     }
   },
   "dependent_plugins": {},
   "modules": [
-    {
-      "id": "cordova-plugin-splashscreen.SplashScreen",
-      "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
-      "pluginId": "cordova-plugin-splashscreen",
-      "clobbers": [
-        "navigator.splashscreen"
-      ]
-    },
     {
       "id": "cordova-plugin-device.device",
       "file": "plugins/cordova-plugin-device/www/device.js",
@@ -94,12 +83,19 @@
       "clobbers": [
         "PushNotification"
       ]
+    },
+    {
+      "id": "cordova-plugin-splashscreen.SplashScreen",
+      "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+      "pluginId": "cordova-plugin-splashscreen",
+      "clobbers": [
+        "navigator.splashscreen"
+      ]
     }
   ],
   "plugin_metadata": {
-    "cordova-plugin-splash": "1.0.0",
-    "cordova-plugin-splashscreen": "5.0.3-dev",
     "cordova-plugin-device": "2.0.3-dev",
-    "phonegap-plugin-push": "2.2.3"
+    "phonegap-plugin-push": "2.2.3",
+    "cordova-plugin-splashscreen": "5.0.3-dev"
   }
 }
