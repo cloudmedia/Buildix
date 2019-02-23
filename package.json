@@ -11,21 +11,32 @@
     "license": "Apache-2.0",
     "dependencies": {
         "cordova-android": "^7.1.4",
+        "cordova-browser": "^5.0.4",
         "cordova-ios": "^4.5.5",
+        "cordova-plugin-device": "git+https://github.com/apache/cordova-plugin-device.git",
         "cordova-plugin-splash": "^1.0.0",
         "cordova-plugin-splashscreen": "git+https://github.com/apache/cordova-plugin-splashscreen.git",
         "cordova-plugin-whitelist": "^1.3.3",
-        "cordova-windows": "^6.0.1"
+        "cordova-support-google-services": "1.2.1",
+        "cordova-windows": "^6.0.1",
+        "phonegap-plugin-multidex": "1.0.0",
+        "phonegap-plugin-push": "git+https://github.com/phonegap/phonegap-plugin-push.git"
     },
     "cordova": {
         "plugins": {
             "cordova-plugin-whitelist": {},
             "cordova-plugin-splash": {},
-            "cordova-plugin-splashscreen": {}
+            "cordova-plugin-splashscreen": {},
+            "cordova-plugin-device": {},
+            "phonegap-plugin-push": {
+                "ANDROID_SUPPORT_V13_VERSION": "27.+",
+                "FCM_VERSION": "17.0.+"
+            }
         },
         "platforms": [
             "android",
-            "windows"
+            "windows",
+            "browser"
         ]
     }
 }
