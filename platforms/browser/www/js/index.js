@@ -28,6 +28,8 @@ var app = {
         server = localStorage.getItem('server');
         serverName = localStorage.getItem('serverName');
 
+        alert(device.platform);
+
         initMain();
 
         if (server)      
