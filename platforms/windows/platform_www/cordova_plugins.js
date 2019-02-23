@@ -49,7 +49,8 @@ module.exports.metadata =
   "cordova-plugin-whitelist": "1.3.3",
   "phonegap-plugin-push": "2.2.3",
   "cordova-plugin-device": "2.0.2",
-  "cordova-plugin-splashscreen": "5.0.2"
+  "cordova-plugin-splashscreen": "5.0.2",
+  "cordova-plugin-splash": "1.0.0"
 };
 // BOTTOM OF METADATA
 });

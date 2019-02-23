@@ -1,0 +1,52 @@
+{
+  "_from": "cordova-plugin-splash@^1.0.0",
+  "_id": "cordova-plugin-splash@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-fE1MMmaCPUtBTE76sfjuBTr7nJI=",
+  "_location": "/cordova-plugin-splash",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "cordova-plugin-splash@^1.0.0",
+    "name": "cordova-plugin-splash",
+    "escapedName": "cordova-plugin-splash",
+    "rawSpec": "^1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-splash/-/cordova-plugin-splash-1.0.0.tgz",
+  "_shasum": "7c4d4c3266823d4b414c4efab1f8ee053afb9c92",
+  "_spec": "cordova-plugin-splash@^1.0.0",
+  "_where": "C:\\Users\\Nathan\\ownCloud\\mars\\Documents\\phonegap\\Buildix",
+  "author": {
+    "name": "Bruno Facundo"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Plugin to set Android splash for Cordova/Ionic applications",
+  "homepage": "",
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-android",
+    "android",
+    "ionic",
+    "splash",
+    "screen",
+    "windows",
+    "background",
+    "theme"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-splash",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "version": "1.0.0"
+}

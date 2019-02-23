@@ -29,12 +29,32 @@
       },
       "res/values/cordova_plugin_splash_style.xml": {
         "parents": {
-          "/*": []
+          "/*": [
+            {
+              "xml": "<style name=\"CordovaPluginSplashTheme\" parent=\"@android:style/Theme.NoTitleBar\"><item name=\"android:windowBackground\">@drawable/cordova_plugin_splash_background</item><item name=\"android:windowFullscreen\">true</item></style>",
+              "count": 1
+            }
+          ]
         }
       },
       "AndroidManifest.xml": {
         "parents": {
-          "/manifest/application/activity[@android:name='MainActivity']": [],
+          "/manifest/application/activity[@android:name='MainActivity']": [
+            {
+              "xml": "<activity android:name=\"MainActivity\" android:theme=\"@style/CordovaPluginSplashTheme\" />",
+              "count": 1,
+              "mode": "merge",
+              "plugin": "cordova-plugin-splash",
+              "oldAttrib": {
+                "android:configChanges": "orientation|keyboardHidden|keyboard|screenSize|locale",
+                "android:label": "@string/activity_name",
+                "android:launchMode": "singleTop",
+                "android:name": "MainActivity",
+                "android:theme": "@style/CordovaPluginSplashTheme",
+                "android:windowSoftInputMode": "adjustResize"
+              }
+            }
+          ],
           "/manifest": [
             {
               "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
@@ -99,6 +119,9 @@
     },
     "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "net.buildix.app"
+    },
+    "cordova-plugin-splash": {
+      "PACKAGE_NAME": "net.buildix.app"
     }
   },
   "dependent_plugins": {},
@@ -134,6 +157,7 @@
     "phonegap-plugin-multidex": "1.0.0",
     "phonegap-plugin-push": "2.2.3",
     "cordova-plugin-device": "2.0.2",
-    "cordova-plugin-splashscreen": "5.0.2"
+    "cordova-plugin-splashscreen": "5.0.2",
+    "cordova-plugin-splash": "1.0.0"
   }
 }
