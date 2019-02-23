@@ -30,5 +30,13 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "phonegap-plugin-push": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/phonegap/phonegap-plugin-push"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

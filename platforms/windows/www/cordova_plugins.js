@@ -13,13 +13,28 @@ module.exports = [
     "file": "plugins/cordova-plugin-splashscreen/www/windows/SplashScreenProxy.js",
     "pluginId": "cordova-plugin-splashscreen",
     "runs": true
+  },
+  {
+    "id": "phonegap-plugin-push.PushNotification",
+    "file": "plugins/phonegap-plugin-push/www/push.js",
+    "pluginId": "phonegap-plugin-push",
+    "clobbers": [
+      "PushNotification"
+    ]
+  },
+  {
+    "id": "phonegap-plugin-push.PushPlugin",
+    "file": "plugins/phonegap-plugin-push/src/windows/PushPluginProxy.js",
+    "pluginId": "phonegap-plugin-push",
+    "runs": true
   }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
   "cordova-plugin-whitelist": "1.3.3",
-  "cordova-plugin-splashscreen": "5.0.3-dev"
+  "cordova-plugin-splashscreen": "5.0.3-dev",
+  "phonegap-plugin-push": "2.2.3"
 };
 // BOTTOM OF METADATA
 });
