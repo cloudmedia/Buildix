@@ -17,6 +17,9 @@
       "ANDROID_SUPPORT_V13_VERSION": "27.+",
       "FCM_VERSION": "17.0.+",
       "PACKAGE_NAME": "net.buildix.app"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "net.buildix.app"
     }
   },
   "dependent_plugins": {

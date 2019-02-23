@@ -19,6 +19,10 @@
             {
               "xml": "<feature name=\"PushNotification\"><param name=\"android-package\" value=\"com.adobe.phonegap.push.PushPlugin\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -92,6 +96,9 @@
       "ANDROID_SUPPORT_V13_VERSION": "27.+",
       "FCM_VERSION": "17.0.+",
       "PACKAGE_NAME": "net.buildix.app"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "net.buildix.app"
     }
   },
   "dependent_plugins": {},
@@ -111,6 +118,14 @@
       "clobbers": [
         "PushNotification"
       ]
+    },
+    {
+      "id": "cordova-plugin-device.device",
+      "file": "plugins/cordova-plugin-device/www/device.js",
+      "pluginId": "cordova-plugin-device",
+      "clobbers": [
+        "device"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -118,6 +133,7 @@
     "cordova-plugin-splashscreen": "5.0.3-dev",
     "cordova-support-google-services": "1.2.1",
     "phonegap-plugin-multidex": "1.0.0",
-    "phonegap-plugin-push": "2.2.3"
+    "phonegap-plugin-push": "2.2.3",
+    "cordova-plugin-device": "2.0.2"
   }
 }

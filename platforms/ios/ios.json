@@ -15,6 +15,10 @@
             {
               "xml": "<feature name=\"PushNotification\"><param name=\"ios-package\" value=\"PushPlugin\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -57,6 +61,9 @@
     },
     "phonegap-plugin-push": {
       "PACKAGE_NAME": "net.buildix.app"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "net.buildix.app"
     }
   },
   "dependent_plugins": {},
@@ -76,10 +83,19 @@
       "clobbers": [
         "PushNotification"
       ]
+    },
+    {
+      "id": "cordova-plugin-device.device",
+      "file": "plugins/cordova-plugin-device/www/device.js",
+      "pluginId": "cordova-plugin-device",
+      "clobbers": [
+        "device"
+      ]
     }
   ],
   "plugin_metadata": {
     "cordova-plugin-splashscreen": "5.0.3-dev",
-    "phonegap-plugin-push": "2.2.3"
+    "phonegap-plugin-push": "2.2.3",
+    "cordova-plugin-device": "2.0.2"
   }
 }

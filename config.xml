@@ -77,4 +77,5 @@
         <variable name="ANDROID_SUPPORT_V13_VERSION" value="27.+" />
         <variable name="FCM_VERSION" value="17.0.+" />
     </plugin>
+    <plugin name="cordova-plugin-device" spec="2.0.2" />
 </widget>
