@@ -16,9 +16,6 @@
 		3047A5131AB8059700498E2A /* build-release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5101AB8059700498E2A /* build-release.xcconfig */; };
 		3047A5141AB8059700498E2A /* build.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5111AB8059700498E2A /* build.xcconfig */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
-		9BB25D8546C345009AE8C57E /* AppDelegate+notification.m in Sources */ = {isa = PBXBuildFile; fileRef = C3284E53BD6B4600A77472B1 /* AppDelegate+notification.m */; };
-		5BD56B599CDE43CF82E8EF90 /* PushPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 059079057D8341E68E631EA3 /* PushPlugin.m */; };
-		A294280D955B47A28FAF6C14 /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87967526D8E349DE853BFA31 /* PushKit.framework */; };
 		744C962B17954E9DB9435135 /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D6A0FBB2FE4A7FB3929C18 /* CDVSplashScreen.m */; };
 		D9AC2D191326425297EFF01D /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 391D0345B6314CDCB0323FEF /* CDVViewController+SplashScreen.m */; };
 /* End PBXBuildFile section */
@@ -61,11 +58,6 @@
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "Buildix/config.xml"; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		C3284E53BD6B4600A77472B1 /* AppDelegate+notification.m */ = {isa = PBXFileReference; name = "AppDelegate+notification.m"; path = "phonegap-plugin-push/AppDelegate+notification.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		059079057D8341E68E631EA3 /* PushPlugin.m */ = {isa = PBXFileReference; name = "PushPlugin.m"; path = "phonegap-plugin-push/PushPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		EBAF6C576753430886CED8D6 /* AppDelegate+notification.h */ = {isa = PBXFileReference; name = "AppDelegate+notification.h"; path = "phonegap-plugin-push/AppDelegate+notification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		D6A2BD38BD054656A0A68FC4 /* PushPlugin.h */ = {isa = PBXFileReference; name = "PushPlugin.h"; path = "phonegap-plugin-push/PushPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		87967526D8E349DE853BFA31 /* PushKit.framework */ = {isa = PBXFileReference; name = "PushKit.framework"; path = "System/Library/Frameworks/PushKit.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		F1D6A0FBB2FE4A7FB3929C18 /* CDVSplashScreen.m */ = {isa = PBXFileReference; name = "CDVSplashScreen.m"; path = "cordova-plugin-splashscreen/CDVSplashScreen.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		391D0345B6314CDCB0323FEF /* CDVViewController+SplashScreen.m */ = {isa = PBXFileReference; name = "CDVViewController+SplashScreen.m"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		FBD18D5E469C4DF1A4DFFAD5 /* CDVSplashScreen.h */ = {isa = PBXFileReference; name = "CDVSplashScreen.h"; path = "cordova-plugin-splashscreen/CDVSplashScreen.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
@@ -78,7 +70,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
-				A294280D955B47A28FAF6C14 /* PushKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +140,6 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				87967526D8E349DE853BFA31 /* PushKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -175,10 +165,6 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				C3284E53BD6B4600A77472B1 /* AppDelegate+notification.m */,
-				059079057D8341E68E631EA3 /* PushPlugin.m */,
-				EBAF6C576753430886CED8D6 /* AppDelegate+notification.h */,
-				D6A2BD38BD054656A0A68FC4 /* PushPlugin.h */,
 				F1D6A0FBB2FE4A7FB3929C18 /* CDVSplashScreen.m */,
 				391D0345B6314CDCB0323FEF /* CDVViewController+SplashScreen.m */,
 				FBD18D5E469C4DF1A4DFFAD5 /* CDVSplashScreen.h */,
@@ -295,8 +281,6 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				9BB25D8546C345009AE8C57E /* AppDelegate+notification.m in Sources */,
-				5BD56B599CDE43CF82E8EF90 /* PushPlugin.m in Sources */,
 				744C962B17954E9DB9435135 /* CDVSplashScreen.m in Sources */,
 				D9AC2D191326425297EFF01D /* CDVViewController+SplashScreen.m in Sources */,
 			);

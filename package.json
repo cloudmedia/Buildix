@@ -17,16 +17,11 @@
         "cordova-plugin-whitelist": "^1.3.3",
         "cordova-support-google-services": "1.2.1",
         "cordova-windows": "^6.0.1",
-        "phonegap-plugin-multidex": "1.0.0",
-        "phonegap-plugin-push": "git+https://github.com/phonegap/phonegap-plugin-push.git"
+        "phonegap-plugin-multidex": "1.0.0"
     },
     "cordova": {
         "plugins": {
             "cordova-plugin-whitelist": {},
-            "phonegap-plugin-push": {
-                "ANDROID_SUPPORT_V13_VERSION": "27.+",
-                "FCM_VERSION": "17.0.+"
-            },
             "cordova-plugin-splashscreen": {}
         },
         "platforms": [

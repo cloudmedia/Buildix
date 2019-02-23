@@ -7,9 +7,6 @@
     "files": {}
   },
   "installed_plugins": {
-    "phonegap-plugin-push": {
-      "PACKAGE_NAME": "net.buildix.app"
-    },
     "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "net.buildix.app"
     }
