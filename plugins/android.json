@@ -17,6 +17,9 @@
     },
     "cordova-plugin-device": {
       "PACKAGE_NAME": "net.buildix.app"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "net.buildix.app"
     }
   },
   "dependent_plugins": {
