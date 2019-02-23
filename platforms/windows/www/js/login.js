@@ -1,4 +1,6 @@
 ﻿$(document).ready(function () {
+    var doOTP = false;
+
     loadingOff();
     initMain();
 
@@ -10,6 +12,18 @@
     {
         $("#login-remember").attr('checked', true);
         $("#login-id").val(localStorage.getItem('saved-login'));
+    }
+
+    if (localStorage.getItem('keep-login') == 'yes')
+    {
+        $("#keep-login").attr('checked', true);
+        if (localStorage.getItem('otp-key'))
+        {
+            doOTP = true;
+            var totp = new TOTP(localStorage.getItem('otp-key'), localStorage.getItem('saved-login'));
+            $("#login-otp").val(totp.getOTP());
+            $("#otp-cont").show();
+        }
     }
 
     $("#login-pin").on('keyup', function(e){
@@ -81,6 +95,15 @@
             localStorage.removeItem('saved-login');
         }
 
+        if ($("#keep-login").is(':checked'))
+        {
+            sub.addData('get-key', true);
+            localStorage.setItem('keep-login', 'yes');
+        }else{
+            localStorage.setItem('keep-login', 'no');
+            localStorage.removeItem('otp-key');
+        }
+
         sub.submit("json", function(data){
             thisBtn.removeClass('loading').text(label);
             loadingOff();
@@ -89,6 +112,7 @@
             {
                 case 1:
                     if (localStorage.getItem('remember-login') == 'yes') localStorage.setItem('saved-login', $("#login-id").val());
+                    if (typeof data.key !== typeof undefined) localStorage.setItem('otp-key', data.key);
                     login = true;
                     doLogin();
                 break;

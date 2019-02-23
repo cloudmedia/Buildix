@@ -1,6 +1,7 @@
 var server;
 var serverName;
 var login = false;
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -158,8 +159,8 @@ function askLogout()
 function doLogin()
 {
     loadingOn();
-    $("#main").load(server+"/account?action=ch-pass");
-    //$("#main").load('html/dashboard.html');
+    //$("#main").load(server+"/account?action=ch-pass");
+    $("#main").load('html/dashboard.html');
     setTimeout(function(){
         $("#nav-vp").load(server+"/api?action=get-nav");
     },1000);

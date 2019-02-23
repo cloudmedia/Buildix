@@ -209,3 +209,13 @@
 {
     opacity: 0.5;
 }
+
+.btn-flex
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn-flex > button:not(:last-of-type)
+{
+    margin-right: 1em;
+}

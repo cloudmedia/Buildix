@@ -5,9 +5,9 @@
 }
 .form-stacked > div
 {
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 }
 
 .form-stacked > div > label
@@ -51,7 +51,7 @@ textarea
     display: inline;
     vertical-align: middle;
     caret-color: #fff;
-    box-sizing: border-box;
+    box-sizing: content-box;
     font-family: 'Exo 2', sans-serif;
 }
 @media (max-width: 500px)
