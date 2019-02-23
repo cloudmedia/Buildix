@@ -19,10 +19,6 @@
             {
               "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
               "count": 1
-            },
-            {
-              "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
-              "count": 1
             }
           ]
         }
@@ -119,9 +115,6 @@
     },
     "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "net.buildix.app"
-    },
-    "cordova-plugin-device": {
-      "PACKAGE_NAME": "net.buildix.app"
     }
   },
   "dependent_plugins": {},
@@ -141,14 +134,6 @@
       "clobbers": [
         "navigator.splashscreen"
       ]
-    },
-    {
-      "id": "cordova-plugin-device.device",
-      "file": "plugins/cordova-plugin-device/www/device.js",
-      "pluginId": "cordova-plugin-device",
-      "clobbers": [
-        "device"
-      ]
     }
   ],
   "plugin_metadata": {
@@ -157,7 +142,6 @@
     "phonegap-plugin-multidex": "1.0.0",
     "phonegap-plugin-push": "2.2.3",
     "cordova-plugin-splash": "1.0.0",
-    "cordova-plugin-splashscreen": "5.0.2",
-    "cordova-plugin-device": "2.0.2"
+    "cordova-plugin-splashscreen": "5.0.2"
   }
 }

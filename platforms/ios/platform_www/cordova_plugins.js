@@ -15,14 +15,6 @@ module.exports = [
     "clobbers": [
       "navigator.splashscreen"
     ]
-  },
-  {
-    "id": "cordova-plugin-device.device",
-    "file": "plugins/cordova-plugin-device/www/device.js",
-    "pluginId": "cordova-plugin-device",
-    "clobbers": [
-      "device"
-    ]
   }
 ];
 module.exports.metadata = 
@@ -30,8 +22,7 @@ module.exports.metadata =
 {
   "phonegap-plugin-push": "2.2.3",
   "cordova-plugin-splash": "1.0.0",
-  "cordova-plugin-splashscreen": "5.0.2",
-  "cordova-plugin-device": "2.0.2"
+  "cordova-plugin-splashscreen": "5.0.2"
 };
 // BOTTOM OF METADATA
 });
