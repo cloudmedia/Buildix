@@ -5,7 +5,6 @@
     initMain();
 
     $("#otp-cont").hide();
-
     $("#server-name").text(serverName);
 
     if (localStorage.getItem('remember-login') == 'yes') 
@@ -17,14 +16,36 @@
     if (localStorage.getItem('keep-login') == 'yes')
     {
         $("#keep-login").attr('checked', true);
+        $("#login-id").attr('disabled', true);
+        $("#login-pass").val('NoPassword4u!').attr('disabled', true);
         if (localStorage.getItem('otp-key'))
         {
             doOTP = true;
             var totp = new TOTP(localStorage.getItem('otp-key'), localStorage.getItem('saved-login'));
+            totp.setCountDownCallback(function(totp){
+                console.log(totp);
+                $("#count-down-disp").text(totp.countDown);
+            });
+            totp.setUpdateCallback(function(totp){
+                $("#login-otp").val(totp.otp);
+            });
             $("#login-otp").val(totp.getOTP());
             $("#otp-cont").show();
         }
     }
+
+    $(".clear-btn").unbind().touch(function(){
+        server = null;
+        localStorage.setItem('oldServer', localStorage.getItem('serverName'));
+        localStorage.removeItem('server');
+        localStorage.removeItem('serverName');
+        localStorage.removeItem('remember-login');
+        localStorage.removeItem('saved-login');
+        localStorage.removeItem('keep-login');
+        localStorage.removeItem('otp-key');
+        localStorage.removeItem('cookie');
+        window.location.replace("index.html");
+    });
 
     $("#login-pin").on('keyup', function(e){
         switch (e.which)
@@ -97,7 +118,8 @@
 
         if ($("#keep-login").is(':checked'))
         {
-            sub.addData('get-key', true);
+            sub.addData('keep-login', true);
+            sub.addData('cookie', localStorage.getItem('cookie'));
             localStorage.setItem('keep-login', 'yes');
         }else{
             localStorage.setItem('keep-login', 'no');
@@ -111,8 +133,17 @@
             switch (data.status)
             {
                 case 1:
-                    if (localStorage.getItem('remember-login') == 'yes') localStorage.setItem('saved-login', $("#login-id").val());
+                    if (localStorage.getItem('remember-login') == 'yes')
+                    {
+                        localStorage.setItem('saved-login', $("#login-id").val());
+                    }
+                    if (typeof data.user !== typeof undefined)
+                    {
+                        localStorage.setItem('saved-login', data.user);
+                        localStorage.setItem('remember-login', 'yes');
+                    }
                     if (typeof data.key !== typeof undefined) localStorage.setItem('otp-key', data.key);
+                    if (typeof data.cookie !== typeof undefined) localStorage.setItem('cookie', data.cookie);
                     login = true;
                     doLogin();
                 break;

@@ -6,12 +6,16 @@
             <input type="email" id="login-id" value="" placeholder="Login Email / Username" />
         </div>
         <div>
-            <input type="password" id="login-pass" value="Greenway1502!" placeholder="Password" />
+            <input type="password" id="login-pass" value="" placeholder="Password" />
         </div>
         <div id="pin-cont" style="display: none;">
             <input type="tel" id="login-pin" value="" data-val="" placeholder="4-digit Pin" autocomplete="off" />
         </div>
-        <div id="otp-cont" style="display: none;">
+        <div id="otp-cont" class="stacked" style="display: none;">
+            <label for="login-otp">
+                <span>One-Time Password:</span>
+                <span id="auto-otp-cont">Update in <span id="count-down-disp" style="color:hotpink;"></span> seconds...</span>
+            </label>
             <input type="tel" id="login-otp" value="" placeholder="One-Time Password" />
         </div>
         <div>

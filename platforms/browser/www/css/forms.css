@@ -9,11 +9,20 @@
     display: flex;
     justify-content: space-between;
 }
+.form-stacked > div.stacked
+{
+    flex-direction: column;
+}
 
 .form-stacked > div > label
 {
+    display: flex;
     margin-bottom: 0.5em;
-    color: #00d3ef; 
+    color: #00d3ef;
+}
+.form-stacked > div > label > span:not(:last-of-type)
+{
+    margin-right: 0.5em;
 }
 
 .form-stacked input
@@ -68,6 +77,11 @@ textarea
     {
         width: 97%;
     }
+}
+
+input:disabled, textarea:disabled
+{
+    opacity: 0.5;
 }
 
 input:focus, textarea:focus

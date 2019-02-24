@@ -44,7 +44,26 @@ var app = {
                 error: errorConnect
             });
         }else{
+            if (localStorage.getItem('oldServer')) $("#main-server").val(localStorage.getItem('oldServer'));
 
+            $("#main-server").focus(function(){
+                $(this).select();
+            });
+
+            $("#main-connect-btn").unbind().touch(function(){
+                var newServer = $("#main-server").val();
+                var valid = new Valid(newServer);
+                if (valid.isHostname())
+                {
+                    serverName = newServer;
+                    server = 'https://'+newServer;
+                    localStorage.setItem('server', server);
+                    localStorage.setItem('serverName', serverName);
+                    window.location.replace("index.html");
+                }else{
+                    notify2(valid.message);
+                }
+            });
         }
     }
 };
@@ -73,21 +92,6 @@ function initMain()
 {
     loadingOff();
 
-    $("#main-connect-btn").unbind().touch(function(){
-        var newServer = $("#main-server").val();
-        var valid = new Valid(newServer);
-        if (valid.isHostname())
-        {
-            serverName = newServer;
-            server = 'https://'+newServer;
-            localStorage.setItem('server', server);
-            localStorage.setItem('serverName', serverName);
-            window.location.replace("index.html");
-        }else{
-            notify2(valid.message);
-        }
-    });
-
     $(".btnLoad").unbind().touch(function(){
         scrollTop();
         loadingOn();
@@ -97,12 +101,6 @@ function initMain()
 
     $(".logout-btn").unbind().touch(function(){
         askLogout();
-    });
-
-    $(".clear-btn").unbind().touch(function(){
-        server = null;
-        localStorage.setItem('server', "");
-        window.location.replace("index.html");
     });
 
     $(".reset-btn").unbind().touch(function(){
