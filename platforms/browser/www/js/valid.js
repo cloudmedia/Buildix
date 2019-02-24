@@ -156,8 +156,14 @@ class Valid
         }
     }
 
-    isUsername()
+    isUsername(len1, len2)
     {
+        if (typeof len1 === typeof undefined) len1 = 3;
+        if (typeof len2 === typeof undefined) len2 = 16;
+        if (!this.isLength(len1, len2))
+        {
+            return false;
+        }
         var regex = new RegExp(reUser);
         if (this.checkRE(regex))
         {

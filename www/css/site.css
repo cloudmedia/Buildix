@@ -43,7 +43,7 @@ header.site-header
     position: relative;
     border: 2px solid #1f1f42;
     background-color: #1f2b35;
-    padding: 0.5em 1em 0.5em 1em;
+    padding: 0.5em 1em 2em 1em;
     -webkit-box-shadow: 10px 10px 9px -9px rgba(0,0,0,0.46);
     -moz-box-shadow: 10px 10px 9px -9px rgba(0,0,0,0.46);
     box-shadow: 10px 10px 9px -9px rgba(0,0,0,0.46);

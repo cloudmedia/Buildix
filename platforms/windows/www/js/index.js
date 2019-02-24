@@ -89,10 +89,34 @@ function processStatus(data)
     }
 }
 
-function errorConnect()
+function errorConnect(e)
 {
+    console.log(dump(e));
     loadingOff();
-    notify2("Failed to connect to "+server+"!");
+    if (e.status == '200')
+    {
+        notify2(e.responseText);
+    }else{
+        notify2("Failed to connect to "+server+"! ERROR: HTTP-"+e.status);
+    }
+}
+
+function mainLoad(url, src, effect)
+{
+    scrollTop();
+    loadingOn();
+    if (typeof effect === typeof undefined) effect = 'fadeInRight';
+    if (typeof src === typeof undefined) src = 'server';
+    var prefix = server;
+    if (src == 'local') prefix = "html";
+    $("#main").load(prefix+url, function(){
+        $(".box").each(function(){
+            var last = $(this).data('lastEffect');
+            if (typeof last === typeof undefined) last = "";
+            $(this).removeClass("animated " + last).hide().data('lastEffect', effect);
+            $(this).addClass("animated " + effect).show();
+        });
+    });
 }
 
 function initMain()
@@ -100,10 +124,10 @@ function initMain()
     loadingOff();
 
     $(".btnLoad").unbind().touch(function(){
-        scrollTop();
-        loadingOn();
         var url = $(this).data('url');
-        $("#main").load(server+url);
+        var src = $(this).data('src');
+        var effect = $(this).data('effect');
+        mainLoad(url, src, effect);
     });
 
     $(".logout-btn").unbind().touch(function(){
@@ -117,8 +141,9 @@ function initMain()
     $(".help").unbind().touch(function(){
         var topic = $(this).data('topic');
         loadingOn();
+        var help_url = server+'/get-help?topic='+topic;
         $.ajax({
-            url: server+'/api?action=get-help&topic='+topic,
+            url: help_url,
             method: 'get',
             timeout: 5000,
             dataType: 'json',
@@ -136,12 +161,6 @@ function initMain()
     });
 
     if (login) initNav();
-}
-
-function mainLoad(url)
-{
-    loadingOn();
-    $("#main").load(url);
 }
 
 function loadingOn()

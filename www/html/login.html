@@ -3,22 +3,27 @@
     <h2>[<span id="server-name"></span>]</h2>
     <div class="form-stacked">
         <div>
+            <label for="login-id">Login ID
+                <i class="fas fa-question-circle inlineBtn spaced help" data-topic="login-id"></i>
+            </label>
             <input type="email" id="login-id" value="" placeholder="Login Email / Username" />
         </div>
         <div>
+            <label for="login-pass">Password</label>
             <input type="password" id="login-pass" value="" placeholder="Password" />
         </div>
         <div id="pin-cont" style="display: none;">
+            <label for="login-pin">4-Digit PIN</label>
             <input type="tel" id="login-pin" value="" data-val="" placeholder="4-digit Pin" autocomplete="off" />
         </div>
-        <div id="otp-cont" class="stacked" style="display: none;">
+        <div id="otp-cont" style="display: none;">
             <label for="login-otp">
                 <span>One-Time Password:</span>
-                <span id="auto-otp-cont">Update in <span id="count-down-disp" style="color:hotpink;"></span> seconds...</span>
+                <span style="display:none;" id="auto-otp-cont">Update in <span id="count-down-disp"></span> seconds...</span>
             </label>
             <input type="tel" id="login-otp" value="" placeholder="One-Time Password" />
         </div>
-        <div>
+        <div class="row">
             <div>
                 <input type="checkbox" value="1" id="login-remember" />
                 <label for="login-remember" class="checkbox">Remember Me</label>

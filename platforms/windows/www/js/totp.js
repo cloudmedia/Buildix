@@ -74,6 +74,7 @@ class TOTP
     setUpdateCallback(callback)
     {
         this.updateCallback = callback;
+        this.update();
     }
 
     setCountDownCallback(callback)

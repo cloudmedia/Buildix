@@ -24,11 +24,11 @@ $(document).ready(function () {
             var totp = new TOTP(localStorage.getItem('otp-key'), localStorage.getItem('saved-login'));
             totp.setCountDownCallback(function(totp){
                 $("#count-down-disp").text(totp.countDown);
+                $("#auto-otp-cont").addClass("animated bounceIn").show();
             });
             totp.setUpdateCallback(function(totp){
                 $("#login-otp").val(totp.otp);
             });
-            $("#login-otp").val(totp.getOTP());
             $("#otp-cont").show();
         }
     }
