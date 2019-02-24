@@ -1,6 +1,7 @@
 var server;
 var serverName;
 var login = false;
+var navLoaded = false;
 
 var app = {
     // Application Constructor
@@ -35,7 +36,6 @@ var app = {
             var gen = new IDGenerator();
             localStorage.setItem('did', gen.generate() + gen.generate());
         }
-        console.log(localStorage.getItem('did'));
 
         if (server)      
         {
@@ -79,7 +79,6 @@ app.initialize();
 
 function processStatus(data)
 {
-    console.log(data);
     if (data.status == 1)
     {
         login = true;
@@ -91,7 +90,6 @@ function processStatus(data)
 
 function errorConnect(e)
 {
-    console.log(dump(e));
     loadingOff();
     if (e.status == '200')
     {
@@ -105,16 +103,20 @@ function mainLoad(url, src, effect)
 {
     scrollTop();
     loadingOn();
-    if (typeof effect === typeof undefined) effect = 'fadeInRight';
+    if (typeof effect === typeof undefined) effect = 'slideInRight';
     if (typeof src === typeof undefined) src = 'server';
     var prefix = server;
     if (src == 'local') prefix = "html";
     $("#main").load(prefix+url, function(){
         $(".box").each(function(){
             var last = $(this).data('lastEffect');
+            var speed = $(this).data('speed');
             if (typeof last === typeof undefined) last = "";
-            $(this).removeClass("animated " + last).hide().data('lastEffect', effect);
-            $(this).addClass("animated " + effect).show();
+            if (typeof speed === typeof undefined) speed = 'faster';
+            if (effect == 'bounceIn') speed = 'fast';
+            if (effect == 'back') effect = 'slideInLeft';
+            $(this).removeClass('animated ' + speed + ' ' + last).hide().data('lastEffect', effect);
+            $(this).addClass('animated ' + speed + ' ' + effect).show();
         });
     });
 }
@@ -160,7 +162,11 @@ function initMain()
         });
     });
 
-    if (login) initNav();
+    $(".username").unbind().touch(function(){
+        mainLoad('/account');
+    });
+
+    if (navLoaded) initNav();
 }
 
 function loadingOn()
@@ -176,21 +182,27 @@ function loadingOff()
 function askLogout()
 {
     var n = new Notify2("Are you sure you want to log out?", "info");
-    n.doConfirm('doLogout()');
+    n.setBindEvent('touchstart');
+    n.doConfirm(doLogout);
     n.notify();
 }
 
 function doLogin()
 {
     loadingOn();
-    //$("#main").load(server+"/account?action=ch-pass");
-    $("#main").load('html/dashboard.html');
+    mainLoad('/api/dashboard', 'server', 'bounceIn');
     setTimeout(function(){
-        $("#nav-vp").load(server+"/api?action=get-nav");
+        reloadNav();
     },1000);
 }
 
-function doLogout()
+function reloadNav()
+{
+    loadingOn();
+    $("#nav-vp").load(server+"/api/get-nav");
+}
+
+function doLogout(n)
 {
     scrollTop();
     $.getJSON(server+'/logout?action=app', function(data){

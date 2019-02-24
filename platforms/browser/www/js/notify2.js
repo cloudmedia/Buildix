@@ -37,8 +37,10 @@ class Notify2
         this.icon = n2DefaultIcon;
         if (useSounds) this.sound = n2DefaultSound;
         this.id = "notify2-" + new Date().getTime();
-        this.cbYes = "void(0)";
-        this.cbNo = "void(0)";
+        this.cbYes = null;
+        this.cbNo = null;
+        this.bindEvent = 'click';
+        this.debug = false;
     }
 
     setAutoHide(bool)
@@ -53,14 +55,40 @@ class Notify2
         return true;
     }
 
+    setBindEvent(e)
+    {
+        this.bindEvent = e;
+        return true;
+    }
+
+    setDebug(bool)
+    {
+        this.debug = bool;
+        return true;
+    }
+
     doConfirm(cbYes, cbNo)
     {
         this.message='<div class="confirm"><div>'+this.message+'</div>'+
-            '<div><button onclick="'+cbYes+';">Yes</div>'+
-            '<div><button onclick="'+cbNo+';">No</button></div></div>';
+            '<div><button id="notify2-confirm-yes">Yes</div>'+
+            '<div><button id="notify2-confirm-no">No</button></div></div>';
         this.autoHide = false;
-        if (this.cbYes != undefined) this.cbYes = cbYes;
-        if (this.cbNo != undefined) this.cbNo = cbNo;
+        this.cbYes = cbYes;
+        this.cbNo = cbNo;
+        var me = this;
+        if (typeof this.cbYes === 'function')
+        {
+            $(document).delegate('#notify2-confirm-yes', this.bindEvent, function(){
+                me.cbYes(me);
+            });
+        }
+        if (typeof this.cbNo === 'function')
+        {
+            $(document).delegate('#notify2-confirm-no', this.bindEvent, function(){
+                me.cbNo(me);
+            });
+        }
+        return true;
     }
 
     notify()
@@ -81,7 +109,7 @@ class Notify2
                 if (useSounds) this.sound = sndMessage;
             break;
         }
-        console.log(this.message);
+        if (this.debug) console.log(this.message);
         $('body').append(
             '<div id="'+this.id+'" class="notify2 '+this.class+'" data-timer="" style="display: none;">'+
             '<div><div><i class="fas '+this.icon+'"></i></div>'+
@@ -95,12 +123,13 @@ class Notify2
 
         if (this.autoHide)
         {
-            console.log("Notify2 Autohide: "+this.autoHide+", Delay: "+this.delay);
+            if (this.debug) console.log("Notify2 Autohide: "+this.autoHide+", Delay: "+this.delay);
             var hideID = this.id;
             var hideDelay = this.delay;
+            var debug = this.debug;
             setTimeout(function(){
                 var hideme = "#"+hideID;
-                console.log("Hiding notification: "+hideme);
+                if (debug) console.log("Hiding notification: "+hideme);
                 $(hideme).click();
             }, hideDelay);
         }
@@ -113,7 +142,6 @@ class Notify2
 function showNotify2(notify)
 {
     var height = notify.height();
-    console.log(height);
     notify.css("margin-bottom", -height).show();
     if(notify.css("margin-bottom") == -height+"px" && !notify.is(':animated'))
     {

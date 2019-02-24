@@ -139,3 +139,14 @@ header.site-header
 {
     color: red;
 }
+
+.username
+{
+    color: coral;
+}
+
+.user-disp > svg
+{
+    width: auto;
+    height: 5em;
+}

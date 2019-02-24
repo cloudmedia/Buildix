@@ -68,7 +68,6 @@
             var pinVal = pin.val();
             pin.val(pinVal.replace(/./gi, '*'));
         }, 300);
-        console.log($(this).data('val'));
     }).mask('ZZZZ', {
         translation: {
             'Z': {pattern: /[0-9\*]/}
@@ -128,7 +127,6 @@
         sub.submit("json", function(data){
             thisBtn.removeClass('loading').text(label);
             loadingOff();
-            console.log(data);
             switch (data.status)
             {
                 case 1: // LOGIN OK
