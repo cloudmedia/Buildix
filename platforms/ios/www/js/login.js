@@ -23,7 +23,6 @@ $(document).ready(function () {
             doOTP = true;
             var totp = new TOTP(localStorage.getItem('otp-key'), localStorage.getItem('saved-login'));
             totp.setCountDownCallback(function(totp){
-                console.log(totp);
                 $("#count-down-disp").text(totp.countDown);
             });
             totp.setUpdateCallback(function(totp){
@@ -108,6 +107,7 @@ $(document).ready(function () {
         sub.addData('pass', $("#login-pass").val());
         sub.addData('pin', $("#login-pin").data('val'));
         sub.addData('otp', $("#login-otp").val());
+        sub.addData('did', localStorage.getItem('did'));
         if ($("#login-remember").is(':checked'))
         {
             localStorage.setItem('remember-login', 'yes');
@@ -119,8 +119,7 @@ $(document).ready(function () {
         if ($("#keep-login").is(':checked'))
         {
             sub.addData('keep-login', true);
-            sub.addData('cookie', localStorage.getItem('cookie'));
-            localStorage.setItem('keep-login', 'yes');
+            if (localStorage.getItem('cookie')) sub.addData('cookie', localStorage.getItem('cookie'));
         }else{
             localStorage.setItem('keep-login', 'no');
             localStorage.removeItem('otp-key');
@@ -132,7 +131,7 @@ $(document).ready(function () {
             console.log(data);
             switch (data.status)
             {
-                case 1:
+                case 1: // LOGIN OK
                     if (localStorage.getItem('remember-login') == 'yes')
                     {
                         localStorage.setItem('saved-login', $("#login-id").val());
@@ -143,29 +142,57 @@ $(document).ready(function () {
                         localStorage.setItem('remember-login', 'yes');
                     }
                     if (typeof data.key !== typeof undefined) localStorage.setItem('otp-key', data.key);
-                    if (typeof data.cookie !== typeof undefined) localStorage.setItem('cookie', data.cookie);
+                    if (typeof data.cookie !== typeof undefined) 
+                    {
+                        localStorage.setItem('cookie', data.cookie);
+                        localStorage.setItem('keep-login', 'yes');
+                    }
                     login = true;
                     doLogin();
                 break;
-                case 2:
+                case 2: // REQUIRE PIN
                     notify2(data.message, "warn");
                     $("#otp-cont").hide();
                     $("#pin-cont").fadeIn(function(){
                         $("#login-pin").select();
                     });
                 break;
-                case 3:
+                case 3: // REQUIRE OTP
                     notify2(data.message, "warn");
                     $("#pin-cont").hide();
                     $("#otp-cont").fadeIn(function(){
                         $("#login-otp").select();
                     });
                 break;
+                case 4: // DID MISMATCH OR INVALID COOKIE OR NO TOTP KEY IN DB
+                    notify2(data.message);
+                    $("#login-error-p").text(data.message);
+                    resetLogin();
+                break;
                 default:
                     notify2(data.message, "error", false);
                     $("#login-pass").val("").select();
+                    $("#")
                     return false;
             }
         });
     });
+
+    $("#relogin-btn").click(function(){
+        window.location.replace("index.html");
+    });
+
+    $("#test-login").click(function(){
+        $("#login-id").val("test");
+        $("#login-pass").val("TestPassword1!");
+    });
 });
+
+function resetLogin()
+{
+    localStorage.removeItem('keep-login');
+    localStorage.removeItem('otp-key');
+    localStorage.removeItem('cookie');
+    $("#login-form").hide();
+    $("#login-error").addClass("animated bounceIn").show();
+}

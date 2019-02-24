@@ -54,6 +54,10 @@ header.site-header
     height: fit-content;
     color: white;
 }
+.box > div:not(:first-of-type)
+{
+    margin-top: 1em;
+}
 .box h1
 {
     display: flex;
