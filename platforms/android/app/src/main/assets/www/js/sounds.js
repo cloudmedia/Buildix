@@ -1,6 +1,6 @@
 // Sounds
 var silenceEle;
-var sndDir = "/sounds/";
+var sndDir = "sounds/";
 var sndSilence = sndDir + "silence.wav";
 var sndIntro = sndDir + "intro.wav";
 var sndType = sndDir + "type.wav";
@@ -15,12 +15,6 @@ var sndSuccess = sndDir + "success.wav";
 var sndSlide = sndDir + "slide.wav";
 var sndAHAHAH = sndDir + "nedry.wav";
 
-$(document).ready(function () {
-  silenceEle = document.createElement('audio');
-  silenceEle.setAttribute('src', sndSilence);
-  silenceEle.setAttribute('autoplay', true);
-});
-
 function playSound(snd)
 {
   var old = document.getElementsByClassName('soundsJS');
@@ -32,6 +26,5 @@ function playSound(snd)
   ele.setAttribute('src', snd);
   ele.setAttribute('autoplay', true);
   ele.setAttribute('class', 'soundsJS');
-  silenceEle.play();
   ele.play();
 }

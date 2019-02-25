@@ -7,8 +7,8 @@
     -webkit-transition: 0.2s ease-in-out, color 0.2s ease-in-out;
     -ms-transition: 0.2s ease-in-out, color 0.2s ease-in-out;
     transition: 0.2s ease-in-out, color 0.2s ease-in-out;
-    -webkit-box-shadow: inset 0px 0px 5px 2px #2989d8 ;
-    -moz-box-shadow: inset 0px 0px 5px 2px #2989d8 ;
+    -webkit-box-shadow: inset 0px 0px 5px 2px #2989d8;
+    -moz-box-shadow: inset 0px 0px 5px 2px #2989d8;
     box-shadow: inset 0px 0px 5px 2px #2989d8;
     background-color: transparent;
     border-radius: 0.375em;
@@ -30,192 +30,194 @@
     white-space: nowrap;
     min-width: 8em;
 }
-.form-btn.loading
-{
+
+.form-btn.loading {
     background: darkred !important;
 }
-.form-btn.loading > span
-{
+
+.form-btn.loading>span {
     animation: blinker 1s linear infinite;
 }
+
 @keyframes blinker {
     50% {
         opacity: 0;
     }
 }
 
-    .form-btn:hover {
-        background-color: rgba(32, 96, 151, 0.6);
-    }
+.form-btn:hover {
+    background-color: rgba(32, 96, 151, 0.6);
+}
 
-    .form-btn:active {
-        background-color: rgba(0, 0, 0, 0.63);
-    }
+.form-btn:active {
+    background-color: rgba(0, 0, 0, 0.63);
+}
 
-    .form-btn.icon:before {
-        margin-right: 0.5em;
-    }
+.form-btn.icon:before {
+    margin-right: 0.5em;
+}
 
-    .form-btn.fit {
-        width: 100%;
-    }
+.form-btn.fit {
+    width: 100%;
+}
 
-    .form-btn.small {
-        font-size: 0.6em;
-    }
+.form-btn.small {
+    font-size: 0.6em;
+}
 
-    .form-btn.large {
-        font-size: 1em;
-        height: 3.65em;
-        line-height: 3.65em;
-    }
+.form-btn.large {
+    font-size: 1em;
+    height: 3.65em;
+    line-height: 3.65em;
+}
 
-    .form-btn.main {
-        background: #00d3ef; /* Old browsers */
-        background: -moz-linear-gradient(left, #00d3ef 1%, #2989d8 34%, #207cca 78%, #2593e8 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(left, #00d3ef 1%,#2989d8 34%,#207cca 78%,#2593e8 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to right, #00d3ef 1%,#2989d8 34%,#207cca 78%,#2593e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d3ef', endColorstr='#2593e8',GradientType=1 ); /* IE6-9 */
-        box-shadow: none;
-        color: #ffffff !important;
-        border: transparent;
-    }
+.form-btn.main {
+    background: #00d3ef;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #00d3ef 1%, #2989d8 34%, #207cca 78%, #2593e8 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #00d3ef 1%, #2989d8 34%, #207cca 78%, #2593e8 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #00d3ef 1%, #2989d8 34%, #207cca 78%, #2593e8 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00d3ef', endColorstr='#2593e8', GradientType=1);
+    /* IE6-9 */
+    box-shadow: none;
+    color: #ffffff !important;
+    border: transparent;
+}
 
-        .form-btn.main:hover {
-            opacity: 0.5;
-        }
+.form-btn.main:hover {
+    opacity: 0.5;
+}
 
-        .form-btn.main:active {
-            opacity: 0.3;
-        }
+.form-btn.main:active {
+    opacity: 0.3;
+}
 
-    .form-btn.disabled,
-    .form-btn:disabled {
-        pointer-events: none;
-        opacity: 0.25;
-    }
+.form-btn.disabled,
+.form-btn:disabled {
+    pointer-events: none;
+    opacity: 0.25;
+}
 
-    i.disabled
-{
+i.disabled {
     opacity: 0.2 !important;
     cursor: default !important;
 }
 
-.inlineBtn
-{
+.inlineBtn {
     cursor: pointer;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
     display: inline;
     color: #cbef00;
     font-size: 1.2em;
 }
-.inlineBtn.spaced
-{
+
+.inlineBtn.spaced {
     margin-left: 10px;
 }
-.inlineBtn.medium
-{
+
+.inlineBtn.medium {
     font-size: 2em;
 }
-.inlineBtn.big
-{
+
+.inlineBtn.big {
     font-size: 3em;
 }
-.inlineBtn:hover
-{
+
+.inlineBtn:hover {
     opacity: 0.5;
 }
 
-.big-button
-{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  cursor: pointer;
-  color: white;
-  padding: 1em;
-  -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
-  box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.5s;
+.big-button {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    padding: 1em;
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
 }
-.big-button > i
-{
-  font-size: 4em;
-  display: table;
-  margin-left: auto;
-  margin-right: auto;
-  width: auto;
-  margin-top: 0.2em;
-  margin-bottom: 0.2em;
+
+.big-button>i {
+    font-size: 4em;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
 }
-.big-button > svg
-{
-  display: table;
-  margin-left: auto;
-  margin-right: auto;
-  width: 4em;
-  height: 4em;
-  margin-top: 0.2em;
-  margin-bottom: 0.2em;
+
+.big-button>svg {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    width: 4em;
+    height: 4em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
 }
-.big-button > svg path
-{
+
+.big-button>svg path {
     fill: white;
 }
-.big-button > span
-{
-  font-size: 2em;
-  display: table;
-  margin-left: auto;
-  margin-right: auto;
-  width: auto;
-  margin-bottom: 0.2em;
+
+.big-button>span {
+    font-size: 2em;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    margin-bottom: 0.2em;
 }
-.big-button > span.bbb
-{
-  position: absolute;
-  left: 0.5em;
-  top: -0.5em;
-  background-color: rgba(255,255,255,0.3);
-  padding: 0.5em 0.8em 0.5em 0.8em;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.5s;
+
+.big-button>span.bbb {
+    position: absolute;
+    left: 0.5em;
+    top: -0.5em;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 0.5em 0.8em 0.5em 0.8em;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
 }
-.big-button > span.bbb:hover
-{
-  background-color: rgba(255, 0, 0, 0.438);
+
+.big-button>span.bbb:hover {
+    background-color: rgba(255, 0, 0, 0.438);
 }
-.big-button.small-text > span
-{
-  font-size: 1.2em !important;
-  margin-top: 1em;
+
+.big-button.small-text>span {
+    font-size: 1.2em !important;
+    margin-top: 1em;
 }
-.big-button:hover
-{
+
+.big-button:hover {
     opacity: 0.5;
 }
 
-.btn-flex
-{
+.btn-flex {
     display: flex;
     flex-wrap: wrap;
 }
-.btn-flex > button:not(:last-of-type)
-{
+
+.btn-flex>button:not(:last-of-type) {
     margin-right: 1em;
 }

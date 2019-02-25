@@ -35,10 +35,8 @@ const msgBadEmail = " is not a valid email address.";
 const msgOnlyNumbers = " may only contain integer numbers.";
 const msgBadUser = " may only contain letters and numbers--and underscore (_) and dot (.), but only in the middle.";
 
-class Valid
-{
-    constructor(val, valLabel="Value")
-    {
+class Valid {
+    constructor(val, valLabel = "Value") {
         this.val = val;
         this.valLabel = valLabel;
         this.message = "";
@@ -47,259 +45,215 @@ class Valid
         this.passLen = 8; // Default minumum password length;
     }
 
-    setStatus(s)
-    {
+    setStatus(s) {
         this.status = s;
         return s;
     }
 
-    checkRE(regex)
-    {
-        if (regex.exec(this.val))
-        {
+    checkRE(regex) {
+        if (regex.exec(this.val)) {
             return this.setStatus(true);
-        }else{
+        } else {
             return this.setStatus(false);
         }
     }
 
-    re(ex)
-    {
+    re(ex) {
         var regex = new RegExp(ex);
         return this.checkRE(regex);
     }
 
-    setPassReq(n)
-    {
-        if (typeof n === 'number')
-        {
-            if (n && (n & (n - 1)) === 0)
-            {
+    setPassReq(n) {
+        if (typeof n === 'number') {
+            if (n && (n & (n - 1)) === 0) {
                 this.passReq = n;
                 return true;
-            }else{
+            } else {
                 this.message = "Invalid password requirement value!";
                 return false;
             }
         }
     }
 
-    setPassLen(l)
-    {
+    setPassLen(l) {
         this.passLen = l;
         return true;
     }
 
-    setVal(val)
-    {
+    setVal(val) {
         this.val = val;
         return true;
     }
 
-    setValLabel(label)
-    {
+    setValLabel(label) {
         this.valLabel = label;
         return true;
     }
 
-    chkSegment(s)
-    {
+    chkSegment(s) {
         var regex = new RegExp(beginsWithLetter);
-        if (!regex.exec(s))
-        {
+        if (!regex.exec(s)) {
             this.message = this.valLabel + " segments must begin with a letter!";
             return this.setStatus(false);
-        }else{
+        } else {
             return true;
         }
     }
 
-    isHostname(segs = 0)
-    {
+    isHostname(segs = 0) {
         // Validate number of hostname segments (names separated by dots)
-        if (segs > 0)
-        {
+        if (segs > 0) {
             var seg_disp = " segment, with no dots (.)";
             if (segs == 2) seg_disp = " segments, separated by a dot (.)";
             if (segs > 2) seg_disp = " segments, separated by dots (.)";
             var host = this.val.split(".");
-            if (host.length != segs)
-            {
+            if (host.length != segs) {
                 this.message = this.valLabel + " must have exactly " + segs + seg_disp;
                 return this.setStatus(false);
             }
-            for (var i = 0; i < host.length; i++)
-            {
-                if (!this.chkSegment(host[i]))
-                {
+            for (var i = 0; i < host.length; i++) {
+                if (!this.chkSegment(host[i])) {
                     return false;
                 }
             }
         }
         var regex = new RegExp(rfc1123);
-        if (this.checkRE(regex))
-        {
+        if (this.checkRE(regex)) {
             return true;
-        }else{
+        } else {
             this.message = this.valLabel + msgBadHostname;
         }
     }
 
-    isEmail()
-    {
+    isEmail() {
         var regex = new RegExp(reEmail);
-        if (this.checkRE(regex))
-        {
+        if (this.checkRE(regex)) {
             return true;
-        }else{
+        } else {
             this.message = this.valLabel + msgBadEmail;
         }
     }
 
-    isUsername(len1, len2)
-    {
+    isUsername(len1, len2) {
         if (typeof len1 === typeof undefined) len1 = 3;
         if (typeof len2 === typeof undefined) len2 = 16;
-        if (!this.isLength(len1, len2))
-        {
+        if (!this.isLength(len1, len2)) {
             return false;
         }
         var regex = new RegExp(reUser);
-        if (this.checkRE(regex))
-        {
+        if (this.checkRE(regex)) {
             return true;
-        }else{
+        } else {
             this.message = this.valLabel + msgBadUser;
         }
     }
 
-    isIPv4()
-    {
+    isIPv4() {
         var regex = new RegExp(reIPv4);
-        if (this.checkRE(regex))
-        {
+        if (this.checkRE(regex)) {
             return true;
-        }else{
+        } else {
             this.message = this.valLabel + msgBadIPv4;
         }
     }
 
-    valPass()
-    {
+    valPass() {
         var missing = "";
         var pOK = true;
 
-        if (this.val.length < this.passLen)
-        {
+        if (this.val.length < this.passLen) {
             this.message = this.valLabel + " must be at least " + this.passLen + " characters.";
             return this.setStatus(false);
         }
 
-        switch (true)
-        {
+        switch (true) {
             case (this.passReq == 4):
-                if (this.re(onlyNumbers))
-                {
+                if (this.re(onlyNumbers)) {
                     return this.setStatus(true);
-                }else{
+                } else {
                     this.message = this.valLabel + " may only contain numbers.";
                     return this.setStatus(false);
                 }
-            break;
+                break;
             case (this.passReq == 8):
-                if (this.re(onlyLetters))
-                {
+                if (this.re(onlyLetters)) {
                     return this.setStatus(true);
-                }else{
+                } else {
                     this.message = this.valLabel + " may only contain letters.";
                     return this.setStatus(false);
                 }
-            break;
+                break;
             case (this.passReq >= 16):
-                if (!this.re(hasLetter))
-                {
+                if (!this.re(hasLetter)) {
                     missing += ", at least one letter";
                     pOK = false;
                 }
-                if (!this.re(hasNumber))
-                {
+                if (!this.re(hasNumber)) {
                     missing += ", at least one number";
                     pOK = false;
                 }
                 if (this.passReq == 16) break;
             case (this.passReq >= 32):
-                if (!this.re(hasLC))
-                {
+                if (!this.re(hasLC)) {
                     missing += ", at least one lowercase letter";
                     pOK = false;
                 }
-                if (!this.re(hasUC))
-                {
+                if (!this.re(hasUC)) {
                     missing += ", at least one uppercase letter";
                     pOK = false;
                 }
                 if (this.passReq == 32) break;
             case (this.passReq == 64):
-                if (!this.re(hasSym))
-                {
+                if (!this.re(hasSym)) {
                     missing += ", at least one symbol";
                     pOK = false;
                 }
-            break;
+                break;
             default:
                 this.message = "Invalid password requirement value!";
                 return this.setStatus(false);
         }
 
-        if (pOK)
-        {
+        if (pOK) {
             return this.setStatus(true);
-        }else{
+        } else {
             this.message = this.valLabel + " must contain: " + missing.substr(2);
             return this.setStatus(false);
         }
     }
 
-    isLength(len1, len2)
-    {
+    isLength(len1, len2) {
         if (len2 == undefined) len2 = 0;
-        if (this.val.length < len1)
-        {
+        if (this.val.length < len1) {
             this.message = this.valLabel + " must be at least " + len1 + " characters.";
             return this.setStatus(false);
         }
-        if (len2 && this.val.length > len2)
-        {
+        if (len2 && this.val.length > len2) {
             this.message = this.valLabel + " must be fewer than " + len2 + " characters.";
             return this.setStatus(false);
         }
         return this.setStatus(true);
     }
 
-    isInt()
-    {
-        if (!this.re(onlyNumbers))
-        {
+    isInt() {
+        if (!this.re(onlyNumbers)) {
             this.message = this.valLabel + msgOnlyNumbers;
             return this.setStatus(false);
-        }else{
+        } else {
             return this.setStatus(true);
         }
     }
 
-    isRange(r1, r2)
-    {
+    isRange(r1, r2) {
         if (!this.isInt()) return false;
-        
+
         r1 = parseInt(r1);
         r2 = parseInt(r2);
-        if (this.val < r1)
-        {
+        if (this.val < r1) {
             this.message = this.valLabel + " must be greater than " + r1 + ".";
             return this.setStatus(false);
         }
-        if (this.val > r2)
-        {
+        if (this.val > r2) {
             this.message = this.valLabel + " must be less than " + r2 + ".";
             return this.setStatus(false);
         }
