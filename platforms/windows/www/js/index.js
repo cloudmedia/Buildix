@@ -188,7 +188,7 @@ function doLogin() {
 }
 
 function testNotify(n) {
-    alert(n.message);
+    notify2("It worked!", "success");
 }
 
 function reloadNav() {

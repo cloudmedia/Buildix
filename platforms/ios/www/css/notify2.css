@@ -102,6 +102,10 @@
 {
     background-color: rgba(56, 77, 145, 0.8);
 }
+.notify2.mail
+{
+    background-color: rgba(145, 77, 56, 0.8);
+}
 .notify2 .confirm
 {
     display: flex;

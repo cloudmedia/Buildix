@@ -106,6 +106,10 @@ class Notify2
             break;
             case "info":
                 this.icon = "fa-question-circle";
+                if (useSounds) this.sound = sndAlert1;
+            break;
+            case "mail":
+                this.icon = "fa-envelope";
                 if (useSounds) this.sound = sndMessage;
             break;
         }
