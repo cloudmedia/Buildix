@@ -53,6 +53,7 @@ class menuSlider
 
     toggle()
     {
+        playSound(sndSlide);
         if(this.ele.css("margin-right") == -this.menuWidth+"px" && !this.ele.is(':animated'))
         {
             this.ele.show();

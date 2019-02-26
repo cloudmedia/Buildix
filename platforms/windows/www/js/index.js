@@ -95,6 +95,7 @@ function errorConnect(e) {
 }
 
 function mainLoad(url, src, effect) {
+    playSound(sndType);
     scrollTop();
     loadingOn();
     if (typeof effect === typeof undefined) effect = 'slideInRight';
