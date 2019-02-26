@@ -1,4 +1,4 @@
-﻿var server;
+var server;
 var serverName;
 var login = false;
 var navLoaded = false;

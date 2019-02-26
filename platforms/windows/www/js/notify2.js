@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Notify2.js
  * Written by: Jay Simons
  * Cloudulus.Media (https://code.cloudulus.media)

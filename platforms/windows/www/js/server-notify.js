@@ -1,4 +1,4 @@
-﻿$(document).ready(function () {
+$(document).ready(function () {
     <?php if (isset($_SESSION['init_login'])) { unset($_SESSION['init_login']);?>
     notify2("Welcome back, <?=$acct->fname;?>!", "success");
     <?php } ?>

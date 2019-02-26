@@ -221,3 +221,44 @@ i.disabled {
 .btn-flex>button:not(:last-of-type) {
     margin-right: 1em;
 }
+
+.svg-icon
+{
+    display: flex;
+    cursor: pointer;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.svg-icon:hover
+{
+    color: white;
+}
+.svg-icon > svg
+{
+    fill: rgb(229, 252, 22);
+    height: 3em;
+    widows: 3em;
+}
+.svg-icon.medium > svg
+{
+    height: 4em;
+    width: 4em;
+}
+.svg-icon.big > svg
+{
+    height: 5em;
+    width: 5em;
+}
+.svg-icon.bigger > svg
+{
+    height: 6em;
+    width: 6em;
+}
+.svg-icon.huge > svg
+{
+    height: 8em;
+    width: 8em;
+}

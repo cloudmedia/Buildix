@@ -1,4 +1,4 @@
-﻿// Sounds
+// Sounds
 var sndDir = "sounds/";
 //
 var sndSilence_f = sndDir + "silence.wav";

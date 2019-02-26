@@ -1,4 +1,4 @@
-﻿var menu;
+var menu;
 $(document).touch(function(e){
     var clickedClass = $(e.target).attr('class');
     if (clickedClass != 'cat-btn' && $("#menu").hasClass('active')) menu.toggle();
