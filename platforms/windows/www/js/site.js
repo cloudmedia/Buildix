@@ -1,4 +1,4 @@
-var initLoaded=false;
+﻿var initLoaded=false;
 var login = false;
 var body = $("#body");
 var server = "https://buildix.net";
