@@ -30,8 +30,8 @@ var app = {
             console.log('mouse move');
             isMouse = true;
         });
-        $(document).on('click', function(){
-            console.log('click');
+        $(document).on('touchstart', function(){
+            console.log('touch');
             isMouse = false;
         });
         var parentElement = document.getElementById(id);
