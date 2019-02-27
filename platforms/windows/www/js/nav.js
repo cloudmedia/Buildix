@@ -1,5 +1,6 @@
 ﻿var menu;
 $("#body").touch(function(e){
+    console.log("body touched");
     var clickedClass = $(e.target).attr('class');
     if (clickedClass != 'cat-btn' && $("#menu").hasClass('active')) menu.toggle();
 });
