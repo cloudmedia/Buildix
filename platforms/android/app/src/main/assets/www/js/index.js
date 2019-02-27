@@ -3,6 +3,7 @@ var serverName;
 var login = false;
 var navLoaded = false;
 var notifyD;
+var isMouse = false;
 
 window.prevFocus = $();
 $(document).on('focusin', ':input[type=text], :input[type=email], :input[type=tel], :input[type=password], :input[type=number], textarea, select', function () {
@@ -25,6 +26,14 @@ var app = {
 
     // Update DOM on a Received Event
     receivedEvent: function (id) {
+        $(document).on('mousemove', function(){
+            console.log('mouse move');
+            isMouse = true;
+        });
+        $(document).on('click', function(){
+            console.log('click');
+            isMouse = false;
+        });
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
@@ -231,7 +240,12 @@ function doLogout(n) {
 
 $.fn.touch = function (callback) {
     if (typeof callback == 'function') {
-        $(this).on('click touchend', callback);
+        if (isMouse)
+        {
+            $(this).on('click', callback);
+        }else{
+            $(this).on('touchstart', callback);
+        }
     }
 }
 
