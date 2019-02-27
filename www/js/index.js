@@ -30,7 +30,7 @@ var app = {
                 hideNotify2($(this));
             });
         });
-        
+
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
@@ -237,12 +237,12 @@ function doLogout(n) {
 
 $.fn.touch = function (callback) {
     var touch = false;
-    $(this).on("click", function(){
+    $(this).on("click", function(e){
         if (!touch)
         {
             console.log("I click!");
             let callbackReal = callback.bind(this);
-            callbackReal(this);
+            callbackReal(this, e);
         }else{
             touch = true;
         }
@@ -254,7 +254,7 @@ $.fn.touch = function (callback) {
             e.preventDefault();
             touch = true;
             console.log("I touch!");
-            let callbackReal = callback.bind(this);
+            let callbackReal = callback.bind(this, e);
             callbackReal(this);
         }
     });
