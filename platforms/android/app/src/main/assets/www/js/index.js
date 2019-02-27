@@ -231,7 +231,7 @@ function doLogout(n) {
 
 $.fn.touch = function (callback) {
     if (typeof callback == 'function') {
-        $(this).on('click touch', callback);
+        $(this).on('click touchend', callback);
     }
 }
 
