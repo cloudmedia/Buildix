@@ -29,7 +29,7 @@ class menuSlider
         {
             this.ele.css("margin-right", -this.menuWidth+"px");
             $("#menu-slider-btn").remove();
-            this.ele.append('<div id="menu-slider-btn"><i class="fas fa-bars"></i></div>');
+            this.ele.append('<div id="menu-slider-btn" class="clickable"><i class="fas fa-bars"></i></div>');
             $("#menu-slider-btn").css('position', 'absolute').css('top', 0).css('left', -$("#menu-slider-btn").width()+'px')
                 .css("box-shadow", "none").css('color', 'white');
             $("#menu-slider-btn").unbind().touch($.proxy(this.toggle, this));

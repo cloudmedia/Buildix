@@ -3,7 +3,6 @@ var serverName;
 var login = false;
 var navLoaded = false;
 var notifyD;
-var isMouse = false;
 
 window.prevFocus = $();
 $(document).on('focusin', ':input[type=text], :input[type=email], :input[type=tel], :input[type=password], :input[type=number], textarea, select', function () {
@@ -26,14 +25,6 @@ var app = {
 
     // Update DOM on a Received Event
     receivedEvent: function (id) {
-        $(document).on('mousemove', function(){
-            console.log('mouse move');
-            isMouse = true;
-        });
-        $(document).on('touchstart', function(){
-            console.log('touch');
-            isMouse = false;
-        });
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
@@ -239,14 +230,28 @@ function doLogout(n) {
 }
 
 $.fn.touch = function (callback) {
-    if (typeof callback == 'function') {
-        if (isMouse)
+    var touch = false;
+    $(this).on("click", function(){
+        if (!touch)
         {
-            $(this).on('click', callback);
+            console.log("I click!");
+            let callbackReal = callback.bind(this);
+            callbackReal(this);
         }else{
-            $(this).on('touchstart', callback);
+            touch = true;
         }
-    }
+        touch = false;
+    });
+    $(this).on("touchstart", function(e){
+        if (typeof e.touches != typeof undefined)
+        {
+            e.preventDefault();
+            touch = true;
+            console.log("I touch!");
+            let callbackReal = callback.bind(this);
+            callbackReal(this);
+        }
+    });
 }
 
 $.fn.ok = function () {
