@@ -32,13 +32,8 @@ class menuSlider
             this.ele.append('<div id="menu-slider-btn"><i class="fas fa-bars"></i></div>');
             $("#menu-slider-btn").css('position', 'absolute').css('top', 0).css('left', -$("#menu-slider-btn").width()+'px')
                 .css("box-shadow", "none").css('color', 'white');
-            $("#menu-slider-btn").click($.proxy(this.toggle, this));
-            $(document).click($.proxy(function(e){
-                if ($(".menu-slider").hasClass('active'))
-                {
-                    this.toggle();
-                }
-            }, this));
+            $("#menu-slider-btn").unbind().touch($.proxy(this.toggle, this));
+
         }else{
             $("#menu-slider-btn").remove();
         }

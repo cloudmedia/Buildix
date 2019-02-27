@@ -212,7 +212,9 @@ function testNotify(n) {
 
 function reloadNav() {
     loadingOn();
-    $("#nav-vp").load(server + "/api/get-nav");
+    $("#nav-vp").load(server + "/api/get-nav", function(){
+        initMain();
+    });
 }
 
 function doLogout(n) {
@@ -234,11 +236,17 @@ $.fn.touch = function (callback) {
 }
 
 $.fn.ok = function () {
+    $(this).data('orig-bg', $(this).css('background-color'));
     $(this).css('background-color', 'green');
 }
 
 $.fn.bad = function () {
+    $(this).data('orig-bg', $(this).css('background-color'));
     $(this).css('background-color', '#a76363');
+}
+
+$.fn.normal = function () {
+    $(this).css('background-color', $(this).data('orig-bg'));
 }
 
 function scrollTop() {
