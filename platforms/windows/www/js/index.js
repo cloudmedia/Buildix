@@ -240,7 +240,6 @@ $.fn.touch = function (callback) {
     $(this).on("click", function(e){
         if (!touch)
         {
-            console.log("I click!");
             let callbackReal = callback.bind(this);
             callbackReal(this, e);
         }else{
@@ -253,9 +252,8 @@ $.fn.touch = function (callback) {
         {
             e.preventDefault();
             touch = true;
-            console.log("I touch!");
-            let callbackReal = callback.bind(this, e);
-            callbackReal(this);
+            let callbackReal = callback.bind(this);
+            callbackReal(this, e);
         }
     });
 }
