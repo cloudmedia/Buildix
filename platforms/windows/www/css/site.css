@@ -16,6 +16,9 @@ text {
 }
 
 header.site-header {
+    position: fixed;
+    top: 0; right: 0; left: 0;
+    z-index: 2;
     background-color: #333333;
     display: flex;
 }
@@ -36,7 +39,7 @@ header.site-header {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    padding-top: 0.5em;
+    padding-top: 5em;
 }
 
 .box {

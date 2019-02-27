@@ -222,7 +222,7 @@ i.disabled {
     margin-right: 1em;
 }
 
-.svg-icon
+.svg-button
 {
     display: flex;
     cursor: pointer;
@@ -231,34 +231,92 @@ i.disabled {
     -moz-transition: .5s;
     -webkit-transition: .5s;
     transition: .5s;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    padding: 0.5em;
 }
-.svg-icon:hover
+.svg-button:hover
 {
     color: white;
 }
-.svg-icon > svg
+.svg-button > svg
 {
-    fill: rgb(229, 252, 22);
-    height: 3em;
-    widows: 3em;
+    fill: #ffffff;
+    height: 1em;
+    widows: 1em;
 }
-.svg-icon.medium > svg
+.svg-button.medium > svg
+{
+    height: 1.5em;
+    width: 1.5em;
+}
+.svg-button.big > svg
+{
+    height: 2em;
+    width: 2em;
+}
+.svg-button.bigger > svg
+{
+    height: 2.5em;
+    width: 2.5em;
+}
+.svg-button.biggest > svg
+{
+    height: 3em;
+    width: 3em;
+}
+.svg-button.huge > svg
 {
     height: 4em;
     width: 4em;
 }
-.svg-icon.big > svg
+.svg-button.huger > svg
 {
     height: 5em;
     width: 5em;
 }
-.svg-icon.bigger > svg
+.svg-button.hugest > svg
 {
     height: 6em;
     width: 6em;
 }
-.svg-icon.huge > svg
+.svg-button.color1
 {
-    height: 8em;
-    width: 8em;
+    background-color: rgb(52, 52, 160);
+}
+.svg-button.color2
+{
+    background-color: rgb(70, 23, 131);
+}
+.svg-button.color3
+{
+    background-color: rgb(133, 43, 43);
+}
+.svg-button.color4
+{
+    background-color: rgb(39, 110, 77);
+}
+.svg-button.color5
+{
+    background-color: rgb(141, 62, 38);
+}
+.svg-button.color6
+{
+    background-color: rgb(160, 117, 52);
+}
+.svg-button.color7
+{
+    background-color: rgb(37, 71, 66);
+}
+.svg-button.color8
+{
+    background-color: rgb(6, 6, 170);
+}
+.svg-button.color9
+{
+    background-color: rgb(77, 6, 6);
+}
+.svg-button.color10
+{
+    background-color: rgb(117, 15, 104);
 }

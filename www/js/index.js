@@ -4,6 +4,11 @@ var login = false;
 var navLoaded = false;
 var notifyD;
 
+window.prevFocus = $();
+$(document).on('focusin', ':input[type=text], :input[type=email], :input[type=tel], :input[type=password], :input[type=number], textarea, select', function () {
+    window.prevFocus = $(this);
+});
+
 var app = {
     // Application Constructor
     initialize: function () {
@@ -37,8 +42,27 @@ var app = {
             localStorage.setItem('did', gen.generate() + gen.generate());
         }
 
-        if (server) {
+        $("#main-connect-btn").unbind().touch(function () {
             $("#main-h1").text("Connecting...");
+            var newServer = $("#main-server").val();
+            var valid = new Valid(newServer);
+            if (valid.isHostname()) {
+                serverName = newServer;
+                server = 'https://' + newServer;
+                localStorage.setItem('server', server);
+                localStorage.setItem('serverName', serverName);
+                window.location.replace("index.html");
+            } else {
+                notify2(valid.message);
+            }
+        });
+
+        $("#main-server").focus(function () {
+            $(this).select();
+        });
+
+        if (server) {
+            $("#main-h1").text("Connecting...").addClass("animated pulse infinite");
             console.log('Received Event: ' + id);
             console.log('Connecting to ' + server + '...');
             $.ajax({
@@ -47,29 +71,20 @@ var app = {
                 timeout: 5000,
                 dataType: 'json',
                 success: processStatus,
-                error: errorConnect
+                error: function(e) {
+                    $("#main-server").val(serverName);
+                    $("#main-h1").text("Connection Failed!");
+                    localStorage.setItem('oldServer', serverName);
+                    server = null;
+                    serverName = null;
+                    localStorage.removeItem('server');
+                    localStorage.removeItem('serverName');
+                    errorConnect(e);
+                }
             });
             console.log("done");
         } else {
             if (localStorage.getItem('oldServer')) $("#main-server").val(localStorage.getItem('oldServer'));
-
-            $("#main-server").focus(function () {
-                $(this).select();
-            });
-
-            $("#main-connect-btn").unbind().touch(function () {
-                var newServer = $("#main-server").val();
-                var valid = new Valid(newServer);
-                if (valid.isHostname()) {
-                    serverName = newServer;
-                    server = 'https://' + newServer;
-                    localStorage.setItem('server', server);
-                    localStorage.setItem('serverName', serverName);
-                    window.location.replace("index.html");
-                } else {
-                    notify2(valid.message);
-                }
-            });
         }
     }
 };
@@ -86,11 +101,14 @@ function processStatus(data) {
 }
 
 function errorConnect(e) {
+    var errServer = server
+    if (errServer == null || errServer == 'null') errServer = localStorage.getItem('oldServer');
+    if (errServer == null || typeof errServer === typeof undefined || errServer == 'null') errServer = "the server";
     loadingOff();
     if (e.status == '200') {
-        notify2(e.responseText);
+        notify2(e.responseText, 'error', false);
     } else {
-        notify2("Failed to connect to " + server + "! ERROR: HTTP-" + e.status);
+        notify2("Failed to connect to " + errServer + "! ERROR: HTTP-" + e.status, 'error', false);
     }
 }
 
