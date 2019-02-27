@@ -16,12 +16,6 @@ if (useSounds)
 }
 var n2DefaultMessage = "An unknown error occurred!"; // Default message (if none is supplied)
 
-$(document).touch(function(e){
-    $(".notify2").each(function(){
-        hideNotify2($(this));
-    });
-});
-
 class Notify2
 {
     constructor(msg, cls, autoHide, delay)
