@@ -3,6 +3,10 @@ text {
     font-family: 'Exo 2', sans-serif;
 }
 
+a{
+    color: rgb(248, 233, 15);
+}
+
 ::selection {
     background: #1f2b35;
     /* WebKit/Blink Browsers */
