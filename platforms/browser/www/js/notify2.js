@@ -12,7 +12,7 @@ var n2DefaultAutoHide = true; // Auto hide notifications be default (true or fal
 var n2DefaultIcon = "fa-times-circle"; // Default FontAwesome icon
 if (useSounds)
 {
-    var n2DefaultSound = sndError; // Default sound from sounds.js
+    var n2DefaultSound = 'erroneous';
 }
 var n2DefaultMessage = "An unknown error occurred!"; // Default message (if none is supplied)
 
@@ -92,19 +92,19 @@ class Notify2
         {
             case "success":
                 this.icon = "fa-check-square";
-                if (useSounds) this.sound = sndSuccess;
+                if (useSounds) this.sound = 'calculate';
             break;
             case "warn":
                 this.icon = "fa-exclamation-triangle";
-                if (useSounds) this.sound = sndDing;
+                if (useSounds) this.sound = 'dialex';
             break;
             case "info":
                 this.icon = "fa-question-circle";
-                if (useSounds) this.sound = sndAlert1;
+                if (useSounds) this.sound = 'chikaka';
             break;
             case "mail":
                 this.icon = "fa-envelope";
-                if (useSounds) this.sound = sndMessage;
+                if (useSounds) this.sound = 'whoop';
             break;
         }
         if (this.debug) console.log(this.message);
@@ -133,7 +133,7 @@ class Notify2
         }
 
         showNotify2(notify);
-        if (useSounds) playSound(this.sound);
+        if (useSounds) sounds.play(this.sound);
         return true;
     }
 }
@@ -157,7 +157,7 @@ function hideNotify2(notify)
 {
     var timer = notify.attr("data-timer");
     if (timer) clearTimeout(timer);
-    playSound(sndType);
+    if (useSounds) sounds.play('blip');
     var height = notify.height() + 15;
     if(notify.css("margin-bottom") == -height+"px" && !notify.is(':animated'))
     {

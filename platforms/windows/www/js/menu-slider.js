@@ -1,4 +1,4 @@
-﻿/**
+/**
  * menu-slider.js
  * Written by: Jay Simons
  * Cloudulus.Media (https://code.cloudulus.media)
@@ -48,7 +48,7 @@ class menuSlider
 
     toggle()
     {
-        playSound(sndSlide);
+        sounds.play('tink');
         if(this.ele.css("margin-right") == -this.menuWidth+"px" && !this.ele.is(':animated'))
         {
             this.ele.show();

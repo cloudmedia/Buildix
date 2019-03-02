@@ -1,4 +1,4 @@
-﻿/**
+/**
  * 
  * @param {(string|string[])} sounds Sound File List (without ext)
  * @param {string} sndDir Directory path of sounds (without trailing /)
@@ -20,6 +20,7 @@ class Sounds2
         this.fileExt = fileExt;
         this.autoPlay = false;
         this.loaded = [];
+        this.playing = null;
         if (autoLoad)
         {
             if (Object.prototype.toString.call(sounds) === '[object Array]')
@@ -60,6 +61,21 @@ class Sounds2
         snd.setAttribute('class', this.className);
         this[s] = snd;
         this.loaded.push(s);
+        return true;
+    }
+
+    play(s)
+    {
+        if (this.playing)
+        {
+            if (this.playing == this[s])
+            {
+                this.playing.pause();
+                this.playing.currentTime = 0;
+            }
+        }
+        this[s].play();
+        this.playing = this[s];
         return true;
     }
 

@@ -33,7 +33,24 @@ var app = {
         });
 
         sounds = new Sounds2([
-            'squeeka'
+            'squeeka',
+            'dialex',
+            'calculate',
+            'compute',
+            'pop',
+            'reversi',
+            'tingdong',
+            'swinga',
+            'trida',
+            'whoop',
+            'erroneous',
+            'dink',
+            'tink',
+            'chikaka',
+            'schweef',
+            'hollowbell',
+            'blip'
+
         ], 'sounds2', true, 'mp3');
 
         var parentElement = document.getElementById(id);
@@ -124,7 +141,7 @@ function errorConnect(e) {
 }
 
 function mainLoad(url, src, effect) {
-    playSound(sndType);
+    sounds.play('hollowbell');
     scrollTop();
     loadingOn();
     if (typeof effect === typeof undefined) effect = 'slideInRight';
@@ -207,6 +224,7 @@ function askLogout() {
 }
 
 function doLogin() {
+    sounds.play('swinga');
     loadingOn();
     notifyD = new NotifyD(server + '/api/notifyd');
     notifyD.setDebug(true);
