@@ -3,7 +3,6 @@ var serverName;
 var login = false;
 var navLoaded = false;
 var notifyD;
-var sounds;
 
 window.prevFocus = $();
 $(document).on('focusin', ':input[type=text], :input[type=email], :input[type=tel], :input[type=password], :input[type=number], textarea, select', function () {
@@ -31,27 +30,6 @@ var app = {
                 hideNotify2($(this));
             });
         });
-
-        sounds = new Sounds2([
-            'squeeka',
-            'dialex',
-            'calculate',
-            'compute',
-            'pop',
-            'reversi',
-            'tingdong',
-            'swinga',
-            'trida',
-            'whoop',
-            'erroneous',
-            'dink',
-            'tink',
-            'chikaka',
-            'schweef',
-            'hollowbell',
-            'blip'
-
-        ], 'sounds2', true, 'mp3');
 
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
@@ -141,7 +119,7 @@ function errorConnect(e) {
 }
 
 function mainLoad(url, src, effect) {
-    sounds.play('hollowbell');
+    sounds.play('bubble');
     scrollTop();
     loadingOn();
     if (typeof effect === typeof undefined) effect = 'slideInRight';
@@ -227,7 +205,6 @@ function doLogin() {
     sounds.play('swinga');
     loadingOn();
     notifyD = new NotifyD(server + '/api/notifyd');
-    notifyD.setDebug(true);
     notifyD.start();
     mainLoad('/api/dashboard', 'server', 'bounceIn');
     setTimeout(function () {

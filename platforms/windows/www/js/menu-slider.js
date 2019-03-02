@@ -15,6 +15,7 @@ class menuSlider
         this.menuWidth = this.ele.width();
         this.winWidth = $(document).width();
         this.animClass = "";
+        this.toggleCallback = null;
 
         this.calc();
         $(window).resize($.proxy(this.calc, this));
@@ -29,11 +30,16 @@ class menuSlider
         {
             this.ele.css("margin-right", -this.menuWidth+"px");
             $("#menu-slider-btn").remove();
-            this.ele.append('<div id="menu-slider-btn" class="clickable"><i class="fas fa-bars"></i></div>');
+            this.ele.append('<div id="menu-slider-btn"><i class="fas fa-bars"></i></div>');
             $("#menu-slider-btn").css('position', 'absolute').css('top', 0).css('left', -$("#menu-slider-btn").width()+'px')
                 .css("box-shadow", "none").css('color', 'white');
-            $("#menu-slider-btn").unbind().touch($.proxy(this.toggle, this));
-
+            $("#menu-slider-btn").click($.proxy(this.toggle, this));
+            $(document).click($.proxy(function(e){
+                if ($(".menu-slider").hasClass('active'))
+                {
+                    this.toggle();
+                }
+            }, this));
         }else{
             $("#menu-slider-btn").remove();
         }
@@ -46,14 +52,23 @@ class menuSlider
         return true;
     }
 
+    setToggleCallback(callback)
+    {
+        this.toggleCallback = callback;
+        return true;
+    }
+
     toggle()
     {
-        sounds.play('tink');
         if(this.ele.css("margin-right") == -this.menuWidth+"px" && !this.ele.is(':animated'))
         {
             this.ele.show();
             this.ele.animate({"margin-right": '+='+this.menuWidth}).addClass("active");
             if (this.animClass.length > 0) this.ele.addClass("animated "+this.animClass);
+            if (typeof this.toggleCallback == 'function')
+            {
+                this.toggleCallback('show');
+            }
         }
         else
         {
@@ -61,6 +76,10 @@ class menuSlider
           {
               this.ele.animate({"margin-right": '-='+this.menuWidth}).removeClass("active");
               if (this.animClass.length > 0) this.ele.removeClass("animated "+this.animClass);
+              if (typeof this.toggleCallback == 'function')
+              {
+                  this.toggleCallback('hide');
+              }
           }
         }
         return true;

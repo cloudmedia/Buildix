@@ -21,6 +21,7 @@ class Sounds2
         this.autoPlay = false;
         this.loaded = [];
         this.playing = null;
+        this.volume = 1;
         if (autoLoad)
         {
             if (Object.prototype.toString.call(sounds) === '[object Array]')
@@ -49,6 +50,12 @@ class Sounds2
         return true;
     }
 
+    setVolume(v)
+    {
+        this.volume = v;
+        return true;
+    }
+
     load(s, autoPlay)
     {
         if (typeof autoPlay === typeof undefined) autoPlay = false;
@@ -66,16 +73,24 @@ class Sounds2
 
     play(s)
     {
+        var play = this[s];
         if (this.playing)
         {
-            if (this.playing == this[s])
+            if (this.playing == play)
             {
                 this.playing.pause();
                 this.playing.currentTime = 0;
             }
         }
-        this[s].play();
-        this.playing = this[s];
+        play.volume = this.volume;
+        const prom = play.play();
+        if (prom !== null)
+        {
+            prom.catch(() => {
+                play.play();
+            });
+        }
+        this.playing = play;
         return true;
     }
 
