@@ -56,6 +56,32 @@ class Sounds2
         return true;
     }
 
+    getVolume()
+    {
+        return this.volume;
+    }
+
+    getLoaded()
+    {
+        return this.loaded;
+    }
+
+    getFileExt()
+    {
+        return this.fileExt;
+    }
+
+    getPlaying()
+    {
+        return this.playing;
+    }
+
+    getSounds()
+    {
+        return this.sounds;
+    }
+
+
     load(s, autoPlay)
     {
         if (typeof autoPlay === typeof undefined) autoPlay = false;
@@ -82,15 +108,18 @@ class Sounds2
                 this.playing.currentTime = 0;
             }
         }
-        play.volume = this.volume;
-        const prom = play.play();
-        if (prom !== null)
+        if (this.volume > 0)
         {
-            prom.catch(() => {
-                play.play();
-            });
+            play.volume = this.volume;
+            const prom = play.play();
+            if (prom !== null)
+            {
+                prom.catch((e) => {
+                    play.play();
+                });
+            }
+            this.playing = play;
         }
-        this.playing = play;
         return true;
     }
 

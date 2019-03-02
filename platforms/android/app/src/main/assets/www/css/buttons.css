@@ -216,10 +216,48 @@ i.disabled {
 .btn-flex {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -2%;
+}
+.btn-flex>button
+{
+    margin-left: 2%;
+    margin-bottom: 1em;
 }
 
-.btn-flex>button:not(:last-of-type) {
-    margin-right: 1em;
+@media(max-width: 350px)
+{
+    .btn-flex>button
+    {
+        width: 100%;
+    }
+}
+@media(min-width: 351px)
+{
+    .btn-flex>button
+    {
+        width: 48%;
+    }
+}
+@media(min-width: 801px)
+{
+    .btn-flex>button
+    {
+        width: 31.3%;
+    }
+}
+@media(min-width: 1200px)
+{
+    .btn-flex>button
+    {
+        width:23%;
+    } 
+}
+@media(min-width: 1600px)
+{
+    .btn-flex>button
+    {
+        width: 18   %;
+    }
 }
 
 .svg-button

@@ -31,11 +31,6 @@
     {
         font-size: 1em;
     }
-    #site-logo-svg
-    {
-        height: 4.2em;
-        width: auto;
-    }
 }
 @media(max-width: 800px)
 {
@@ -51,15 +46,6 @@
     .nav button > div
     {
         font-size: 0.8em;
-    }
-    .site-logo
-    {
-        height: 4.2em;
-    }
-    #site-logo-svg
-    {
-        height: auto;
-        width: 80%;
     }
 }
 .nav div, .nav h1
