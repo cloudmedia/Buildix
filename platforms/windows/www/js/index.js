@@ -3,6 +3,7 @@ var serverName;
 var login = false;
 var navLoaded = false;
 var notifyD;
+var sounds;
 
 window.prevFocus = $();
 $(document).on('focusin', ':input[type=text], :input[type=email], :input[type=tel], :input[type=password], :input[type=number], textarea, select', function () {
@@ -30,6 +31,10 @@ var app = {
                 hideNotify2($(this));
             });
         });
+
+        sounds = new Sounds2([
+            'squeeka'
+        ], 'sounds2', true, 'mp3');
 
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');

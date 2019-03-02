@@ -75,6 +75,27 @@ $(document).ready(function () {
 
     $("#login-otp").mask('000000');
 
+    $("#email-otp-btn").touch(function(){
+        $("#email-otp-icon").removeClass('fa-envelope').addClass('fa-cog fa-spin');
+        var me = $(this);
+        var origColor = me.css('color');
+        me.css('color', 'red');
+        var origText = $("#email-otp-text").text();
+        $("#email-otp-text").text("Sending...");
+        $.getJSON(server + '/login?action=email-otp', function(data){
+            me.css('color', origColor);
+            $("#email-otp-text").text(origText);
+            $("#email-otp-icon").removeClass('fa-cog fa-spin').addClass('fa-envelope');
+            if (data.status == 3)
+            {
+                notify2(data.message, "mail");
+            }else{
+                notify2(data.message);
+            }
+            $("#login-otp").select();
+        });
+    });
+
     $("#login-btn").touch(function () {
         scrollTop();
         if ($("#login-id").val().length < 3) {
