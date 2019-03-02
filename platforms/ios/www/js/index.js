@@ -32,9 +32,7 @@ var app = {
             });
         });
 
-        sounds = new Sounds2([
-            'squeeka'
-        ], 'sounds2', true, 'mp3');
+
 
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
