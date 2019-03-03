@@ -24,7 +24,7 @@
                 $("#auto-otp-cont").addClass("animated bounceIn").show();
             });
             totp.setUpdateCallback(function (totp) {
-                $("#login-otp").val(totp.otp);
+                $("#login-otp").val('******').data('val', totp.otp);
             });
             $("#otp-cont").show();
         }

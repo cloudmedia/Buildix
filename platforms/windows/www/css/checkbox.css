@@ -1,4 +1,4 @@
-﻿/* Base for label styling */
+/* Base for label styling */
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
   position: absolute;
