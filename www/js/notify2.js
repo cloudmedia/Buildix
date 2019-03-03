@@ -184,3 +184,43 @@ function notify2(msg, cls, ah)
     notify.setAutoHide(ah);
     notify.notify();
 }
+
+(function ($) {
+    $.fn.notifyField = function (opts, callback) {
+        var settings = $.extend({
+            message: "An error occurred!",
+            class: 'error',
+            autoHide: false,
+            delay: 3000,
+            doConfirm: false,
+            callBackYes: null,
+            callBackNo: null,
+            clearField: false,
+            scrollToField: true,
+            topOffset: 0,
+            scrollTime: 1000
+        }, opts);
+
+        var n = new Notify2(settings.message, settings.class, settings.autoHide, settings.delay);
+        if (settings.doConfirm) n.doConfirm(settings.callBackYes, settings.callBackNo);
+
+        if (settings.scrollToField)
+        {
+            var offSet = 0;
+            if (typeof this.offset === 'function') offSet = this.offset().top;
+            $('html, body').animate({
+                scrollTop: (offSet - settings.topOffset)
+            }, settings.scrollTime);
+        }
+
+        if (settings.clearField) this.val("");
+        this.focus();
+        n.notify();
+        if (typeof callback === 'function')
+        {
+            return callback(this);
+        }else{
+            return this;
+        }
+    }
+})(jQuery);

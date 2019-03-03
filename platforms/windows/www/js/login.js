@@ -85,7 +85,7 @@
     });
 
     $("#test-login").click(function () {
-        $("#login-id").val("test");
+        $("#login-id").val("Joe.Test");
         $("#login-pass").val("TestPassword1!");
     });
 });
@@ -125,11 +125,6 @@ function processLogin()
         $("#login-pass").ok();
     }
 
-    var label = $(this).text();
-    var thisBtn = $(this);
-    loadingOn();
-    thisBtn.html('<i class="fas fa-cog fa-spin"></i><span> Logging in...</span>').addClass('loading').blur();
-
     var sub = new Submit(server + '/login?action=login');
     sub.addData('id', $("#login-id").val());
     sub.addData('pass', $("#login-pass").val());
@@ -152,8 +147,11 @@ function processLogin()
         localStorage.removeItem('otp-key');
     }
 
+    loadingOn();
+    $("#login-btn").loadButton('on', {loadingText: 'Logging in...'});
+
     sub.submit("json", function (data) {
-        thisBtn.removeClass('loading').text(label);
+        $("#login-btn").loadButton('off');
         loadingOff();
         switch (data.status) {
             case 1: // LOGIN OK
