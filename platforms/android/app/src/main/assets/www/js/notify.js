@@ -719,7 +719,7 @@
 			this.val("");
 			this.data('val', "");
 		}
-        this.focus();
+        this.select();
         if (typeof callback === 'function')
         {
             return callback(this);
