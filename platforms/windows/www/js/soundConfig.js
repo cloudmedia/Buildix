@@ -1,4 +1,4 @@
-var sounds;
+﻿var sounds;
 var soundVolume = 1;
 
 if (localStorage.getItem('soundVolume'))
