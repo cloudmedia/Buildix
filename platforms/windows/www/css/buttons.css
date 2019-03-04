@@ -286,6 +286,27 @@ i.disabled {
     height: 1em;
     widows: 1em;
 }
+.svg-button.loading {
+    animation: svgBtnLoad 1s linear infinite;
+}
+.svg-button.loading > svg
+{
+    animation: svgBtnLoad2 1s linear infinite;
+}
+
+@keyframes svgBtnLoad {
+    50% {
+        background-color: white;
+    }
+}
+
+@keyframes svgBtnLoad2 {
+    50% {
+        fill: black;
+    }
+}
+
+
 .svg-button.medium > svg
 {
     height: 1.5em;
