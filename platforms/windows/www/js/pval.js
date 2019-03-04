@@ -1,4 +1,4 @@
-﻿function checkPass(idPass)
+function checkPass(idPass)
 {
     if ($("#pw-validate").is(":hidden")) $("#pw-validate").fadeIn();
     var pswd = $(idPass).val();

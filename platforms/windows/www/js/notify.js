@@ -1,4 +1,4 @@
-﻿/* Notify.js - http://notifyjs.com/ Copyright (c) 2015 MIT */
+/* Notify.js - http://notifyjs.com/ Copyright (c) 2015 MIT */
 (function (factory) {
 	// UMD start
 	// https://github.com/umdjs/umd/blob/master/jqueryPluginCommonjs.js

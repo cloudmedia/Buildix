@@ -1,4 +1,4 @@
-﻿/**
+/**
  * 
  * @param {(string|string[])} sounds Sound File List (without ext)
  * @param {string} sndDir Directory path of sounds (without trailing /)

@@ -72,13 +72,13 @@ class Notify2
         var me = this;
         if (typeof this.cbYes === 'function')
         {
-            $(document).delegate('#notify2-confirm-yes', this.bindEvent, function(){
+            $(document).unbind().delegate('#notify2-confirm-yes', this.bindEvent, function(){
                 me.cbYes(me);
             });
         }
         if (typeof this.cbNo === 'function')
         {
-            $(document).delegate('#notify2-confirm-no', this.bindEvent, function(){
+            $(document).unbind().delegate('#notify2-confirm-no', this.bindEvent, function(){
                 me.cbNo(me);
             });
         }

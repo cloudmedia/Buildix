@@ -1,4 +1,4 @@
-﻿/**
+/**
  * TOTP.js
  * Written by: Jay Simons
  * https://Cloudulus.Media
