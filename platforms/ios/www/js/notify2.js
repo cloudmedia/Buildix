@@ -64,9 +64,11 @@ class Notify2
 
     doConfirm(cbYes, cbNo, target)
     {
+        var cbYesID = "notify2-" + this.genID(10);
+        var cbNoID = "notify2-" + this.genID(10);
         this.message='<div class="confirm"><div>'+this.message+'</div>'+
-            '<div><button id="notify2-confirm-yes">Yes</div>'+
-            '<div><button id="notify2-confirm-no">No</button></div></div>';
+            '<div><button id="'+cbYesID+'">Yes</div>'+
+            '<div><button id="'+cbNoID+'">No</button></div></div>';
         this.autoHide = false;
         this.cbYes = cbYes;
         this.cbNo = cbNo;
@@ -74,17 +76,48 @@ class Notify2
         var me = this;
         if (typeof this.cbYes === 'function')
         {
-            $(document).unbind().delegate('#notify2-confirm-yes', this.bindEvent, function(){
+            $(document).on(this.bindEvent, "#"+cbYesID, function(){
                 me.cbYes(me);
             });
+            /*
+            $(document).delegate('#notify2-confirm-yes', this.bindEvent, function(){
+                me.cbYes(me);
+            });
+            */
         }
         if (typeof this.cbNo === 'function')
         {
-            $(document).unbind().delegate('#notify2-confirm-no', this.bindEvent, function(){
+            $(document).on(this.bindEvent, "#"+cbNoID, function(){
                 me.cbNo(me);
             });
+            /*
+            $(document).delegate('#notify2-confirm-no', this.bindEvent, function(){
+                me.cbNo(me);
+            });
+            */
         }
         return true;
+    }
+
+    genID(length) {
+
+        if (typeof length === typeof undefined) length = 8;
+        var timestamp = +new Date;
+    
+        var _getRandomInt = function (min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+    
+        var ts = timestamp.toString();
+        var parts = ts.split("").reverse();
+        var id = "";
+
+        for (var i = 0; i < length; ++i) {
+            var index = _getRandomInt(0, parts.length - 1);
+            id += parts[index];
+        }
+
+        return id;
     }
 
     notify()
