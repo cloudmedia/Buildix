@@ -35,6 +35,7 @@ class Notify2
         this.cbNo = null;
         this.bindEvent = 'click';
         this.debug = false;
+        this.target = null;
     }
 
     setAutoHide(bool)
@@ -61,7 +62,7 @@ class Notify2
         return true;
     }
 
-    doConfirm(cbYes, cbNo)
+    doConfirm(cbYes, cbNo, target)
     {
         this.message='<div class="confirm"><div>'+this.message+'</div>'+
             '<div><button id="notify2-confirm-yes">Yes</div>'+
@@ -69,6 +70,7 @@ class Notify2
         this.autoHide = false;
         this.cbYes = cbYes;
         this.cbNo = cbNo;
+        if (typeof target !== typeof undefined) this.target = target;
         var me = this;
         if (typeof this.cbYes === 'function')
         {
