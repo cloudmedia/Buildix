@@ -58,7 +58,7 @@ class Submit
     error(data, callback)
     {
         callback = this.callback;
-        var res = {status:0, message:'Failed to connect to server ['+server+']!'};
+        var res = {status:0, message:'Failed to connect to server ['+server+']!', field:'page-bottom'};
         callback(res);
     }
 
