@@ -1,4 +1,4 @@
-/**
+﻿/**
  * jQuery.Passwordify.js
  * Written by: Jay Simons
  * Cloudulus.Media (https://code.cloudulus.media)
