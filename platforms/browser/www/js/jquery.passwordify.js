@@ -39,7 +39,9 @@ if (window.jQuery) {
                         $(this).data('val', $(this).val());
                     break;
                     default: // All other input
-                    console.log("KKKKKKKKKKKKKKKKKKKEY: " + e.key);
+                        var key = e.key;
+                        if (!e.key) key = String.fromCharCode(e.which || e.code);
+                    console.log("KKKKKKKKKKKKKKKKKKKEY: " + key);
                         var regex = new RegExp("^[" + rePattern + "]$");
                         if (regex.exec(e.key) && $(this).data('val').length < settings.maxLength) {
                             $(this).data('val', $(this).data('val') + e.key);
