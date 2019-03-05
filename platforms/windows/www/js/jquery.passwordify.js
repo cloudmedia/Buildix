@@ -44,7 +44,6 @@ if (window.jQuery) {
                         var regex = new RegExp("^[" + rePattern + "]$");
                         if (regex.exec(entered) && $(this).data('val').length < settings.maxLength) {
                             $(this).data('val', $(this).data('val') + entered);
-                            console.log($(this).data('val'));
                         }
                 }
                 setTimeout(function () {
