@@ -171,10 +171,12 @@ function processLogin()
                 doLogin();
                 break;
             case 2: // REQUIRE PIN
-                notify2(data.message, "warn");
                 $("#otp-cont").hide();
-                $("#pin-cont").fadeIn(function () {
-                    $("#login-pin").select();
+                $("#pin-cont").fadeIn(function(){
+                    $("#login-pin").notifyForm("Please enter your PIN.", {
+                        className: 'warn',
+                        clearField: true
+                    });
                 });
                 break;
             case 3: // REQUIRE OTP
