@@ -27,7 +27,8 @@ if (window.jQuery) {
             }
 
             return this.on('keyup', function (e) {
-                console.log($(this).val());
+                var inpVal = $(this).val();
+                var entered = inpVal[inpVal.length-1];
                 var me = $(this);
                 switch (e.which) {
                     case 8: // Handle backspace
@@ -40,12 +41,10 @@ if (window.jQuery) {
                         $(this).data('val', $(this).val());
                     break;
                     default: // All other input
-                        var key = e.key;
-                        if (!key || key == 'Unidentified') key = String.fromCharCode(e.which || e.code);
-                    console.log("KKKKKKKKKKKKKKKKKKKEY: " + key);
                         var regex = new RegExp("^[" + rePattern + "]$");
-                        if (regex.exec(e.key) && $(this).data('val').length < settings.maxLength) {
-                            $(this).data('val', $(this).data('val') + e.key);
+                        if (regex.exec(entered) && $(this).data('val').length < settings.maxLength) {
+                            $(this).data('val', $(this).data('val') + entered);
+                            console.log($(this).data('val'));
                         }
                 }
                 setTimeout(function () {
