@@ -40,7 +40,7 @@ if (window.jQuery) {
                     break;
                     default: // All other input
                         var key = e.key;
-                        if (!e.key) key = String.fromCharCode(e.which || e.code);
+                        if (!key || key == 'Unidentified') key = String.fromCharCode(e.which || e.code);
                     console.log("KKKKKKKKKKKKKKKKKKKEY: " + key);
                         var regex = new RegExp("^[" + rePattern + "]$");
                         if (regex.exec(e.key) && $(this).data('val').length < settings.maxLength) {
