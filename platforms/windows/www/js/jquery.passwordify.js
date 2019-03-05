@@ -1,4 +1,4 @@
-﻿/**
+/**
  * jQuery.Passwordify.js
  * Written by: Jay Simons
  * Cloudulus.Media (https://code.cloudulus.media)
@@ -26,7 +26,7 @@ if (window.jQuery) {
                 maskPlaceholder = maskPlaceholder + 'Z';
             }
 
-            return this.on('keyup', function (e) {
+            return this.on('keypress', function (e) {
                 var me = $(this);
                 switch (e.which) {
                     case 8: // Handle backspace
