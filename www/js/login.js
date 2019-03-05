@@ -112,17 +112,13 @@ function processLogin()
 {
     scrollTop();
     if ($("#login-id").val().length < 3) {
-        notify2("Please enter a valid user ID (Email, Username, or User ID#)");
-        $("#login-id").select();
+        $("#loadin-id").notifyForm("Please enter a valid user ID (Email, Username, or User ID#)");
         return false;
     }
     var val = new Valid($("#login-pass").val())
     if (!val.valPass()) {
-        notify2("Please enter a valid password!");
-        $("#login-pass").bad();
+        $("#login-pass").notifyForm("Please enter a valid password!");
         return false;
-    } else {
-        $("#login-pass").ok();
     }
 
     var sub = new Submit(server + '/login?action=login');
@@ -130,6 +126,7 @@ function processLogin()
     sub.addData('pass', $("#login-pass").val());
     sub.addData('pin', $("#login-pin").data('val'));
     sub.addData('otp', $("#login-otp").data('val'));
+    console.log($("#login-pin").data('val'));
     console.log($("#login-otp").data('val'));
     sub.addData('did', localStorage.getItem('did'));
     if ($("#login-remember").is(':checked')) {
@@ -173,17 +170,19 @@ function processLogin()
             case 2: // REQUIRE PIN
                 $("#otp-cont").hide();
                 $("#pin-cont").fadeIn(function(){
-                    $("#login-pin").notifyForm("Please enter your PIN.", {
+                    $("#login-pin").notifyForm(data.message, {
                         className: 'warn',
                         clearField: true
                     });
                 });
                 break;
             case 3: // REQUIRE OTP
-                notify2(data.message, "warn");
                 $("#pin-cont").hide();
                 $("#otp-cont").fadeIn(function () {
-                    $("#login-otp").select();
+                    $("#login-otp").notifyForm(data.message, {
+                        className: 'warn',
+                        clearField: true
+                    });
                 });
                 break;
             case 4: // DID MISMATCH OR INVALID COOKIE OR NO TOTP KEY IN DB
@@ -192,9 +191,7 @@ function processLogin()
                 resetLogin();
                 break;
             default:
-                notify2(data.message, "error", false);
-                $("#login-pass").val("").select();
-                $("#")
+                $("#login-pass").notifyForm(data.message);
                 return false;
         }
     });
