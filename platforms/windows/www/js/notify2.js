@@ -131,7 +131,7 @@ class Notify2
             break;
             case "warn":
                 this.icon = "fa-exclamation-triangle";
-                if (useSounds) this.sound = 'dialex';
+                if (useSounds) this.sound = 'plunk';
             break;
             case "info":
                 this.icon = "fa-question-circle";

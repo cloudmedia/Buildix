@@ -65,7 +65,7 @@
 	var sounds = {
 		error: 'erroneous',
 		success: 'calculate',
-		warn: 'dialex',
+		warn: 'plunk',
 		info: 'chikaka',
 		mail: 'whoop',
 		close: 'tink'

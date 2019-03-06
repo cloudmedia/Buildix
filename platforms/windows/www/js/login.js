@@ -186,7 +186,7 @@ function processLogin()
                 });
                 break;
             case 4: // DID MISMATCH OR INVALID COOKIE OR NO TOTP KEY IN DB
-                notify2(data.message);
+                notify2(data.message, "error", false);
                 $("#login-error-p").text(data.message);
                 resetLogin();
                 break;

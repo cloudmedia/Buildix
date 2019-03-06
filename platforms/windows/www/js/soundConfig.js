@@ -27,7 +27,8 @@ sounds = new Sounds2([
     'hollowbell',
     'blip',
     'bubble',
-    'ghost'
+    'ghost',
+    'plunk'
 ], 'sounds2', true, 'mp3');
 
 sounds.setVolume(soundVolume);
