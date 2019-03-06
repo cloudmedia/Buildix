@@ -66,8 +66,8 @@
 		error: 'erroneous',
 		success: 'calculate',
 		warn: 'plunk',
-		info: 'chikaka',
-		mail: 'whoop',
+		info: 'pop',
+		mail: 'trida',
 		close: 'tink'
 	};
 	this.sounds = sounds;

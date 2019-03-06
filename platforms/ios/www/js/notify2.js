@@ -135,11 +135,11 @@ class Notify2
             break;
             case "info":
                 this.icon = "fa-question-circle";
-                if (useSounds) this.sound = 'chikaka';
+                if (useSounds) this.sound = 'pop';
             break;
             case "mail":
                 this.icon = "fa-envelope";
-                if (useSounds) this.sound = 'whoop';
+                if (useSounds) this.sound = 'trida';
             break;
         }
         if (this.debug) console.log(this.message);
