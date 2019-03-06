@@ -76,6 +76,27 @@ $(document).ready(function () {
         });
     });
 
+    $("#text-otp-btn").touch(function(){
+        $("#text-otp-icon").removeClass('fa-sms').addClass('fa-cog fa-spin');
+        var me = $(this);
+        var origColor = me.css('color');
+        me.css('color', 'red');
+        var origText = $("#text-otp-text").text();
+        $("#text-otp-text").text("Sending...");
+        $.getJSON(server + '/login?action=text-otp', function(data){
+            me.css('color', origColor);
+            $("#text-otp-text").text(origText);
+            $("#text-otp-icon").removeClass('fa-cog fa-spin').addClass('fa-sms');
+            if (data.status == 3)
+            {
+                notify2(data.message, "mail");
+            }else{
+                notify2(data.message);
+            }
+            $("#login-otp").focus();
+        });
+    });
+
     $("#login-btn").touch(function () {
         processLogin();
     });
