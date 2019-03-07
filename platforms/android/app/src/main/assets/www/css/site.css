@@ -212,3 +212,13 @@ header.site-header {
     background: #4CAF50;
     cursor: pointer;
 }
+
+ul.actions
+{
+    list-style-type: none;
+    padding-inline-start: 10px;
+}
+ul.actions > li:not(:first-of-type)
+{
+    margin-top: 0.5em;
+}

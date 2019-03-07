@@ -26,31 +26,20 @@ if (window.jQuery) {
                 maskPlaceholder = maskPlaceholder + 'Z';
             }
 
+            $(this).css('text-security', 'disc');
+            $(this).css('-webkit-text-security', 'disc');
+            $(this).css('-moz-text-security', 'disc');
+
             return this.on('keyup', function (e) {
-                var inpVal = $(this).val();
-                var entered = inpVal[inpVal.length-1];
                 var me = $(this);
                 switch (e.which) {
                     case 8: // Handle backspace
-                        $(this).data('val', $(this).data('val').slice(0, -1));
+                        $(this).val('');
                         break;
                     case 13: // Handle enter key
                         if (typeof settings.enterKeyCallback == 'function') settings.enterKeyCallback(me);
                         break;
-                    case undefined:
-                        $(this).data('val', $(this).val());
-                    break;
-                    default: // All other input
-                        var regex = new RegExp("^[" + rePattern + "]$");
-                        if (regex.exec(entered) && $(this).data('val').length < settings.maxLength) {
-                            $(this).data('val', $(this).data('val') + entered);
-                        }
-                }
-                setTimeout(function () {
-                    var inpVal = me.val();
-                    me.val(inpVal.replace(/./gi, '*'));
-                    me.trigger('change');
-                }, 300);
+                    }
             }).mask(maskPlaceholder, {
                 translation: {
                     'Z': {pattern: "[" + rePattern + "\*]"}

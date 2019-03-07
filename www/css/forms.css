@@ -205,3 +205,10 @@ input:focus::placeholder {
     left: 10px;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
+
+input.passwordify
+{
+    text-security: disc;
+    -webkit-text-security: disc;
+    -moz-text-security: disc;
+}

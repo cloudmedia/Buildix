@@ -24,7 +24,7 @@ $(document).ready(function () {
                 $("#auto-otp-cont").addClass("animated bounceIn").show();
             });
             totp.setUpdateCallback(function (totp) {
-                $("#login-otp").val('******').data('val', totp.otp);
+                $("#login-otp").val(totp.otp);
             });
             $("#otp-cont").show();
         }
@@ -145,10 +145,8 @@ function processLogin()
     var sub = new Submit(server + '/login?action=login');
     sub.addData('id', $("#login-id").val());
     sub.addData('pass', $("#login-pass").val());
-    sub.addData('pin', $("#login-pin").data('val'));
-    sub.addData('otp', $("#login-otp").data('val'));
-    console.log($("#login-pin").data('val'));
-    console.log($("#login-otp").data('val'));
+    sub.addData('pin', $("#login-pin").val());
+    sub.addData('otp', $("#login-otp").val());
     sub.addData('did', localStorage.getItem('did'));
     if ($("#login-remember").is(':checked')) {
         localStorage.setItem('remember-login', 'yes');
