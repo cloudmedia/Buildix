@@ -2,5 +2,17 @@
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <AppxShowAllApps>False</AppxShowAllApps>
+    <Source>C:\Users\Nathan\ownCloud\mars\Documents\web-gfx\buildix-new\bx-logo.png</Source>
+    <SmallTileSource>C:\Users\Nathan\ownCloud\mars\Documents\web-gfx\buildix-new\bx-logo.png</SmallTileSource>
+    <MediumTileSource>C:\Users\Nathan\ownCloud\mars\Documents\web-gfx\buildix-new\bx-logo.png</MediumTileSource>
+    <WideTileSource>C:\Users\Nathan\ownCloud\mars\Documents\web-gfx\buildix-new\bx-logo.png</WideTileSource>
+    <LargeTileSource>C:\Users\Nathan\ownCloud\mars\Documents\web-gfx\buildix-new\bx-logo.png</LargeTileSource>
+    <AppIconSource>C:\Users\Nathan\ownCloud\mars\Documents\web-gfx\buildix-new\bx-icon.png</AppIconSource>
+    <SplashScreenSource>C:\Users\Nathan\ownCloud\mars\Documents\web-gfx\buildix-new\bx-logo.png</SplashScreenSource>
+    <PackageLogoSource>C:\Users\Nathan\ownCloud\mars\Documents\web-gfx\buildix-new\bx-logo.png</PackageLogoSource>
+    <BadgeLogoSource>C:\Users\Nathan\ownCloud\mars\Documents\web-gfx\buildix-new\bx-logo.png</BadgeLogoSource>
+    <AppxPackageIsForStore>True</AppxPackageIsForStore>
+    <AppxBuildConfigurationSelection>x64</AppxBuildConfigurationSelection>
+    <PackageOptionalProjectsInIdeBuilds>False</PackageOptionalProjectsInIdeBuilds>
   </PropertyGroup>
 </Project>

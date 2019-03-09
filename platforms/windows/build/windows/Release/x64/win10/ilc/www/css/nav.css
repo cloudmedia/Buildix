@@ -1,0 +1,147 @@
+﻿.nav
+{
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+.nav-cont
+{
+    overflow-y: auto;
+    max-height: 100%;
+}
+.nav-cont > div
+{
+    margin-bottom: 0;
+}
+@media(min-width: 801px)
+{
+    .nav
+    {
+        width: 20%;
+    }
+    .nav svg
+    {
+        width: 4em;
+        height: 4em;
+    }
+    .nav button > div
+    {
+        font-size: 1em;
+    }
+}
+@media(max-width: 800px)
+{
+    .nav
+    {
+        width: 50%;
+    }
+    .nav svg
+    {
+        width: 2em;
+        height: 2em;
+    }
+    .nav button > div
+    {
+        font-size: 0.8em;
+    }
+}
+.nav div, .nav h1
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav .cat
+{
+    display: flex;
+    flex-direction: column;
+    line-height: 2em;
+}
+.cat-cont
+{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+.cat-cont > div
+{
+    display: flex;
+    width: 100%;
+}
+.cat-cont > div:not(:last-of-type)
+{
+    margin-bottom: 1em;
+}
+.nav .cat > h1
+{
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #1f2b35;
+    width: 100%;
+    text-align: center;
+    padding: 0.2em 0 0.2em 0;
+}
+.nav button
+{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-box-shadow: inset 0px 0px 5px 2px #2989d8 ;
+    -moz-box-shadow: inset 0px 0px 5px 2px #2989d8 ;
+    box-shadow: inset 0px 0px 5px 2px #2989d8;
+    background-color: transparent;
+    border-radius: 0.375em;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    height: auto;
+    letter-spacing: 0.075em;
+    padding: 1em;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.nav button > div
+{
+    flex-basis: 80%;
+    max-width: 70%;
+    height: 100%;
+    white-space: normal;
+}
+.nav svg
+{
+    color: white;
+    flex-basis: 20%;
+}
+.nav svg > *
+{
+    fill: white !important;
+}
+
+#menu-slider-btn
+{
+    font-size: 3em;
+    background-color: rgba(0,0,0,0.5);
+    padding: 0.2em;
+    margin-left: -0.4em;
+    box-sizing: border-box;
+    cursor: pointer;
+}

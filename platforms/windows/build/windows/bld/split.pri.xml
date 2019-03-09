@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="59705Cloudulus.Media.499905A036C19" version="1.0" primary="true">
+		<Qualifiers>
+			<AlternateForm>UNPLATED</AlternateForm>
+			<Scale>100</Scale>
+			<TargetSize>256,16,24,32,48</TargetSize>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="config.xml" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/config.xml">
+				<Candidate type="Path">
+					<Value>config.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="images">
+				<NamedResource name="BadgeLogo.png" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/images/BadgeLogo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\BadgeLogo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreen.png" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/images/SplashScreen.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\SplashScreen.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreenPhone.png" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/images/SplashScreenPhone.png"/>
+				<NamedResource name="Square150x150Logo.png" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/images/Square150x150Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square150x150Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square30x30Logo.png" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/images/Square30x30Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square30x30Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square310x310Logo.png" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/images/Square310x310Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square310x310Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square44x44Logo.png" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/images/Square44x44Logo.png">
+					<Candidate qualifiers="TargetSize-48, AlternateForm-UNPLATED" type="Path">
+						<Value>images\Square44x44Logo.altform-unplated_targetsize-48.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-48" isDefault="true" type="Path">
+						<Value>images\Square44x44Logo.targetsize-48.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-32, AlternateForm-UNPLATED" type="Path">
+						<Value>images\Square44x44Logo.altform-unplated_targetsize-32.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-32" isDefault="true" type="Path">
+						<Value>images\Square44x44Logo.targetsize-32.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-256, AlternateForm-UNPLATED" type="Path">
+						<Value>images\Square44x44Logo.altform-unplated_targetsize-256.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-256" isDefault="true" type="Path">
+						<Value>images\Square44x44Logo.targetsize-256.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-24, AlternateForm-UNPLATED" type="Path">
+						<Value>images\Square44x44Logo.altform-unplated_targetsize-24.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-24" isDefault="true" type="Path">
+						<Value>images\Square44x44Logo.targetsize-24.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-16, AlternateForm-UNPLATED" type="Path">
+						<Value>images\Square44x44Logo.altform-unplated_targetsize-16.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-16" isDefault="true" type="Path">
+						<Value>images\Square44x44Logo.targetsize-16.png</Value>
+					</Candidate>
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square44x44Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square70x70Logo.png" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/images/Square70x70Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square70x70Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square71x71Logo.png" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/images/Square71x71Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square71x71Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/images/StoreLogo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\StoreLogo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/images/Wide310x150Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Wide310x150Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Properties">
+				<NamedResource name="Default.rd.xml" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/Properties/Default.rd.xml">
+					<Candidate type="Path">
+						<Value>Properties\Default.rd.xml</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="www">
+				<NamedResource name="cordova.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/cordova.js">
+					<Candidate type="Path">
+						<Value>www\cordova.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="cordova_plugins.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/cordova_plugins.js">
+					<Candidate type="Path">
+						<Value>www\cordova_plugins.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="index.html" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/index.html">
+					<Candidate type="Path">
+						<Value>www\index.html</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="cordova-js-src">
+					<NamedResource name="confighelper.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/cordova-js-src/confighelper.js">
+						<Candidate type="Path">
+							<Value>www\cordova-js-src\confighelper.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="exec.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/cordova-js-src/exec.js">
+						<Candidate type="Path">
+							<Value>www\cordova-js-src\exec.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="platform.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/cordova-js-src/platform.js">
+						<Candidate type="Path">
+							<Value>www\cordova-js-src\platform.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="splashscreen.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/cordova-js-src/splashscreen.js">
+						<Candidate type="Path">
+							<Value>www\cordova-js-src\splashscreen.js</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="css">
+					<NamedResource name="all.min.css" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/css/all.min.css">
+						<Candidate type="Path">
+							<Value>www\css\all.min.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="animate.css" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/css/animate.css">
+						<Candidate type="Path">
+							<Value>www\css\animate.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="animate.min.css" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/css/animate.min.css">
+						<Candidate type="Path">
+							<Value>www\css\animate.min.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="buttons.css" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/css/buttons.css">
+						<Candidate type="Path">
+							<Value>www\css\buttons.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="buttons.min.css" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/css/buttons.min.css">
+						<Candidate type="Path">
+							<Value>www\css\buttons.min.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="checkbox.css" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/css/checkbox.css">
+						<Candidate type="Path">
+							<Value>www\css\checkbox.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="checkbox.min.css" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/css/checkbox.min.css">
+						<Candidate type="Path">
+							<Value>www\css\checkbox.min.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="fonts.css" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/css/fonts.css">
+						<Candidate type="Path">
+							<Value>www\css\fonts.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="fonts.min.css" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/css/fonts.min.css">
+						<Candidate type="Path">
+							<Value>www\css\fonts.min.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="forms.css" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/css/forms.css">
+						<Candidate type="Path">
+							<Value>www\css\forms.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="forms.min.css" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/css/forms.min.css">
+						<Candidate type="Path">
+							<Value>www\css\forms.min.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="nav.css" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/css/nav.css">
+						<Candidate type="Path">
+							<Value>www\css\nav.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="nav.min.css" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/css/nav.min.css">
+						<Candidate type="Path">
+							<Value>www\css\nav.min.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="normalize.css" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/css/normalize.css">
+						<Candidate type="Path">
+							<Value>www\css\normalize.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="normalize.min.css" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/css/normalize.min.css">
+						<Candidate type="Path">
+							<Value>www\css\normalize.min.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="notify2.css" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/css/notify2.css">
+						<Candidate type="Path">
+							<Value>www\css\notify2.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="notify2.min.css" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/css/notify2.min.css">
+						<Candidate type="Path">
+							<Value>www\css\notify2.min.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="pval.css" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/css/pval.css">
+						<Candidate type="Path">
+							<Value>www\css\pval.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="pval.min.css" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/css/pval.min.css">
+						<Candidate type="Path">
+							<Value>www\css\pval.min.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="site.css" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/css/site.css">
+						<Candidate type="Path">
+							<Value>www\css\site.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="site.min.css" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/css/site.min.css">
+						<Candidate type="Path">
+							<Value>www\css\site.min.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="splashscreen.css" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/css/splashscreen.css">
+						<Candidate type="Path">
+							<Value>www\css\splashscreen.css</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="fonts">
+					<NamedResource name="7cHmv4okm5zmbtYmK-4W4nIppT4.woff2" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/fonts/7cHmv4okm5zmbtYmK-4W4nIppT4.woff2">
+						<Candidate type="Path">
+							<Value>www\fonts\7cHmv4okm5zmbtYmK-4W4nIppT4.woff2</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="7cHmv4okm5zmbtYoK-4W4nIp.woff2" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/fonts/7cHmv4okm5zmbtYoK-4W4nIp.woff2">
+						<Candidate type="Path">
+							<Value>www\fonts\7cHmv4okm5zmbtYoK-4W4nIp.woff2</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="7cHmv4okm5zmbtYsK-4W4nIppT4.woff2" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/fonts/7cHmv4okm5zmbtYsK-4W4nIppT4.woff2">
+						<Candidate type="Path">
+							<Value>www\fonts\7cHmv4okm5zmbtYsK-4W4nIppT4.woff2</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="BngMUXZYTXPIvIBgJJSb6ufA5qWr4xCCQ_k.woff2" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/fonts/BngMUXZYTXPIvIBgJJSb6ufA5qWr4xCCQ_k.woff2">
+						<Candidate type="Path">
+							<Value>www\fonts\BngMUXZYTXPIvIBgJJSb6ufA5qWr4xCCQ_k.woff2</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="BngMUXZYTXPIvIBgJJSb6ufB5qWr4xCCQ_k.woff2" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/fonts/BngMUXZYTXPIvIBgJJSb6ufB5qWr4xCCQ_k.woff2">
+						<Candidate type="Path">
+							<Value>www\fonts\BngMUXZYTXPIvIBgJJSb6ufB5qWr4xCCQ_k.woff2</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="BngMUXZYTXPIvIBgJJSb6ufC5qWr4xCCQ_k.woff2" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/fonts/BngMUXZYTXPIvIBgJJSb6ufC5qWr4xCCQ_k.woff2">
+						<Candidate type="Path">
+							<Value>www\fonts\BngMUXZYTXPIvIBgJJSb6ufC5qWr4xCCQ_k.woff2</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="BngMUXZYTXPIvIBgJJSb6ufD5qWr4xCCQ_k.woff2" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/fonts/BngMUXZYTXPIvIBgJJSb6ufD5qWr4xCCQ_k.woff2">
+						<Candidate type="Path">
+							<Value>www\fonts\BngMUXZYTXPIvIBgJJSb6ufD5qWr4xCCQ_k.woff2</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="BngMUXZYTXPIvIBgJJSb6ufJ5qWr4xCCQ_k.woff2" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/fonts/BngMUXZYTXPIvIBgJJSb6ufJ5qWr4xCCQ_k.woff2">
+						<Candidate type="Path">
+							<Value>www\fonts\BngMUXZYTXPIvIBgJJSb6ufJ5qWr4xCCQ_k.woff2</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="BngMUXZYTXPIvIBgJJSb6ufN5qWr4xCC.woff2" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/fonts/BngMUXZYTXPIvIBgJJSb6ufN5qWr4xCC.woff2">
+						<Candidate type="Path">
+							<Value>www\fonts\BngMUXZYTXPIvIBgJJSb6ufN5qWr4xCC.woff2</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="BngMUXZYTXPIvIBgJJSb6ufO5qWr4xCCQ_k.woff2" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/fonts/BngMUXZYTXPIvIBgJJSb6ufO5qWr4xCCQ_k.woff2">
+						<Candidate type="Path">
+							<Value>www\fonts\BngMUXZYTXPIvIBgJJSb6ufO5qWr4xCCQ_k.woff2</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="html">
+					<NamedResource name="login.html" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/html/login.html">
+						<Candidate type="Path">
+							<Value>www\html\login.html</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="icons">
+					<NamedResource name="accept.png" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/icons/accept.png">
+						<Candidate type="Path">
+							<Value>www\icons\accept.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="cancel.png" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/icons/cancel.png">
+						<Candidate type="Path">
+							<Value>www\icons\cancel.png</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="images">
+					<NamedResource name="bx-icon.png" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/images/bx-icon.png">
+						<Candidate type="Path">
+							<Value>www\images\bx-icon.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="bx-icon.svg" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/images/bx-icon.svg">
+						<Candidate type="Path">
+							<Value>www\images\bx-icon.svg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="bx-loading.svg" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/images/bx-loading.svg">
+						<Candidate type="Path">
+							<Value>www\images\bx-loading.svg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="bx-logo.svg" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/images/bx-logo.svg">
+						<Candidate type="Path">
+							<Value>www\images\bx-logo.svg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="og-image.jpg" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/images/og-image.jpg">
+						<Candidate type="Path">
+							<Value>www\images\og-image.jpg</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="img">
+					<NamedResource name="logo.png" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/img/logo.png">
+						<Candidate type="Path">
+							<Value>www\img\logo.png</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="js">
+					<NamedResource name="anime.min.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/anime.min.js">
+						<Candidate type="Path">
+							<Value>www\js\anime.min.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="base64.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/base64.js">
+						<Candidate type="Path">
+							<Value>www\js\base64.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="base64.min.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/base64.min.js">
+						<Candidate type="Path">
+							<Value>www\js\base64.min.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="functions.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/functions.js">
+						<Candidate type="Path">
+							<Value>www\js\functions.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="functions.min.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/functions.min.js">
+						<Candidate type="Path">
+							<Value>www\js\functions.min.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="index.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/index.js">
+						<Candidate type="Path">
+							<Value>www\js\index.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="index.min.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/index.min.js">
+						<Candidate type="Path">
+							<Value>www\js\index.min.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="jquery.loadButton.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/jquery.loadButton.js">
+						<Candidate type="Path">
+							<Value>www\js\jquery.loadButton.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="jquery.loadButton.min.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/jquery.loadButton.min.js">
+						<Candidate type="Path">
+							<Value>www\js\jquery.loadButton.min.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="jquery.mask.min.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/jquery.mask.min.js">
+						<Candidate type="Path">
+							<Value>www\js\jquery.mask.min.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="jquery.min.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/jquery.min.js">
+						<Candidate type="Path">
+							<Value>www\js\jquery.min.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="jquery.passwordify.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/jquery.passwordify.js">
+						<Candidate type="Path">
+							<Value>www\js\jquery.passwordify.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="jquery.passwordify.min.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/jquery.passwordify.min.js">
+						<Candidate type="Path">
+							<Value>www\js\jquery.passwordify.min.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="login.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/login.js">
+						<Candidate type="Path">
+							<Value>www\js\login.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="login.min.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/login.min.js">
+						<Candidate type="Path">
+							<Value>www\js\login.min.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="menu-slider.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/menu-slider.js">
+						<Candidate type="Path">
+							<Value>www\js\menu-slider.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="menu-slider.min.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/menu-slider.min.js">
+						<Candidate type="Path">
+							<Value>www\js\menu-slider.min.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="notify.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/notify.js">
+						<Candidate type="Path">
+							<Value>www\js\notify.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="notify.min.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/notify.min.js">
+						<Candidate type="Path">
+							<Value>www\js\notify.min.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="notify2.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/notify2.js">
+						<Candidate type="Path">
+							<Value>www\js\notify2.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="notify2.min.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/notify2.min.js">
+						<Candidate type="Path">
+							<Value>www\js\notify2.min.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="notifyd.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/notifyd.js">
+						<Candidate type="Path">
+							<Value>www\js\notifyd.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="notifyd.min.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/notifyd.min.js">
+						<Candidate type="Path">
+							<Value>www\js\notifyd.min.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="pval.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/pval.js">
+						<Candidate type="Path">
+							<Value>www\js\pval.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="pval.min.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/pval.min.js">
+						<Candidate type="Path">
+							<Value>www\js\pval.min.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="soundConfig.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/soundConfig.js">
+						<Candidate type="Path">
+							<Value>www\js\soundConfig.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="sounds2.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/sounds2.js">
+						<Candidate type="Path">
+							<Value>www\js\sounds2.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="sounds2.min.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/sounds2.min.js">
+						<Candidate type="Path">
+							<Value>www\js\sounds2.min.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="submit.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/submit.js">
+						<Candidate type="Path">
+							<Value>www\js\submit.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="submit.min.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/submit.min.js">
+						<Candidate type="Path">
+							<Value>www\js\submit.min.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="totp.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/totp.js">
+						<Candidate type="Path">
+							<Value>www\js\totp.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="totp.min.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/totp.min.js">
+						<Candidate type="Path">
+							<Value>www\js\totp.min.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="valid.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/valid.js">
+						<Candidate type="Path">
+							<Value>www\js\valid.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="valid.min.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/js/valid.min.js">
+						<Candidate type="Path">
+							<Value>www\js\valid.min.js</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="plugins">
+					<ResourceMapSubtree name="cordova-plugin-splashscreen">
+						<ResourceMapSubtree name="www">
+							<NamedResource name="splashscreen.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/plugins/cordova-plugin-splashscreen/www/splashscreen.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-splashscreen\www\splashscreen.js</Value>
+								</Candidate>
+							</NamedResource>
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="SplashScreenProxy.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/plugins/cordova-plugin-splashscreen/www/windows/SplashScreenProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\cordova-plugin-splashscreen\www\windows\SplashScreenProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="phonegap-plugin-push">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="PushPluginProxy.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/plugins/phonegap-plugin-push/src/windows/PushPluginProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\phonegap-plugin-push\src\windows\PushPluginProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="push.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/plugins/phonegap-plugin-push/www/push.js">
+								<Candidate type="Path">
+									<Value>www\plugins\phonegap-plugin-push\www\push.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="sounds2">
+					<NamedResource name="bizzuzz.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/bizzuzz.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\bizzuzz.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="blip.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/blip.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\blip.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="blip2.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/blip2.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\blip2.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="bubble.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/bubble.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\bubble.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="bumble.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/bumble.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\bumble.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="calculate.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/calculate.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\calculate.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="chikaka.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/chikaka.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\chikaka.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="compute.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/compute.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\compute.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="dialex.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/dialex.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\dialex.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="dinga.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/dinga.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\dinga.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="dink.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/dink.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\dink.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="dunka.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/dunka.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\dunka.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="erroneous.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/erroneous.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\erroneous.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="ghost.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/ghost.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\ghost.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="hihat.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/hihat.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\hihat.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="hollowbell.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/hollowbell.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\hollowbell.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="horror.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/horror.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\horror.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="marimba.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/marimba.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\marimba.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="plinga.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/plinga.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\plinga.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="pluck.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/pluck.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\pluck.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="plunk.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/plunk.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\plunk.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="pop.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/pop.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\pop.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="reversi.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/reversi.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\reversi.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="schweef.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/schweef.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\schweef.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="selecta.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/selecta.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\selecta.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="squeeka.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/squeeka.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\squeeka.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="swinga.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/swinga.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\swinga.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="tada.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/tada.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\tada.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="tingdong.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/tingdong.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\tingdong.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="tink.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/tink.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\tink.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="trida.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/trida.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\trida.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="whoop.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/whoop.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\whoop.mp3</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="wonky.mp3" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/sounds2/wonky.mp3">
+						<Candidate type="Path">
+							<Value>www\sounds2\wonky.mp3</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="svg">
+					<NamedResource name="bedroom.svg" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/svg/bedroom.svg">
+						<Candidate type="Path">
+							<Value>www\svg\bedroom.svg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="commons.svg" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/svg/commons.svg">
+						<Candidate type="Path">
+							<Value>www\svg\commons.svg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="desk.svg" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/svg/desk.svg">
+						<Candidate type="Path">
+							<Value>www\svg\desk.svg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="garage.svg" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/svg/garage.svg">
+						<Candidate type="Path">
+							<Value>www\svg\garage.svg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="kitchen.svg" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/svg/kitchen.svg">
+						<Candidate type="Path">
+							<Value>www\svg\kitchen.svg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="living-room.svg" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/svg/living-room.svg">
+						<Candidate type="Path">
+							<Value>www\svg\living-room.svg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="login.svg" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/svg/login.svg">
+						<Candidate type="Path">
+							<Value>www\svg\login.svg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="logout.svg" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/svg/logout.svg">
+						<Candidate type="Path">
+							<Value>www\svg\logout.svg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="user.svg" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/svg/user.svg">
+						<Candidate type="Path">
+							<Value>www\svg\user.svg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="work.svg" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/svg/work.svg">
+						<Candidate type="Path">
+							<Value>www\svg\work.svg</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="webfonts">
+					<NamedResource name="fa-brands-400.eot" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/webfonts/fa-brands-400.eot">
+						<Candidate type="Path">
+							<Value>www\webfonts\fa-brands-400.eot</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="fa-brands-400.svg" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/webfonts/fa-brands-400.svg">
+						<Candidate type="Path">
+							<Value>www\webfonts\fa-brands-400.svg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="fa-brands-400.ttf" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/webfonts/fa-brands-400.ttf">
+						<Candidate type="Path">
+							<Value>www\webfonts\fa-brands-400.ttf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="fa-brands-400.woff" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/webfonts/fa-brands-400.woff">
+						<Candidate type="Path">
+							<Value>www\webfonts\fa-brands-400.woff</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="fa-brands-400.woff2" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/webfonts/fa-brands-400.woff2">
+						<Candidate type="Path">
+							<Value>www\webfonts\fa-brands-400.woff2</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="fa-regular-400.eot" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/webfonts/fa-regular-400.eot">
+						<Candidate type="Path">
+							<Value>www\webfonts\fa-regular-400.eot</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="fa-regular-400.svg" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/webfonts/fa-regular-400.svg">
+						<Candidate type="Path">
+							<Value>www\webfonts\fa-regular-400.svg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="fa-regular-400.ttf" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/webfonts/fa-regular-400.ttf">
+						<Candidate type="Path">
+							<Value>www\webfonts\fa-regular-400.ttf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="fa-regular-400.woff" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/webfonts/fa-regular-400.woff">
+						<Candidate type="Path">
+							<Value>www\webfonts\fa-regular-400.woff</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="fa-regular-400.woff2" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/webfonts/fa-regular-400.woff2">
+						<Candidate type="Path">
+							<Value>www\webfonts\fa-regular-400.woff2</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="fa-solid-900.eot" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/webfonts/fa-solid-900.eot">
+						<Candidate type="Path">
+							<Value>www\webfonts\fa-solid-900.eot</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="fa-solid-900.svg" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/webfonts/fa-solid-900.svg">
+						<Candidate type="Path">
+							<Value>www\webfonts\fa-solid-900.svg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="fa-solid-900.ttf" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/webfonts/fa-solid-900.ttf">
+						<Candidate type="Path">
+							<Value>www\webfonts\fa-solid-900.ttf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="fa-solid-900.woff" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/webfonts/fa-solid-900.woff">
+						<Candidate type="Path">
+							<Value>www\webfonts\fa-solid-900.woff</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="fa-solid-900.woff2" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/webfonts/fa-solid-900.woff2">
+						<Candidate type="Path">
+							<Value>www\webfonts\fa-solid-900.woff2</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="WinJS">
+					<ResourceMapSubtree name="js">
+						<NamedResource name="base.js" uri="ms-resource://59705Cloudulus.Media.499905A036C19/Files/www/WinJS/js/base.js">
+							<Candidate type="Path">
+								<Value>www\WinJS\js\base.js</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

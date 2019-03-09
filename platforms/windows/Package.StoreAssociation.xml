@@ -359,11 +359,11 @@
     <Language Code="zu-za" InMinimumRequirementSet="true" />
   </SupportedLocales>
   <ProductReservedInfo>
-    <MainPackageIdentityName>59705Cloudulus.Media.Buildix</MainPackageIdentityName>
+    <MainPackageIdentityName>59705Cloudulus.Media.499905A036C19</MainPackageIdentityName>
     <ReservedNames>
       <ReservedName>Buildix</ReservedName>
     </ReservedNames>
   </ProductReservedInfo>
   <AccountPackageIdentityNames />
-  <PackageInfoList LandingUrl="https://developer.microsoft.com/dashboard/Application?appId=9NL3ZZZWHXXF" />
+  <PackageInfoList LandingUrl="https://developer.microsoft.com/dashboard/Application?appId=9NWWLQHN9MNB" />
 </StoreAssociation>

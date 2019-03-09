@@ -1,0 +1,12 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.scale-240"
+"ResourceDimensions"		"scale-240"
+
+[Files]
+"C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\build\windows\bld\split.scale-240.pri"			"resources.pri"
+"C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\build\windows\bld\PackageLayout\images\Wide310x150Logo.scale-240.png"			"images\Wide310x150Logo.scale-240.png"
+"C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\build\windows\bld\PackageLayout\images\StoreLogo.scale-240.png"			"images\StoreLogo.scale-240.png"
+"C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\build\windows\bld\PackageLayout\images\Square71x71Logo.scale-240.png"			"images\Square71x71Logo.scale-240.png"
+"C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\build\windows\bld\PackageLayout\images\Square44x44Logo.scale-240.png"			"images\Square44x44Logo.scale-240.png"
+"C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\build\windows\bld\PackageLayout\images\Square150x150Logo.scale-240.png"			"images\Square150x150Logo.scale-240.png"
+"C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\build\windows\bld\PackageLayout\images\SplashScreenPhone.scale-240.png"			"images\SplashScreenPhone.scale-240.png"

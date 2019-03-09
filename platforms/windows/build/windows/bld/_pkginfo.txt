@@ -1,0 +1,1 @@
+C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\AppPackages\CordovaApp.Windows10_2.0.1.0_Test\CordovaApp.Windows10_2.0.1.0_x64.appxbundle

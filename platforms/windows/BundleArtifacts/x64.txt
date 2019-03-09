@@ -1,0 +1,6 @@
+MainPackage=C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\build\windows\Release\x64\win10\CordovaApp.Windows10_2.0.1.0_x64.appx
+ResourcePack=C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\build\windows\Release\x64\win10\CordovaApp.Windows10_2.0.1.0_scale-125.appx
+ResourcePack=C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\build\windows\Release\x64\win10\CordovaApp.Windows10_2.0.1.0_scale-150.appx
+ResourcePack=C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\build\windows\Release\x64\win10\CordovaApp.Windows10_2.0.1.0_scale-200.appx
+ResourcePack=C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\build\windows\Release\x64\win10\CordovaApp.Windows10_2.0.1.0_scale-240.appx
+ResourcePack=C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\build\windows\Release\x64\win10\CordovaApp.Windows10_2.0.1.0_scale-400.appx

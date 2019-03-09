@@ -1,0 +1,59 @@
+﻿<div id="login-form" class="box">
+    <h1>Login</h1>
+    <h2>[<span id="server-name"></span>]</h2>
+    <div class="form-stacked">
+        <div>
+            <label for="login-id">Login ID
+                <i class="fas fa-question-circle inlineBtn spaced help" data-topic="login-id"></i>
+            </label>
+            <input type="email" id="login-id" value="" placeholder="Login Email / Username" />
+        </div>
+        <div>
+            <label for="login-pass">Password</label>
+            <input type="password" id="login-pass" value="" placeholder="Password" />
+        </div>
+        <div id="pin-cont" style="display: none;">
+            <label for="login-pin">4-Digit PIN</label>
+            <input type="tel" id="login-pin" value="" data-val="" placeholder="4-digit Pin" autocomplete="off" />
+        </div>
+        <div id="otp-cont" style="display: none;">
+            <label for="login-otp">
+                <span>One-Time Password:</span>
+                <span style="display:none;" id="auto-otp-cont">Update in <span id="count-down-disp"></span> seconds...</span>
+            </label>
+            <input type="tel" id="login-otp" value="" data-val="" placeholder="One-Time Password" />
+            <p><a id="email-otp-btn" href="javascript:void(0);">
+                <i id="email-otp-icon" class="fas fa-envelope"></i>
+                <span id="email-otp-text">Email me my one-time password</span>
+            </a></p>
+            <p><a id="text-otp-btn" href="javascript:void(0);">
+                <i id="text-otp-icon" class="fas fa-sms"></i>
+                <span id="text-otp-text">Text me my one-time password</span>
+            </a></p>
+        </div>
+        <div class="row">
+            <div>
+                <input type="checkbox" value="1" id="login-remember" />
+                <label for="login-remember" class="checkbox">Remember Me</label>
+            </div>
+            <div>
+                <input type="checkbox" value="1" id="keep-login" />
+                <label for="keep-login" class="checkbox">Keep Me Logged In</label>
+            </div>
+        </div>
+    </div>
+    <div class="btn-flex">
+        <button class="form-btn main" id="login-btn">Login</button>
+        <button class="form-btn clear-btn" id="login-cancel">Forget</button>
+    </div>
+    <div class="btn-flex">
+        <button class="form-btn main" id="test-login">Test Login</button>
+    </div>
+</div>
+<div id="login-error" class="box" style="display: none;">
+    <h1>Login Error!</h1>
+    <p id="login-error-p">A login error occurred!</p>
+    <button class="form-btn main" id="relogin-btn">Try Again</button>
+</div>
+
+<script src="js/login.js"></script>

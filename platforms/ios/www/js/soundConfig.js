@@ -28,7 +28,8 @@ sounds = new Sounds2([
     'blip',
     'bubble',
     'ghost',
-    'plunk'
+    'plunk',
+    'wonky'
 ], 'sounds2', true, 'mp3');
 
 sounds.setVolume(soundVolume);

@@ -8,7 +8,7 @@
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <PackageIdentityName>ced01e17-36e7-45eb-b871-b98cf0142468</PackageIdentityName>
+    <PackageIdentityName>5beb968a-9a06-434b-b516-b96749e7e77c</PackageIdentityName>
     <PackageIdentityPublisher>CN=2951FC3C-84E7-4F18-AA0A-77356EC80650</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\build\windows\bld\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
@@ -25,12 +25,64 @@
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\BadgeLogo.scale-100.png">
+      <PackagePath>images\BadgeLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\BadgeLogo.scale-125.png">
+      <PackagePath>images\BadgeLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\BadgeLogo.scale-150.png">
+      <PackagePath>images\BadgeLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\BadgeLogo.scale-200.png">
+      <PackagePath>images\BadgeLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\BadgeLogo.scale-400.png">
+      <PackagePath>images\BadgeLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\SplashScreen.scale-100.png">
       <PackagePath>images\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\splashscreen.scale-125.png">
+      <PackagePath>images\splashscreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\splashscreen.scale-150.png">
+      <PackagePath>images\splashscreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\splashscreen.scale-200.png">
+      <PackagePath>images\splashscreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\splashscreen.scale-400.png">
+      <PackagePath>images\splashscreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square150x150Logo.scale-100.png">
       <PackagePath>images\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square150x150Logo.scale-125.png">
+      <PackagePath>images\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square150x150Logo.scale-150.png">
+      <PackagePath>images\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square150x150Logo.scale-200.png">
+      <PackagePath>images\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square150x150Logo.scale-400.png">
+      <PackagePath>images\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square30x30Logo.scale-100.png">
@@ -40,8 +92,80 @@
       <PackagePath>images\Square310x310Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square310x310Logo.scale-125.png">
+      <PackagePath>images\Square310x310Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square310x310Logo.scale-150.png">
+      <PackagePath>images\Square310x310Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square310x310Logo.scale-200.png">
+      <PackagePath>images\Square310x310Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square310x310Logo.scale-400.png">
+      <PackagePath>images\Square310x310Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>images\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square44x44Logo.altform-unplated_targetsize-24.png">
+      <PackagePath>images\Square44x44Logo.altform-unplated_targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>images\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>images\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>images\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square44x44Logo.scale-100.png">
       <PackagePath>images\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square44x44Logo.scale-125.png">
+      <PackagePath>images\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square44x44Logo.scale-150.png">
+      <PackagePath>images\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square44x44Logo.scale-200.png">
+      <PackagePath>images\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square44x44Logo.scale-400.png">
+      <PackagePath>images\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square44x44Logo.targetsize-16.png">
+      <PackagePath>images\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square44x44Logo.targetsize-24.png">
+      <PackagePath>images\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square44x44Logo.targetsize-256.png">
+      <PackagePath>images\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square44x44Logo.targetsize-32.png">
+      <PackagePath>images\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square44x44Logo.targetsize-48.png">
+      <PackagePath>images\Square44x44Logo.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square70x70Logo.scale-100.png">
@@ -51,25 +175,96 @@
       <PackagePath>images\Square71x71Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square71x71Logo.scale-125.png">
+      <PackagePath>images\Square71x71Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square71x71Logo.scale-150.png">
+      <PackagePath>images\Square71x71Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square71x71Logo.scale-200.png">
+      <PackagePath>images\Square71x71Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square71x71Logo.scale-400.png">
+      <PackagePath>images\Square71x71Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\StoreLogo.scale-100.png">
       <PackagePath>images\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\StoreLogo.scale-125.png">
+      <PackagePath>images\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\StoreLogo.scale-150.png">
+      <PackagePath>images\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\StoreLogo.scale-200.png">
+      <PackagePath>images\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\StoreLogo.scale-400.png">
+      <PackagePath>images\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Wide310x150Logo.scale-100.png">
       <PackagePath>images\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Wide310x150Logo.scale-125.png">
+      <PackagePath>images\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Wide310x150Logo.scale-150.png">
+      <PackagePath>images\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Wide310x150Logo.scale-200.png">
+      <PackagePath>images\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Wide310x150Logo.scale-400.png">
+      <PackagePath>images\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\SplashScreenPhone.scale-240.png">
+      <PackagePath>images\SplashScreenPhone.scale-240.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square150x150Logo.scale-240.png">
+      <PackagePath>images\Square150x150Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square44x44Logo.scale-240.png">
+      <PackagePath>images\Square44x44Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Square71x71Logo.scale-240.png">
+      <PackagePath>images\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\StoreLogo.scale-240.png">
+      <PackagePath>images\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\images\Wide310x150Logo.scale-240.png">
+      <PackagePath>images\Wide310x150Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\icons\accept.png">
+      <PackagePath>www\icons\accept.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\icons\cancel.png">
+      <PackagePath>www\icons\cancel.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\images\bx-icon.png">
       <PackagePath>www\images\bx-icon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\img\android-chrome-512x512.png">
-      <PackagePath>www\img\android-chrome-512x512.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\img\logo.png">
       <PackagePath>www\img\logo.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\img\mstile-70x70.png">
-      <PackagePath>www\img\mstile-70x70.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -101,11 +296,26 @@
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\base64.js">
       <PackagePath>www\js\base64.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\fasolid.min.js">
-      <PackagePath>www\js\fasolid.min.js</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\base64.min.js">
+      <PackagePath>www\js\base64.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\functions.js">
+      <PackagePath>www\js\functions.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\functions.min.js">
+      <PackagePath>www\js\functions.min.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\index.js">
       <PackagePath>www\js\index.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\index.min.js">
+      <PackagePath>www\js\index.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\jquery.loadButton.js">
+      <PackagePath>www\js\jquery.loadButton.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\jquery.loadButton.min.js">
+      <PackagePath>www\js\jquery.loadButton.min.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\jquery.mask.min.js">
       <PackagePath>www\js\jquery.mask.min.js</PackagePath>
@@ -113,41 +323,86 @@
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\jquery.min.js">
       <PackagePath>www\js\jquery.min.js</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\jquery.passwordify.js">
+      <PackagePath>www\js\jquery.passwordify.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\jquery.passwordify.min.js">
+      <PackagePath>www\js\jquery.passwordify.min.js</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\login.js">
       <PackagePath>www\js\login.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\login.min.js">
+      <PackagePath>www\js\login.min.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\menu-slider.js">
       <PackagePath>www\js\menu-slider.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\nav.js">
-      <PackagePath>www\js\nav.js</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\menu-slider.min.js">
+      <PackagePath>www\js\menu-slider.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\notify.js">
+      <PackagePath>www\js\notify.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\notify.min.js">
+      <PackagePath>www\js\notify.min.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\notify2.js">
       <PackagePath>www\js\notify2.js</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\notify2.min.js">
+      <PackagePath>www\js\notify2.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\notifyd.js">
+      <PackagePath>www\js\notifyd.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\notifyd.min.js">
+      <PackagePath>www\js\notifyd.min.js</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\pval.js">
       <PackagePath>www\js\pval.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\server-notify.js">
-      <PackagePath>www\js\server-notify.js</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\pval.min.js">
+      <PackagePath>www\js\pval.min.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\site.js">
-      <PackagePath>www\js\site.js</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\soundConfig.js">
+      <PackagePath>www\js\soundConfig.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\sounds.js">
-      <PackagePath>www\js\sounds.js</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\sounds2.js">
+      <PackagePath>www\js\sounds2.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\sounds2.min.js">
+      <PackagePath>www\js\sounds2.min.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\submit.js">
       <PackagePath>www\js\submit.js</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\submit.min.js">
+      <PackagePath>www\js\submit.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\totp.js">
+      <PackagePath>www\js\totp.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\totp.min.js">
+      <PackagePath>www\js\totp.min.js</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\valid.js">
       <PackagePath>www\js\valid.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\js\valid.min.js">
+      <PackagePath>www\js\valid.min.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\plugins\cordova-plugin-splashscreen\www\splashscreen.js">
       <PackagePath>www\plugins\cordova-plugin-splashscreen\www\splashscreen.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\plugins\cordova-plugin-splashscreen\www\windows\SplashScreenProxy.js">
       <PackagePath>www\plugins\cordova-plugin-splashscreen\www\windows\SplashScreenProxy.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\plugins\phonegap-plugin-push\src\windows\PushPluginProxy.js">
+      <PackagePath>www\plugins\phonegap-plugin-push\src\windows\PushPluginProxy.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\plugins\phonegap-plugin-push\www\push.js">
+      <PackagePath>www\plugins\phonegap-plugin-push\www\push.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\WinJS\js\base.js">
       <PackagePath>www\WinJS\js\base.js</PackagePath>
@@ -158,32 +413,62 @@
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\css\animate.css">
       <PackagePath>www\css\animate.css</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\css\animate.min.css">
+      <PackagePath>www\css\animate.min.css</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\css\buttons.css">
       <PackagePath>www\css\buttons.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\css\buttons.min.css">
+      <PackagePath>www\css\buttons.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\css\checkbox.css">
+      <PackagePath>www\css\checkbox.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\css\checkbox.min.css">
+      <PackagePath>www\css\checkbox.min.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\css\fonts.css">
       <PackagePath>www\css\fonts.css</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\css\fonts.min.css">
+      <PackagePath>www\css\fonts.min.css</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\css\forms.css">
       <PackagePath>www\css\forms.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\css\index.css">
-      <PackagePath>www\css\index.css</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\css\forms.min.css">
+      <PackagePath>www\css\forms.min.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\css\nav.css">
       <PackagePath>www\css\nav.css</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\css\nav.min.css">
+      <PackagePath>www\css\nav.min.css</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\css\normalize.css">
       <PackagePath>www\css\normalize.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\css\normalize.min.css">
+      <PackagePath>www\css\normalize.min.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\css\notify2.css">
       <PackagePath>www\css\notify2.css</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\css\notify2.min.css">
+      <PackagePath>www\css\notify2.min.css</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\css\pval.css">
       <PackagePath>www\css\pval.css</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\css\pval.min.css">
+      <PackagePath>www\css\pval.min.css</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\css\site.css">
       <PackagePath>www\css\site.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\css\site.min.css">
+      <PackagePath>www\css\site.min.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\css\splashscreen.css">
       <PackagePath>www\css\splashscreen.css</PackagePath>
@@ -227,17 +512,11 @@
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\webfonts\fa-solid-900.woff2">
       <PackagePath>www\webfonts\fa-solid-900.woff2</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\html\dashboard.html">
-      <PackagePath>www\html\dashboard.html</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\html\login.html">
       <PackagePath>www\html\login.html</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\index.html">
       <PackagePath>www\index.html</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\index2.html">
-      <PackagePath>www\index2.html</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\images\bx-icon.svg">
       <PackagePath>www\images\bx-icon.svg</PackagePath>
@@ -290,56 +569,104 @@
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\images\og-image.jpg">
       <PackagePath>www\images\og-image.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds\alert1.wav">
-      <PackagePath>www\sounds\alert1.wav</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\bizzuzz.mp3">
+      <PackagePath>www\sounds2\bizzuzz.mp3</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds\alert2.wav">
-      <PackagePath>www\sounds\alert2.wav</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\blip.mp3">
+      <PackagePath>www\sounds2\blip.mp3</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds\alert3.wav">
-      <PackagePath>www\sounds\alert3.wav</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\blip2.mp3">
+      <PackagePath>www\sounds2\blip2.mp3</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds\button.wav">
-      <PackagePath>www\sounds\button.wav</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\bubble.mp3">
+      <PackagePath>www\sounds2\bubble.mp3</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds\ding.wav">
-      <PackagePath>www\sounds\ding.wav</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\bumble.mp3">
+      <PackagePath>www\sounds2\bumble.mp3</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds\error.wav">
-      <PackagePath>www\sounds\error.wav</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\calculate.mp3">
+      <PackagePath>www\sounds2\calculate.mp3</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds\fizzle.wav">
-      <PackagePath>www\sounds\fizzle.wav</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\chikaka.mp3">
+      <PackagePath>www\sounds2\chikaka.mp3</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds\intro.wav">
-      <PackagePath>www\sounds\intro.wav</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\compute.mp3">
+      <PackagePath>www\sounds2\compute.mp3</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds\message.wav">
-      <PackagePath>www\sounds\message.wav</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\dialex.mp3">
+      <PackagePath>www\sounds2\dialex.mp3</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds\nedry.wav">
-      <PackagePath>www\sounds\nedry.wav</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\dinga.mp3">
+      <PackagePath>www\sounds2\dinga.mp3</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds\silence.wav">
-      <PackagePath>www\sounds\silence.wav</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\dink.mp3">
+      <PackagePath>www\sounds2\dink.mp3</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds\slide.wav">
-      <PackagePath>www\sounds\slide.wav</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\dunka.mp3">
+      <PackagePath>www\sounds2\dunka.mp3</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds\success.wav">
-      <PackagePath>www\sounds\success.wav</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\erroneous.mp3">
+      <PackagePath>www\sounds2\erroneous.mp3</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds\type.wav">
-      <PackagePath>www\sounds\type.wav</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\ghost.mp3">
+      <PackagePath>www\sounds2\ghost.mp3</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds\desktop.ini">
-      <PackagePath>www\sounds\desktop.ini</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\hihat.mp3">
+      <PackagePath>www\sounds2\hihat.mp3</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds\silence.mp3">
-      <PackagePath>www\sounds\silence.mp3</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\hollowbell.mp3">
+      <PackagePath>www\sounds2\hollowbell.mp3</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds\Thumbs.db">
-      <PackagePath>www\sounds\Thumbs.db</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\horror.mp3">
+      <PackagePath>www\sounds2\horror.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\marimba.mp3">
+      <PackagePath>www\sounds2\marimba.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\plinga.mp3">
+      <PackagePath>www\sounds2\plinga.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\pluck.mp3">
+      <PackagePath>www\sounds2\pluck.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\plunk.mp3">
+      <PackagePath>www\sounds2\plunk.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\pop.mp3">
+      <PackagePath>www\sounds2\pop.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\reversi.mp3">
+      <PackagePath>www\sounds2\reversi.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\schweef.mp3">
+      <PackagePath>www\sounds2\schweef.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\selecta.mp3">
+      <PackagePath>www\sounds2\selecta.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\squeeka.mp3">
+      <PackagePath>www\sounds2\squeeka.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\swinga.mp3">
+      <PackagePath>www\sounds2\swinga.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\tada.mp3">
+      <PackagePath>www\sounds2\tada.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\tingdong.mp3">
+      <PackagePath>www\sounds2\tingdong.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\tink.mp3">
+      <PackagePath>www\sounds2\tink.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\trida.mp3">
+      <PackagePath>www\sounds2\trida.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\whoop.mp3">
+      <PackagePath>www\sounds2\whoop.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\sounds2\wonky.mp3">
+      <PackagePath>www\sounds2\wonky.mp3</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nathan\ownCloud\mars\Documents\phonegap\Buildix\platforms\windows\www\webfonts\fa-brands-400.eot">
       <PackagePath>www\webfonts\fa-brands-400.eot</PackagePath>
