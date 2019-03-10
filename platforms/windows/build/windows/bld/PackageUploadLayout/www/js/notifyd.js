@@ -59,6 +59,8 @@ class NotifyD {
             if (res.doConfirm) n.doConfirm(eval(res.cbYes), eval(res.cbNo), res.target);
             n.notify();
             if (typeof this.callback === 'function') this.callback(this);
+        } else if (res.status == 2) {
+            this.stop();
         } else {
             me.clog("No messages.");
         }
