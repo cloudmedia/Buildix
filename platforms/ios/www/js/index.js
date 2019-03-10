@@ -26,9 +26,7 @@ var app = {
     // Update DOM on a Received Event
     receivedEvent: function (id) {
         $(document).touch(function(e){
-            $(".notify2").each(function(){
-                hideNotify2($(this));
-            });
+            hideNotify2($(".notify2:last"));
         });
 
         var parentElement = document.getElementById(id);
