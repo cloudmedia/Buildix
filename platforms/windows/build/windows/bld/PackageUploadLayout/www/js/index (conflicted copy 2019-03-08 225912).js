@@ -204,7 +204,7 @@ function askLogout() {
 function doLogin() {
     sounds.play('swinga');
     loadingOn();
-    notifyD = new NotifyD(server + '/notifyd');
+    notifyD = new NotifyD(server + '/api/notifyd');
     notifyD.start();
     mainLoad('/api/dashboard', 'server', 'bounceIn');
     setTimeout(function () {
@@ -214,11 +214,6 @@ function doLogin() {
 
 function testNotify(n) {
     notify2("It worked!", "success");
-}
-
-function testCB(n)
-{
-    notify2(n.target, "info");
 }
 
 function reloadNav() {

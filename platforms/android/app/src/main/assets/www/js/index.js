@@ -50,7 +50,7 @@ var app = {
 
         $("#main-connect-btn").unbind().touch(function () {
             $("#main-h1").text("Connecting...");
-            var newServer = $("#main-server").val();
+            var newServer = $("#main-server").val().toLowerCase();
             var valid = new Valid(newServer);
             if (valid.isHostname()) {
                 serverName = newServer;
@@ -107,7 +107,7 @@ function processStatus(data) {
 }
 
 function errorConnect(e) {
-    var errServer = server
+    var errServer = serverName;
     if (errServer == null || errServer == 'null') errServer = localStorage.getItem('oldServer');
     if (errServer == null || typeof errServer === typeof undefined || errServer == 'null') errServer = "the server";
     loadingOff();
@@ -204,7 +204,7 @@ function askLogout() {
 function doLogin() {
     sounds.play('swinga');
     loadingOn();
-    notifyD = new NotifyD(server + '/api/notifyd');
+    notifyD = new NotifyD(server + '/notifyd');
     notifyD.start();
     mainLoad('/api/dashboard', 'server', 'bounceIn');
     setTimeout(function () {
@@ -214,6 +214,11 @@ function doLogin() {
 
 function testNotify(n) {
     notify2("It worked!", "success");
+}
+
+function testCB(n)
+{
+    notify2(n.target, "info");
 }
 
 function reloadNav() {

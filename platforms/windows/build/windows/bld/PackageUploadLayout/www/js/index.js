@@ -65,6 +65,8 @@ var app = {
 
         $("#main-server").focus(function () {
             $(this).select();
+        }).blur(function(){
+            $(this).val($(this).val().toLowerCase());
         });
 
         if (server) {
@@ -107,7 +109,7 @@ function processStatus(data) {
 }
 
 function errorConnect(e) {
-    var errServer = server
+    var errServer = serverName;
     if (errServer == null || errServer == 'null') errServer = localStorage.getItem('oldServer');
     if (errServer == null || typeof errServer === typeof undefined || errServer == 'null') errServer = "the server";
     loadingOff();
