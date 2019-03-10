@@ -10,16 +10,13 @@ var n2DefaultClass = "error";
 var n2DefaultDelay = 3000; // 3000 milliseconds = 3 seconds
 var n2DefaultAutoHide = true; // Auto hide notifications be default (true or false)
 var n2DefaultIcon = "fa-times-circle"; // Default FontAwesome icon
-if (useSounds)
-{
+if (useSounds) {
     var n2DefaultSound = 'erroneous';
 }
 var n2DefaultMessage = "An unknown error occurred!"; // Default message (if none is supplied)
 
-class Notify2
-{
-    constructor(msg, cls, autoHide, delay)
-    {
+class Notify2 {
+    constructor(msg, cls, autoHide, delay) {
         if (msg == undefined) msg = n2DefaultMessage;
         this.message = msg;
         if (cls == undefined) cls = n2DefaultClass;
@@ -38,45 +35,39 @@ class Notify2
         this.target = null;
     }
 
-    setAutoHide(bool)
-    {
+    setAutoHide(bool) {
         this.autoHide = bool;
         return true;
     }
 
-    setDelay(delay)
-    {
+    setDelay(delay) {
         this.delay = delay;
         return true;
     }
 
-    setBindEvent(e)
-    {
+    setBindEvent(e) {
         this.bindEvent = e;
         return true;
     }
 
-    setDebug(bool)
-    {
+    setDebug(bool) {
         this.debug = bool;
         return true;
     }
 
-    doConfirm(cbYes, cbNo, target)
-    {
+    doConfirm(cbYes, cbNo, target) {
         var cbYesID = "notify2-" + this.genID(10);
         var cbNoID = "notify2-" + this.genID(10);
-        this.message='<div class="confirm"><div>'+this.message+'</div>'+
-            '<div><button id="'+cbYesID+'">Yes</div>'+
-            '<div><button id="'+cbNoID+'">No</button></div></div>';
+        this.message = '<div class="confirm"><div>' + this.message + '</div>' +
+            '<div><button id="' + cbYesID + '">Yes</div>' +
+            '<div><button id="' + cbNoID + '">No</button></div></div>';
         this.autoHide = false;
         this.cbYes = cbYes;
         this.cbNo = cbNo;
         if (typeof target !== typeof undefined) this.target = target;
         var me = this;
-        if (typeof this.cbYes === 'function')
-        {
-            $(document).on(this.bindEvent, "#"+cbYesID, function(){
+        if (typeof this.cbYes === 'function') {
+            $(document).on(this.bindEvent, "#" + cbYesID, function () {
                 me.cbYes(me);
             });
             /*
@@ -85,9 +76,8 @@ class Notify2
             });
             */
         }
-        if (typeof this.cbNo === 'function')
-        {
-            $(document).on(this.bindEvent, "#"+cbNoID, function(){
+        if (typeof this.cbNo === 'function') {
+            $(document).on(this.bindEvent, "#" + cbNoID, function () {
                 me.cbNo(me);
             });
             /*
@@ -103,11 +93,11 @@ class Notify2
 
         if (typeof length === typeof undefined) length = 8;
         var timestamp = +new Date;
-    
+
         var _getRandomInt = function (min, max) {
             return Math.floor(Math.random() * (max - min + 1)) + min;
         }
-    
+
         var ts = timestamp.toString();
         var parts = ts.split("").reverse();
         var id = "";
@@ -120,49 +110,46 @@ class Notify2
         return id;
     }
 
-    notify()
-    {
+    notify() {
         var notify;
-        switch (this.class)
-        {
+        switch (this.class) {
             case "success":
                 this.icon = "fa-check-square";
                 if (useSounds) this.sound = 'calculate';
-            break;
+                break;
             case "warn":
                 this.icon = "fa-exclamation-triangle";
                 if (useSounds) this.sound = 'plunk';
-            break;
+                break;
             case "info":
                 this.icon = "fa-question-circle";
                 if (useSounds) this.sound = 'pop';
-            break;
+                break;
             case "mail":
                 this.icon = "fa-envelope";
                 if (useSounds) this.sound = 'trida';
-            break;
+                break;
         }
         if (this.debug) console.log(this.message);
         $('body').append(
-            '<div id="'+this.id+'" class="notify2 '+this.class+'" data-timer="" style="display: none;">'+
-            '<div><div><i class="fas '+this.icon+'"></i></div>'+
-            '<div>'+this.message+'</div></div>'+
+            '<div id="' + this.id + '" class="notify2 ' + this.class + '" data-timer="" style="display: none;">' +
+            '<div><div><i class="fas ' + this.icon + '"></i></div>' +
+            '<div>' + this.message + '</div></div>' +
             '<div><i class="fas fa-times" id="notify2-close-btn"></i></div></div>'
         );
-        notify = $("#"+this.id); 
-        notify.hide().click(function(){
+        notify = $("#" + this.id);
+        notify.hide().click(function () {
             hideNotify2($(this));
         });
 
-        if (this.autoHide)
-        {
-            if (this.debug) console.log("Notify2 Autohide: "+this.autoHide+", Delay: "+this.delay);
+        if (this.autoHide) {
+            if (this.debug) console.log("Notify2 Autohide: " + this.autoHide + ", Delay: " + this.delay);
             var hideID = this.id;
             var hideDelay = this.delay;
             var debug = this.debug;
-            setTimeout(function(){
-                var hideme = "#"+hideID;
-                if (debug) console.log("Hiding notification: "+hideme);
+            setTimeout(function () {
+                var hideme = "#" + hideID;
+                if (debug) console.log("Hiding notification: " + hideme);
                 $(hideme).click();
             }, hideDelay);
         }
@@ -172,46 +159,47 @@ class Notify2
         return true;
     }
 }
-function showNotify2(notify)
-{
+
+function showNotify2(notify) {
     var height = notify.height();
     notify.css("margin-bottom", -height).show();
-    if(notify.css("margin-bottom") == -height+"px" && !notify.is(':animated'))
-    {
-        notify.animate({"margin-bottom": '+='+height});
-    }
-    else
-    {
-        if(!notify.is(':animated'))
-        {
-            notify.animate({"margin-bottom": '-='+height});
-        }
-    }
-}
-function hideNotify2(notify)
-{
-    var timer = notify.attr("data-timer");
-    if (timer) clearTimeout(timer);
-    if (useSounds) sounds.play('blip');
-    var height = notify.height() + 15;
-    if(notify.css("margin-bottom") == -height+"px" && !notify.is(':animated'))
-    {
-        notify.animate({"margin-bottom": '+='+height});
-    }
-    else
-    {
-        if(!notify.is(':animated'))
-        {
-            notify.animate({"margin-bottom": '-='+height}, function(){
-                $(this).remove();
+    if (notify.css("margin-bottom") == -height + "px" && !notify.is(':animated')) {
+        notify.animate({
+            "margin-bottom": '+=' + height
+        });
+    } else {
+        if (!notify.is(':animated')) {
+            notify.animate({
+                "margin-bottom": '-=' + height
             });
         }
     }
 }
 
+function hideNotify2(notify) {
+    if (notify.hasClass('notify2')) {
+        var timer = notify.attr("data-timer");
+        if (timer) clearTimeout(timer);
+        if (useSounds) sounds.play('blip');
+        var height = notify.height() + 15;
+        if (notify.css("margin-bottom") == -height + "px" && !notify.is(':animated')) {
+            notify.animate({
+                "margin-bottom": '+=' + height
+            });
+        } else {
+            if (!notify.is(':animated')) {
+                notify.animate({
+                    "margin-bottom": '-=' + height
+                }, function () {
+                    $(this).remove();
+                });
+            }
+        }
+    }
+}
+
 // Shortcut function to easily instantiate on one line
-function notify2(msg, cls, ah)
-{
+function notify2(msg, cls, ah) {
     if (msg == undefined) msg = "";
     if (cls == undefined) cls = "error";
     if (ah == undefined) ah = true;
@@ -239,8 +227,7 @@ function notify2(msg, cls, ah)
         var n = new Notify2(settings.message, settings.class, settings.autoHide, settings.delay);
         if (settings.doConfirm) n.doConfirm(settings.callBackYes, settings.callBackNo);
 
-        if (settings.scrollToField)
-        {
+        if (settings.scrollToField) {
             var offSet = 0;
             if (typeof this.offset === 'function') offSet = this.offset().top;
             $('html, body').animate({
@@ -251,10 +238,9 @@ function notify2(msg, cls, ah)
         if (settings.clearField) this.val("");
         this.focus();
         n.notify();
-        if (typeof callback === 'function')
-        {
+        if (typeof callback === 'function') {
             return callback(this);
-        }else{
+        } else {
             return this;
         }
     }
