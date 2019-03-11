@@ -13,3 +13,11 @@ function toTitleCase(str) {
 function formatNum(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
+
+function dbg(t)
+{
+    if (debug)
+    {
+        console.log(t);
+    }
+}
