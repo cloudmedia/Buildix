@@ -222,3 +222,36 @@ ul.actions > li:not(:first-of-type)
 {
     margin-top: 0.5em;
 }
+
+#qr-code-cont
+{
+    z-index: 3;
+    position: fixed;
+    display: flex;
+    top: 0; left:0; right: 0; bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+#qr-code-cont > div
+{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+#qr-code-cont > div > div
+{
+    margin-top: 2em;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+#qr-code-img
+{
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#qr-timer
+{
+    color: hotpink;
+}
