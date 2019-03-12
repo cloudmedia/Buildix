@@ -43,6 +43,9 @@ $(document).ready(function () {
         window.location.replace("index.html");
     });
 
+    $("#login-id").onEnter('tab');
+    $("#login-pass").onEnter(processLogin);
+
     $("#login-pin").passwordify({
         maxLength: 4,
         numbersOnly: true,
