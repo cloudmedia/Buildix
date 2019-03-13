@@ -382,3 +382,11 @@ i.disabled {
 {
     background-color: rgb(117, 15, 104);
 }
+.svg-button.colorActive
+{
+    background-color: rgb(27, 121, 15);
+}
+.svg-button.colorInactive
+{
+    background-color: rgb(117, 15, 15);
+}
