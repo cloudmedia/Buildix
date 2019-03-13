@@ -253,6 +253,7 @@ $.fn.touch = function (callback) {
         touch = false;
     });
     $(this).on("touchstart", function(e){
+        $(this).blur();
         if (typeof e.touches != typeof undefined)
         {
             e.preventDefault();
