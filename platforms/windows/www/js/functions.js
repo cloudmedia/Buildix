@@ -14,7 +14,7 @@ function formatNum(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
-function debug(t)
+function dbg(t)
 {
     if (debug)
     {

@@ -256,7 +256,7 @@ i.disabled {
 {
     .btn-flex>button
     {
-        width: 18   %;
+        width: 18%;
     }
 }
 
@@ -381,4 +381,12 @@ i.disabled {
 .svg-button.color10
 {
     background-color: rgb(117, 15, 104);
+}
+.svg-button.colorActive
+{
+    background-color: rgb(27, 121, 15);
+}
+.svg-button.colorInactive
+{
+    background-color: rgb(117, 15, 15);
 }

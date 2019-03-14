@@ -667,7 +667,7 @@
         var s = $.extend({
             clearField: false,
             scrollToField: true,
-            topOffset: 0,
+            topOffset: 60,
 			scrollTime: 1000,
 
 			autoHide: true,
