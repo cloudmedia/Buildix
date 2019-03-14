@@ -309,3 +309,68 @@ ul.actions > li:not(:first-of-type)
 {
     flex-basis: 10%;
 }
+
+.flex-center-vertical
+{
+    display: flex;
+}
+.flex-center-vertical > *
+{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.flex-center-vertical.spaced > *
+{
+    margin-right: 0.5em;
+}
+
+.aniModal
+{
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    top:0; right:0; bottom:0; left:0;
+    z-index: 9;
+    display: flex;
+}
+.aniModal2
+{
+    margin: auto;
+    color: white;
+    min-width: 50%;
+    padding-right: 1rem;
+}
+@media(max-width: 500px)
+{
+    .aniModal2
+    {
+        width: 90%;
+    }
+}
+.aniModal2 > div:last-of-type
+{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    font-size: 3rem;
+}
+.aniModal2 > div:last-of-type > i:not(:first-of-type)
+{
+    margin-left: 0.5em;
+}
+.aniModal2 > div:last-of-type > i
+{
+    transition: 0.5s linear;
+}
+.aniModal2 > div:last-of-type > i:hover
+{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.aniModal2 > div > label
+{
+    font-size: 2rem;
+}
+.aniModal2 > div > input
+{
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
