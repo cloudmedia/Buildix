@@ -258,7 +258,7 @@ $.fn.touch = function (callback) {
             }
             $.touch.event = false;
         })
-        .on("touchend", function (e) {
+        .on("touchstart", function (e) {
             e.stopPropagation();
             $(this).blur();
             $.touch.event = true;
