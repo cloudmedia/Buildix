@@ -241,36 +241,27 @@ function doLogout(n) {
 }
 
 $.fn.touch = function (callback) {
-
-    $.touch = {
-        action: "",
-        move: false,
-        event: false
-    }
-
-    return this.on("click", function (e) {
-            if (!$.touch.event) {
-                $.touch.action = "click";
-                let callbackReal = callback.bind(this);
-                callbackReal(this, e);
-            }
-            $.touch.event = false;
-        })
-        .on("touchend", function (e) {
-            $(this).blur();
-            $.touch.event = true;
-            if ($.touch.move) {
-                $.touch.move = false;
-                return;
-            } else {
-                $.touch.action = "touch";
-                let callbackReal = callback.bind(this);
-                callbackReal(this, e);
-            }
-        })
-        .on("touchmove", function () {
-            $.touch.move = true;
-        });
+    var touch = false;
+    $(this).on("click", function(e){
+        if (!touch)
+        {
+            let callbackReal = callback.bind(this);
+            callbackReal(this, e);
+        }else{
+            touch = true;
+        }
+        touch = false;
+    });
+    $(this).on("touchstart", function(e){
+        $(this).blur();
+        if (typeof e.touches != typeof undefined)
+        {
+            e.preventDefault();
+            touch = true;
+            let callbackReal = callback.bind(this);
+            callbackReal(this, e);
+        }
+    });
 }
 
 $.fn.ok = function () {
