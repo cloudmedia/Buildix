@@ -115,7 +115,7 @@ class Notify2 {
         switch (this.class) {
             case "success":
                 this.icon = "fa-check-square";
-                if (useSounds) this.sound = 'calculate';
+                if (useSounds) this.sound = 'hollowbell';
                 break;
             case "warn":
                 this.icon = "fa-exclamation-triangle";
