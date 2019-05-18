@@ -249,7 +249,7 @@ $.fn.touch = function (callback) {
     }
 
     return this.on("click", function (e) {
-            e.preventDefault().stopPropagation();
+            e.stopPropagation();
             if (!$.touch.event) {
                 $.touch.action = "click";
                 let callbackReal = callback.bind(this);
@@ -258,7 +258,7 @@ $.fn.touch = function (callback) {
             $.touch.event = false;
         })
         .on("touchend", function (e) {
-            e.preventDefault().stopPropagation();
+            e.stopPropagation();
             $(this).blur();
             $.touch.event = true;
             if ($.touch.move) {
