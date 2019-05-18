@@ -253,6 +253,7 @@ $.fn.touch = function (callback) {
             if (!$.touch.event) {
                 $.touch.action = "click";
                 let callbackReal = callback.bind(this);
+                console.log('click event');
                 callbackReal(this, e);
             }
             $.touch.event = false;
@@ -267,6 +268,7 @@ $.fn.touch = function (callback) {
             } else {
                 $.touch.action = "touch";
                 let callbackReal = callback.bind(this);
+                console.log('click event');
                 callbackReal(this, e);
             }
         })
