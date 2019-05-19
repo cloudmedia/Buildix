@@ -187,10 +187,12 @@ function initMain() {
 }
 
 function loadingOn() {
+    $("#overlay").fadeIn();
     $("#site-logo-svg").attr('src', 'images/bx-loading.svg').removeClass().addClass('animated infinite pulse');
 }
 
 function loadingOff() {
+    $("#overlay").fadeOut();
     $("#site-logo-svg").attr('src', 'images/bx-logo.svg').removeClass().addClass('animated rubberBand');
 }
 

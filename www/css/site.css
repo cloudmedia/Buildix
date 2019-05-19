@@ -374,3 +374,11 @@ ul.actions > li:not(:first-of-type)
     font-size: 1.5rem;
     margin-top: 0.5rem;
 }
+
+#overlay {
+    display: none;
+    z-index: 999999;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
