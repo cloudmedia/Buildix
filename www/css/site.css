@@ -419,8 +419,8 @@ ul.actions > li:not(:first-of-type)
 }
 .setpoint-disp svg {
     fill: white;
-    width: 2em;
-    height: 2em;
+    width: 1em;
+    height: 1em;
 }
 .setpoint-disp.mode-heat svg {
     fill: #cc0d0d !important;

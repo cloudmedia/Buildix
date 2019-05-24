@@ -285,7 +285,7 @@ i.disabled {
 {
     fill: #ffffff;
     height: 1em;
-    widows: 1em;
+    width: 1em;
 }
 .svg-button > span.status {
     background-color: rgba(0, 0, 0, 0.8);
@@ -299,8 +299,8 @@ i.disabled {
 }
 .svg-button > span.status svg {
     fill: white;
-    width: 2em;
-    height: 2em;
+    width: 1em;
+    height: 1em;
 }
 .svg-button.fill-red > svg {
     fill: rgb(161, 9, 9);
@@ -318,55 +318,6 @@ i.disabled {
 {
     animation: svgBtnLoad2 1s linear infinite;
 }
-
-    .zone-header {
-        display: flex;
-        font-size: 2em;
-        background-color: rgba(0, 0, 0, 0.6);
-        padding: 0.5em;
-        border-radius: 5px;
-        margin-bottom: 1em;
-    }
-
-    .zone-header.small {
-        font-size: 1.2em;
-    }
-
-    .zone-header>div:first-of-type svg {
-        fill: rgb(<?=$zone->zone_color_css; ?>);
-        width: 1em;
-        height: 1em;
-    }
-
-    .zone-header>div:not(:first-of-type) {
-        margin-left: 0.5em;
-        color: cornflowerblue;
-    }
-
-    .setpoint-disp {
-        display: flex;
-    }
-    .setpoint-disp > * {
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-    .setpoint-disp > i {
-        margin-right: 1em;
-    }
-    .setpoint-disp svg {
-        fill: white;
-        width: 2em;
-        height: 2em;
-    }
-    .setpoint-disp.mode-heat svg {
-        fill: #cc0d0d !important;
-    }
-    .setpoint-disp.mode-cool svg {
-        fill: #0da7cc !important;
-    }
-    .setpoint-disp.mode-off svg {
-        fill: #cc8a0d !important;
-    }
 
 @keyframes svgBtnLoad {
     50% {
