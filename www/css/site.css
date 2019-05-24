@@ -382,3 +382,52 @@ ul.actions > li:not(:first-of-type)
     top: 0; left: 0; right: 0; bottom: 0;
     background-color: rgba(0, 0, 0, 0.6);
 }
+
+.zone-header {
+    display: flex;
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.5em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.zone-header.small {
+    font-size: 1.2em;
+}
+
+.zone-header>div:first-of-type svg {
+    fill: rgb(<?=$zone->zone_color_css; ?>);
+    width: 1em;
+    height: 1em;
+}
+
+.zone-header>div:not(:first-of-type) {
+    margin-left: 0.5em;
+    color: cornflowerblue;
+}
+
+.setpoint-disp {
+    display: flex;
+}
+.setpoint-disp > * {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.setpoint-disp > i {
+    margin-right: 1em;
+}
+.setpoint-disp svg {
+    fill: white;
+    width: 2em;
+    height: 2em;
+}
+.setpoint-disp.mode-heat svg {
+    fill: #cc0d0d !important;
+}
+.setpoint-disp.mode-cool svg {
+    fill: #0da7cc !important;
+}
+.setpoint-disp.mode-off svg {
+    fill: #cc8a0d !important;
+}
