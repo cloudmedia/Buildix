@@ -265,6 +265,11 @@ ul.actions > li:not(:first-of-type)
     flex-basis: 40%;
     min-height: 2em;
 }
+@media(max-width:600px) {
+    .svg-buttons.full > div {
+        flex-basis: 100% !important;
+    }
+}
 .svg-buttons > div > span
 {
     margin-left: 0.5em;
