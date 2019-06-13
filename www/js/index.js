@@ -257,7 +257,7 @@ $.fn.touch = function (callback) {
             callbackReal(this, e);
         }
     });
-    $(this).on("touchstart", function(e){
+    $(this).on("touchend", function(e){
         $(this).blur();
         if (typeof e.touches != typeof undefined)
         {
