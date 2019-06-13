@@ -262,15 +262,17 @@ $.fn.touch = function (callback) {
         if (typeof e.touches != typeof undefined)
         {
             e.preventDefault();
-            if (!$.touch.move)
-            {
-                $.touch.touch = true;
-                let callbackReal = callback.bind(this);
-                callbackReal(this, e);
-            }else{
-                $.touch.move = false;
-                return;
-            }
+            setTimeout(function(){
+                if (!$.touch.move)
+                {
+                    $.touch.touch = true;
+                    let callbackReal = callback.bind(this);
+                    callbackReal(this, e);
+                }else{
+                    $.touch.move = false;
+                    return;
+                }
+            }, 100);
         }
     });
     $(this).on("touchmove", function(e){
