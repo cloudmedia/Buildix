@@ -402,7 +402,6 @@ ul.actions > li:not(:first-of-type)
 }
 
 .zone-header>div:first-of-type svg {
-    fill: rgb(<?=$zone->zone_color_css; ?>);
     width: 1em;
     height: 1em;
 }
