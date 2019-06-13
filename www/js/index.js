@@ -243,26 +243,38 @@ function doLogout(n) {
 }
 
 $.fn.touch = function (callback) {
-    var touch = false;
+    $.touch = {
+        action: "",
+        touch: false,
+        move: false,
+        event: false
+    }
     $(this).on("click", function(e){
-        if (!touch)
+        if (!$.touch.touch)
         {
+            $.touch.touch = false;
             let callbackReal = callback.bind(this);
             callbackReal(this, e);
-        }else{
-            touch = true;
         }
-        touch = false;
     });
     $(this).on("touchstart", function(e){
         $(this).blur();
         if (typeof e.touches != typeof undefined)
         {
             e.preventDefault();
-            touch = true;
-            let callbackReal = callback.bind(this);
-            callbackReal(this, e);
+            if (!$.touch.move)
+            {
+                $.touch.touch = true;
+                let callbackReal = callback.bind(this);
+                callbackReal(this, e);
+            }else{
+                $.touch.move = false;
+                return;
+            }
         }
+    });
+    $(this).on("touchmove", function(e){
+        $.touch.move = true;
     });
 }
 
