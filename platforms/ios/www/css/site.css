@@ -265,6 +265,11 @@ ul.actions > li:not(:first-of-type)
     flex-basis: 40%;
     min-height: 2em;
 }
+@media(max-width:600px) {
+    .svg-buttons.full > div {
+        flex-basis: 100% !important;
+    }
+}
 .svg-buttons > div > span
 {
     margin-left: 0.5em;
@@ -373,4 +378,87 @@ ul.actions > li:not(:first-of-type)
 {
     font-size: 1.5rem;
     margin-top: 0.5rem;
+}
+
+#overlay {
+    display: none;
+    z-index: 999999;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.zone-header {
+    display: flex;
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.5em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.zone-header.small {
+    font-size: 1.2em;
+}
+
+.zone-header>div:first-of-type svg {
+    width: 1em;
+    height: 1em;
+}
+
+.zone-header>div:not(:first-of-type) {
+    margin-left: 0.5em;
+    color: cornflowerblue;
+}
+
+.zone-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.zone-grid>div {
+    height: 10em;
+    width: 10em;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 1em;
+}
+.zone-grid > div:hover {
+    opacity: 0.5;
+}
+.zone-grid > div > div {
+    margin: auto;
+}
+.zone-grid svg {
+    height: 4em;
+    width: 4em;
+    fill: white;
+}
+
+.setpoint-disp {
+    display: flex;
+}
+.setpoint-disp > * {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.setpoint-disp > i {
+    margin-right: 1em;
+}
+.setpoint-disp svg {
+    fill: white;
+    width: 1em;
+    height: 1em;
+}
+.setpoint-disp.mode-heat svg {
+    fill: #cc0d0d !important;
+}
+.setpoint-disp.mode-cool svg {
+    fill: #0da7cc !important;
+}
+.setpoint-disp.mode-off svg {
+    fill: #cc8a0d !important;
 }

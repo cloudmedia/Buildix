@@ -411,6 +411,33 @@ ul.actions > li:not(:first-of-type)
     color: cornflowerblue;
 }
 
+.zone-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.zone-grid>div {
+    height: 10em;
+    width: 10em;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 1em;
+}
+.zone-grid > div:hover {
+    opacity: 0.5;
+}
+.zone-grid > div > div {
+    margin: auto;
+}
+.zone-grid svg {
+    height: 4em;
+    width: 4em;
+    fill: white;
+}
+
 .setpoint-disp {
     display: flex;
 }

@@ -187,10 +187,12 @@ function initMain() {
 }
 
 function loadingOn() {
+    $("#overlay").fadeIn();
     $("#site-logo-svg").attr('src', 'images/bx-loading.svg').removeClass().addClass('animated infinite pulse');
 }
 
 function loadingOff() {
+    $("#overlay").fadeOut();
     $("#site-logo-svg").attr('src', 'images/bx-logo.svg').removeClass().addClass('animated rubberBand');
 }
 
@@ -243,24 +245,8 @@ function doLogout(n) {
 $.fn.touch = function (callback) {
     var touch = false;
     $(this).on("click", function(e){
-        if (!touch)
-        {
             let callbackReal = callback.bind(this);
             callbackReal(this, e);
-        }else{
-            touch = true;
-        }
-        touch = false;
-    });
-    $(this).on("touchstart", function(e){
-        $(this).blur();
-        if (typeof e.touches != typeof undefined)
-        {
-            e.preventDefault();
-            touch = true;
-            let callbackReal = callback.bind(this);
-            callbackReal(this, e);
-        }
     });
 }
 

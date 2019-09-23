@@ -13,6 +13,8 @@ class aniModal
     {
        this.obj1 = obj1;
        this.obj2 = obj2;
+       this.obj1.hide();
+       this.obj2.hide();
        var defaultOpts = {
            animClassIn: 'bounceInUp',
            animClassOut: 'bounceOutDown',
@@ -51,7 +53,7 @@ class aniModal
         this.obj1.hide();
         var me = this;
         this.obj1.fadeIn(function(){
-           me.obj2.removeClass(me.cssClassIn).removeClass(me.cssClassOut).addClass(me.cssClassIn);
+           me.obj2.removeClass(me.cssClassIn).removeClass(me.cssClassOut).addClass(me.cssClassIn).show();
         });
 
     }

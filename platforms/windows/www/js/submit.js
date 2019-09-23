@@ -61,7 +61,7 @@ class Submit
         var res;
         if (debug)
         {
-            res = {status:0, message:res.responseText, field:'page-bottom'};
+            res = {status:0, message:data.responseText, field:'page-bottom'};
         }else{
             res = {status:0, message:'Failed to connect to server ['+server+']!', field:'page-bottom'};
         }
