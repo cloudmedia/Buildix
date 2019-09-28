@@ -56,5 +56,7 @@
     <array>
       <string>remote-notification</string>
     </array>
+    <key>NFCReaderUsageDescription</key>
+    <string>We use the NFC reader to read key fobs for additional multi-factor authentication.</string>
   </dict>
 </plist>
