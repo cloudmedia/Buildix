@@ -21,11 +21,11 @@
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleShortVersionString</key>
-    <string>2.0.0</string>
+    <string>2.0.2</string>
     <key>CFBundleSignature</key>
     <string>????</string>
     <key>CFBundleVersion</key>
-    <string>2.0.0</string>
+    <string>2.0.2</string>
     <key>LSRequiresIPhoneOS</key>
     <true/>
     <key>NSMainNibFile</key>
@@ -57,6 +57,6 @@
       <string>remote-notification</string>
     </array>
     <key>NFCReaderUsageDescription</key>
-    <string>We use the NFC reader to read key fobs for additional multi-factor authentication.</string>
+    <string>$NFC_USAGE_DESCRIPTION</string>
   </dict>
 </plist>

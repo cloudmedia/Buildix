@@ -26,6 +26,12 @@
               "xml": "<array><string>remote-notification</string></array>",
               "count": 1
             }
+          ],
+          "NFCReaderUsageDescription": [
+            {
+              "xml": "<string>$NFC_USAGE_DESCRIPTION</string>",
+              "count": 2
+            }
           ]
         }
       },
@@ -45,6 +51,18 @@
             {
               "xml": "<string>production</string>",
               "count": 1
+            }
+          ]
+        }
+      },
+      "undefined": {
+        "parents": {
+          "*-Info.plist": [
+            {
+              "xml": "<string>Used to authenticate key fobs for access control modules.</string>",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml"
             }
           ]
         }

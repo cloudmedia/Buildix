@@ -38,9 +38,6 @@
         <splash qualifier="port-xxxhdpi" src="res/screens/android/drawable-port-xxxhdpi-screen.png" />
     </platform>
     <platform name="ios">
-        <edit-config platform="ios" target="*-Info.plist" parent="NFCReaderUsageDescription" mode="merge">
-            <string>Used to authenticate key fobs for access control modules.</string>
-        </edit-config>
         <preference name="OverrideUserAgent" value="Buildix/2.0 iOS" />
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
@@ -70,6 +67,10 @@
         <splash height="1024" platform="ios" src="res/screens/ios/Default-Portrait~ipad.png" width="768" />
         <splash height="960" platform="ios" src="res/screens/ios/Default@2x~iphone.png" width="640" />
         <splash height="480" platform="ios" src="res/screens/ios/Default~iphone.png" width="320" />
+        <preference default="Read NFC Tags" name="NFC_USAGE_DESCRIPTION" />
+        <config-file parent="NFCReaderUsageDescription" target="*-Info.plist">
+            <string>$NFC_USAGE_DESCRIPTION</string>
+        </config-file>
     </platform>
     <platform name="winphone">
         <preference name="windows-identity-name" value="59705Cloudulus.Media.Buildix" />
