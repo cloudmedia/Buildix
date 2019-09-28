@@ -30,7 +30,7 @@
           "NFCReaderUsageDescription": [
             {
               "xml": "<string>$NFC_USAGE_DESCRIPTION</string>",
-              "count": 2
+              "count": 4
             }
           ]
         }
