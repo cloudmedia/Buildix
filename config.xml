@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="net.buildix.app" version="2.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="net.buildix.app" version="2.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Buildix</name>
     <description>
         Building automation suite.
@@ -15,8 +15,8 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <preference name="OverrideUserAgent" value="Buildix/2.0 Android" />
-        <preference name="android-minSdkVersion"  value="16" />
-        <preference name="android-targetSdkVersion"  value="28" />
+        <preference name="android-minSdkVersion" value="16" />
+        <preference name="android-targetSdkVersion" value="28" />
         <allow-intent href="market:*" />
         <icon qualifier="ldpi" src="res/icons/android/drawable-ldpi-icon.png" />
         <icon qualifier="mdpi" src="res/icons/android/drawable-mdpi-icon.png" />
@@ -38,6 +38,9 @@
         <splash qualifier="port-xxxhdpi" src="res/screens/android/drawable-port-xxxhdpi-screen.png" />
     </platform>
     <platform name="ios">
+        <edit-config platform="ios" target="*-Info.plist" parent="NFCReaderUsageDescription" mode="merge">
+            <string>Used to authenticate key fobs for access control modules.</string>
+        </edit-config>
         <preference name="OverrideUserAgent" value="Buildix/2.0 iOS" />
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />

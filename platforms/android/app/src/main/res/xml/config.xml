@@ -45,4 +45,6 @@
     <splash qualifier="port-xxxhdpi" src="res/screens/android/drawable-port-xxxhdpi-screen.png" />
     <preference name="loglevel" value="DEBUG" />
     <preference name="OverrideUserAgent" value="Buildix/2.0 Android" />
+    <preference name="android-minSdkVersion" value="16" />
+    <preference name="android-targetSdkVersion" value="28" />
 </widget>
