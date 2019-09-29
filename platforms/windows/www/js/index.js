@@ -118,6 +118,28 @@ function errorConnect(e) {
     }
 }
 
+function appendMainLoad(url, val, overLoad) {
+    if (typeof val === typeof undefined) val = 'yes';
+    if (typeof overLoad === typeof undefined) overLoad = false;
+    var vars = {};
+    var varCount = 0;
+    var isMainLoad = false;
+    var parts = url.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+        if (key == 'mainload') isMainLoad = true;
+        vars[key] = value;
+        varCount = varCount + 1;
+    });
+    if (!isMainLoad) {
+        if (!varCount) {
+            url = url + "?mainload=" + val;
+        } else {
+            url = url + "&mainload=" + val;
+        }
+        if (overLoad) url = url + "&overload=yes";
+    }
+    return url;
+}
+
 function mainLoad(url, src, effect) {
     sounds.play('bubble');
     scrollTop();
@@ -126,6 +148,8 @@ function mainLoad(url, src, effect) {
     if (typeof src === typeof undefined) src = 'server';
     var prefix = server;
     if (src == 'local') prefix = "html";
+    url = appendMainLoad(url);
+    console.log("Loading url: " + url);
     $("#main").load(prefix + url, function () {
         $(".box").each(function () {
             var last = $(this).data('lastEffect');
