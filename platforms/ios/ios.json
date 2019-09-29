@@ -30,7 +30,7 @@
           "NFCReaderUsageDescription": [
             {
               "xml": "<string>Reading NFC tags is used as an additional layer of multi-factor authentication.</string>",
-              "count": 25
+              "count": 29
             }
           ]
         }

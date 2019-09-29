@@ -45,10 +45,6 @@
     }
 }
 
-.form-btn:hover {
-    background-color: rgba(32, 96, 151, 0.6);
-}
-
 .form-btn:active {
     background-color: rgba(0, 0, 0, 0.63);
 }
@@ -85,10 +81,6 @@
     box-shadow: none;
     color: #ffffff !important;
     border: transparent;
-}
-
-.form-btn.main:hover {
-    opacity: 0.5;
 }
 
 .form-btn.main:active {
@@ -128,10 +120,6 @@ i.disabled {
 
 .inlineBtn.big {
     font-size: 3em;
-}
-
-.inlineBtn:hover {
-    opacity: 0.5;
 }
 
 .big-button {
@@ -200,17 +188,9 @@ i.disabled {
     transition: .5s;
 }
 
-.big-button>span.bbb:hover {
-    background-color: rgba(255, 0, 0, 0.438);
-}
-
 .big-button.small-text>span {
     font-size: 1.2em !important;
     margin-top: 1em;
-}
-
-.big-button:hover {
-    opacity: 0.5;
 }
 
 .btn-flex {
@@ -276,10 +256,6 @@ i.disabled {
     width: fit-content;
     height: fit-content;
     cursor: pointer;
-}
-.svg-button:hover
-{
-    background-color: black !important;
 }
 .svg-button > svg
 {
