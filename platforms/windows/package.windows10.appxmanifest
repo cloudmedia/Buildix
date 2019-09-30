@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Package IgnorableNamespaces="uap mp" xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10">
-    <Identity Name="net.buildix.app" Publisher="CN=2951FC3C-84E7-4F18-AA0A-77356EC80650" Version="2.0.6.0" />
+    <Identity Name="net.buildix.app" Publisher="CN=2951FC3C-84E7-4F18-AA0A-77356EC80650" Version="2.0.7.0" />
     <mp:PhoneIdentity PhoneProductId="5beb968a-9a06-434b-b516-b96749e7e77c" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
     <Properties>
         <DisplayName>Buildix</DisplayName>
