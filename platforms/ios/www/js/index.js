@@ -350,3 +350,63 @@ function timeStamp() {
     var dateTime = date + ' ' + time;
     return dateTime;
 }
+
+function modCmd(mid, cmd, data, modSuccess, modError)
+{
+    var sub = new Submit(server + "/zone/mod-cmd");
+    sub.addData('mid', mid);
+    sub.addData('cmd', cmd);
+    sub.addData('data', data);
+    loadingOn();
+    sub.submit('json', function (data) {
+        console.log(data);
+        if (data.status == 1) {
+            var count = 0;
+            var checker = setInterval(function () {
+                $.getJSON(server + "/zone/event-stat", function (data) {
+                    console.log(data);
+                    if (data.status == 1) {
+                        notify2(data.log + " OK!", "success");
+                        loadingOff();
+                        clearInterval(checker);
+                        if (typeof modSuccess == 'function')
+                        {
+                            modSuccess(data);
+                            return;
+                        }
+                    }
+                });
+                if (count >= 10) {
+                    loadingOff();
+                    clearInterval(checker);
+                    $.getJSON(server + "/zone/event-stat?fail=true", function (
+                        data) {
+                        if (data.status < 1) {
+                            notify2("Failed to update event status!");
+                            if (typeof modError == 'function')
+                            {
+                                modError(data);
+                                return;
+                            }
+                        }
+                    });
+                    notify2("Module not responding!", "error");
+                    if (typeof modError == 'function')
+                    {
+                        modError(data);
+                        return;
+                    }
+                }
+                count++;
+            }, 1000);
+        } else {
+            loadingOff();
+            notify2(data.message, "error");
+            if (typeof modError == 'function')
+            {
+                modError(data);
+                return;
+            }
+        }
+    });
+}
